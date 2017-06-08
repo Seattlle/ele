@@ -1,0 +1,201 @@
+.shop-main{
+    height:100%;
+    overflow: hidden;
+    background:#fff;
+}
+.menuview{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+}
+.menucategory{
+    overflow-y: auto;
+    height: 100%;
+    background-color: #f8f8f8;
+    -webkit-overflow-scrolling: touch;
+}
+.menucategory-item{
+    position: relative;
+    padding: .2rem .15rem;
+    border-bottom: 1px solid #ededed;
+    font-size: .26rem;
+    color: #666;
+}
+.menucategory-item.active{
+    background:#fff;
+    border-left:3px solid #3190e8;
+    font-weight:bold;
+}
+.container-menuview{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    width: 0;
+    height: 100%;
+    overflow-y:auto;
+}
+.category-title{
+    position: relative;
+    padding: .16rem .18rem;
+    background-color: #f1f1f1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.category-name{
+    margin-right: .133333rem;
+    font-weight: 700;
+    font-size: .3rem;
+    color: #666;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+}
+.category-description{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    width: 0;
+    color: #999;
+    font-size: .2rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.category-item{
+    position: relative;
+    background-color: #fff;
+    margin: 0;
+    padding: .3rem .2rem;
+    margin-bottom: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 2.5rem;
+    box-shadow: 0.4rem 0.013333rem 0 0 #ddd;
+}
+.foodimg{
+    margin-right: .1rem;
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    display: block;
+    width: 0;
+    vertical-align: top;
+}
+.foodimg img{
+    width: 100%;
+    border-radius: .053333rem;
+}
+.foodinfo{
+    position: relative;
+    -webkit-box-flex: 8;
+    -ms-flex: 8;
+    flex: 8;
+    display: block;
+    width: 0;
+    padding-bottom: .5rem;
+}
+.foodtitle{
+    font-size: .3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.fooddescription{
+    margin: .1rem 0;
+    font-size: .2rem;
+    color: #999;
+    line-height:.4rem;
+}
+.foodsales{
+    color: #666;
+    font-size: .2rem;
+    line-height: 1;
+}
+.foodsales span{
+    vertical-align: middle;
+}
+.foodactivity{
+    font-size: .293333rem;
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    color: #f07373;
+    white-space: nowrap;
+}
+.foodactivity span:first-child {
+    border: 1px solid currentColor;
+    padding: 0 .066667rem;
+}
+.foodprice{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-weight: 700;
+    font-size: .4rem;
+    line-height: .4rem;
+    color: #f60;
+}
+.foodprice:before {
+    font-weight: 400;
+    content: "\A5";
+    font-size: .293333rem;
+    display: inline-block;
+}
+.cartbutton {
+    position: absolute;
+    right: 0;
+    bottom: -.066667rem;
+}
+.cartbutton-2tycR {
+    display: inline-block;
+    font-size: .346667rem;
+    white-space: nowrap;
+}
+.cartbutton-2tycR a {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    outline:none;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    border:1px solid #3190e8;
+    line-height:.5rem;
+    height:.5rem;
+    width:.5rem;
+    text-align:center;
+    font-size:.5rem;
+}
+.cartbutton-2tycR a.cut{
+    color:#3190e8;
+}
+.cartbutton-2tycR a.add{
+    background:#3190e8;
+    color:#fff;
+}
+.cartbutton-2OSi7{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    color: #666;
+    font-size: .373333rem;
+    min-width: .4rem;
+    max-width: 2em;
+    overflow: hidden;
+}

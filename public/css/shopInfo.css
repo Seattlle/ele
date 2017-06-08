@@ -1,0 +1,91 @@
+.shopInfo{
+    padding:0.3rem;
+    background-color:rgb(0, 151, 255);
+}
+.shop-header-main_1B2kH_0{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-content: center;
+}
+.shop-header-logo_3woDQ_0{
+    width: 1.3rem;
+    height: 1.3rem;
+    border: 1px solid #fff;
+    border-radius: .106667rem;
+    margin: 0 .2rem;
+}
+.shop-header-content_3UjPs_0{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    width: 0;
+    padding-right: .133333rem;
+    color:#fff;
+}
+.shop-header-shopName_2QrHh_0{
+    font-size:.36rem;
+    font-weight:bold;
+    line-height:0.4rem;
+}
+.shop-header-delivery_1mcTe_0{
+    font-size:0.3rem;
+}
+.shop-header-notice_2DzmG_0{
+    font-size:0.3rem;
+    white-space: nowrap;
+    width:100%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.shop-tab-container_3skq8_0 {
+    line-height: 0.8rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fff;
+}
+.shop-tab-tab_r4SDi_0 {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    width: 0;
+    text-align: center;
+    font-size: .28rem;
+    color: #666;
+    border-bottom: 1px solid #ddd;
+    outline:none!important;
+}
+.shop-tab-active {
+    color: #3190e8;
+}
+.shop-tab-active .shop-tab-title_1crD1_0:after {
+    content: "";
+    position: absolute;
+    bottom:-1px;
+    left: 0rem;
+    right: 0rem;
+    height: .03rem;
+    background-color: #3190e8;
+    border-radius: .04rem;
+}
+
+.subPage{
+    position: absolute;
+    width:100%;
+    bottom:0;
+    top:2.9rem;
+    overflow:hidden;
+}

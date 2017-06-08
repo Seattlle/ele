@@ -1,0 +1,89 @@
+.shopComment{
+    height:100%;
+    overflow-y:auto;
+}
+.overview-container{
+    background-color: #fff;
+    margin-bottom: .2em;
+    padding: .3rem;
+    font-size: .3rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #666;
+}
+.overview-col1{
+    padding-right: .2rem;
+    border-right: 1px solid #ddd;
+    text-align: center;
+    line-height: 1.5;
+}
+.overview-overallScore{
+    font-size: .6rem;
+    line-height: 1;
+    font-weight: 400;
+    color: #f60;
+    display: block;
+}
+.overview-col2{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    width: 0;
+    font-size: .3rem;
+    line-height: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.overview-line{
+    width: 80%;
+    margin: .1rem 0;
+}
+.overview-lineContent i{
+    font-style: normal;
+    color:#ffaa0c;
+}
+.rating-wrapper{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+.rating-max, .rating-rating{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.overview-lineScore {
+    color: #f60;
+}
+.overview-small{
+    font-size: .16rem;
+    padding-left:.16rem;
+    color: #999;
+}
+
+.index-rateDetail{
+    background-color: #fff;
+    padding: .3rem .22rem;
+    font-size: .3rem;
+}

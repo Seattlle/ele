@@ -1,0 +1,41 @@
+.app-header,.app-footer{
+    position: fixed;
+    width:100%;
+    z-index: 99;
+    max-width:768px;
+    min-width:320px;
+    margin:0 auto;
+}
+.app-footer{
+    bottom:0;
+}
+.app-header{
+    top:0;
+}
+.main{
+    width:100%;
+    max-width:768px;
+    min-width:320px;
+    margin:0.8rem auto 1.1rem auto;
+    background:#ccc;
+    position: fixed;
+    top:0;
+    bottom:0;
+    box-sizing:border-box;
+}
+.main-contaienr{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    bottom:0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.hide-footer .app-footer{
+    display: none;
+}
+.hide-footer .main{
+    margin-bottom:0;
+}
