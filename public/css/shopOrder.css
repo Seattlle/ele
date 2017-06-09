@@ -8,6 +8,8 @@
     display: -ms-flexbox;
     display: flex;
     height: 100%;
+    padding-bottom:1rem;
+    box-sizing:border-box;
 }
 .menucategory{
     overflow-y: auto;
@@ -17,7 +19,7 @@
 }
 .menucategory-item{
     position: relative;
-    padding: .2rem .15rem;
+    padding: .2rem ;
     border-bottom: 1px solid #ededed;
     font-size: .26rem;
     color: #666;
@@ -130,7 +132,7 @@
     vertical-align: middle;
 }
 .foodactivity{
-    font-size: .293333rem;
+    font-size: .22rem;
     -webkit-transform: scale(.8);
     transform: scale(.8);
     -webkit-transform-origin: left;
@@ -176,11 +178,11 @@
     -moz-border-radius:50%;
     border-radius:50%;
     border:1px solid #3190e8;
-    line-height:.5rem;
-    height:.5rem;
-    width:.5rem;
+    line-height:.4rem;
+    height:.4rem;
+    width:.4rem;
     text-align:center;
-    font-size:.5rem;
+    font-size:.4rem;
 }
 .cartbutton-2tycR a.cut{
     color:#3190e8;

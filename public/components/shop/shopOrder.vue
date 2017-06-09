@@ -6,7 +6,6 @@
                     <span class="menucategory-qwsbd">{{item.name}}</span>
                 </li>
             </ul>
-
             <section class="container-menuview">
                 <div class="category-title">
                     <strong class="category-name">热销榜</strong>
@@ -196,9 +195,11 @@
                 </ul>
             </section>
         </div>
+        <cart></cart>
     </section>
 </template>
 <script>
+    import cart from './cart.vue'
     export default{
         data(){
             return {
@@ -211,35 +212,11 @@
                 },{
                     'id':'10002',
                     'name':'主餐'
-                },{
-                    'id':'10001',
-                    'name':'热销榜'
-                },{
-                    'id':'10002',
-                    'name':'优惠'
-                },{
-                    'id':'10002',
-                    'name':'主餐'
-                },{
-                    'id':'10001',
-                    'name':'热销榜'
-                },{
-                    'id':'10002',
-                    'name':'优惠'
-                },{
-                    'id':'10002',
-                    'name':'主餐'
-                },{
-                    'id':'10001',
-                    'name':'热销榜'
-                },{
-                    'id':'10002',
-                    'name':'优惠'
-                },{
-                    'id':'10002',
-                    'name':'主餐'
                 }]
             }
+        },
+        components:{
+            cart
         }
     }
 </script>

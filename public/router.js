@@ -17,7 +17,7 @@ const routes=[{
 },{
     path:'/shopInfo',
     name:'',
-    component:resolve=>require(["./components/shop/shopInfo.vue"],resolve),
+    component:resolve=>require(["./components/shop/shop.vue"],resolve),
     children:[
         {
             path:'',
