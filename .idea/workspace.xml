@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2a9f80c-602c-497c-88f3-8a851fa399bf" name="默认的" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/0.js" afterPath="$PROJECT_DIR$/app/0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/1.js" afterPath="$PROJECT_DIR$/app/1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/2.js" afterPath="$PROJECT_DIR$/app/2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/3.js" afterPath="$PROJECT_DIR$/app/3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/4.js" afterPath="$PROJECT_DIR$/app/4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/main.js" afterPath="$PROJECT_DIR$/app/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/components/shop/cart.vue" afterPath="$PROJECT_DIR$/public/components/shop/cart.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/components/shop/shopOrder.vue" afterPath="$PROJECT_DIR$/public/components/shop/shopOrder.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/shopOrder.css" afterPath="$PROJECT_DIR$/public/css/shopOrder.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="shopOrder.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="shopOrder.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/components/shop/shopOrder.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="49" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+            <state relative-caret-position="342">
+              <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
               <folding>
                 <element signature="n#li#0;n#ul#0;n#template#0;n#section#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="false" />
                 <element signature="e#2765#2786#0" expanded="true" />
@@ -89,6 +80,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -207,7 +208,6 @@
         <option value="$PROJECT_DIR$/public/components/shop/comment.vue" />
         <option value="$PROJECT_DIR$/public/components/main/header.vue" />
         <option value="$PROJECT_DIR$/public/css/App.css" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="C:/Program Files/Git/etc/ssh/ssh_config" />
         <option value="$PROJECT_DIR$/public/components/shop/shopInfo.vue" />
         <option value="$PROJECT_DIR$/public/components/shop/shop.vue" />
@@ -217,6 +217,7 @@
         <option value="$PROJECT_DIR$/public/css/shopOrder.css" />
         <option value="$PROJECT_DIR$/public/components/shop/cart.vue" />
         <option value="$PROJECT_DIR$/public/components/shop/shopOrder.vue" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -298,28 +299,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ele" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -476,7 +455,7 @@
       <workItem from="1496904847582" duration="7196000" />
       <workItem from="1496991056798" duration="455000" />
       <workItem from="1496991568990" duration="5548000" />
-      <workItem from="1497059911547" duration="15006000" />
+      <workItem from="1497059911547" duration="15139000" />
     </task>
     <task id="LOCAL-00001" summary="修改商户中心页">
       <created>1496999545488</created>
@@ -485,16 +464,23 @@
       <option name="project" value="LOCAL" />
       <updated>1496999545488</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="商户中心页 添加滚动监听">
+      <created>1497087682583</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1497087682583</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80731000" />
+    <option name="totallyTimeSpent" value="80864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="887" y="0" width="1040" height="1047" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1736527" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1736527" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -818,14 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/shop.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="779">
@@ -926,8 +904,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/components/shop/shopOrder.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="49" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        <state relative-caret-position="342">
+          <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
           <folding>
             <element signature="n#li#0;n#ul#0;n#template#0;n#section#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="false" />
             <element signature="e#2765#2786#0" expanded="true" />
@@ -946,6 +924,14 @@
             <element signature="e#8179#8207#0" expanded="false" />
             <element signature="e#8226#8388#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
