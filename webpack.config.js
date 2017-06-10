@@ -2,7 +2,7 @@ const  webpack=require('webpack');
 const HtmlWebpackPlugin=require('html-webpack-plugin');
 
 module.exports = {
-    devtool: 'eval-source-map',
+    devtool: 'source-map',
 
     entry:  __dirname + "/public/main.js",//已多次提及的唯一入口文件
     output: {

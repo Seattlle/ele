@@ -1,53 +1,607 @@
 webpackJsonp([2],{
 
+/***/ 102:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(67);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(6)("32ee6ebb", content, false);
+// Hot Module Replacement
+if(true) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept(67, function() {
+     var newContent = __webpack_require__(67);
+     if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
 /***/ 105:
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// style-loader: Adds some css to the DOM by adding a <style> tag\n\n// load the styles\nvar content = __webpack_require__(73);\nif(typeof content === 'string') content = [[module.i, content, '']];\nif(content.locals) module.exports = content.locals;\n// add the styles to the DOM\nvar update = __webpack_require__(6)(\"c33ddb12\", content, false);\n// Hot Module Replacement\nif(true) {\n // When the styles change, update the <style> tags\n if(!content.locals) {\n   module.hot.accept(73, function() {\n     var newContent = __webpack_require__(73);\n     if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];\n     update(newContent);\n   });\n }\n // When the module is disposed, remove the <style> tags\n module.hot.dispose(function() { update(); });\n}//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wdWJsaWMvY29tcG9uZW50cy9wcm9maWxlL3VzZXJJbmZvLnZ1ZT82NDA1Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztBQUVBO0FBQ0Esb0NBQThOO0FBQzlOO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSx1QkFBNk47QUFDN04sNENBQXNPO0FBQ3RPO0FBQ0E7QUFDQSxJQUFJO0FBQ0o7QUFDQTtBQUNBLGdDQUFnQyxVQUFVLEVBQUU7QUFDNUMiLCJmaWxlIjoiMTA1LmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gc3R5bGUtbG9hZGVyOiBBZGRzIHNvbWUgY3NzIHRvIHRoZSBET00gYnkgYWRkaW5nIGEgPHN0eWxlPiB0YWdcblxuLy8gbG9hZCB0aGUgc3R5bGVzXG52YXIgY29udGVudCA9IHJlcXVpcmUoXCIhIS4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2luZGV4LmpzP3NvdXJjZU1hcCEuLi8uLi8uLi9ub2RlX21vZHVsZXMvdnVlLWxvYWRlci9saWIvc3R5bGUtY29tcGlsZXIvaW5kZXguanM/e1xcXCJ2dWVcXFwiOnRydWUsXFxcImlkXFxcIjpcXFwiZGF0YS12LWQxZjBlZWRlXFxcIixcXFwic2NvcGVkXFxcIjpmYWxzZSxcXFwiaGFzSW5saW5lQ29uZmlnXFxcIjpmYWxzZX0hLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Z1ZS1sb2FkZXIvbGliL3NlbGVjdG9yLmpzP3R5cGU9c3R5bGVzJmluZGV4PTAhLi91c2VySW5mby52dWVcIik7XG5pZih0eXBlb2YgY29udGVudCA9PT0gJ3N0cmluZycpIGNvbnRlbnQgPSBbW21vZHVsZS5pZCwgY29udGVudCwgJyddXTtcbmlmKGNvbnRlbnQubG9jYWxzKSBtb2R1bGUuZXhwb3J0cyA9IGNvbnRlbnQubG9jYWxzO1xuLy8gYWRkIHRoZSBzdHlsZXMgdG8gdGhlIERPTVxudmFyIHVwZGF0ZSA9IHJlcXVpcmUoXCIhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Z1ZS1zdHlsZS1sb2FkZXIvbGliL2FkZFN0eWxlc0NsaWVudC5qc1wiKShcImMzM2RkYjEyXCIsIGNvbnRlbnQsIGZhbHNlKTtcbi8vIEhvdCBNb2R1bGUgUmVwbGFjZW1lbnRcbmlmKG1vZHVsZS5ob3QpIHtcbiAvLyBXaGVuIHRoZSBzdHlsZXMgY2hhbmdlLCB1cGRhdGUgdGhlIDxzdHlsZT4gdGFnc1xuIGlmKCFjb250ZW50LmxvY2Fscykge1xuICAgbW9kdWxlLmhvdC5hY2NlcHQoXCIhIS4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2luZGV4LmpzP3NvdXJjZU1hcCEuLi8uLi8uLi9ub2RlX21vZHVsZXMvdnVlLWxvYWRlci9saWIvc3R5bGUtY29tcGlsZXIvaW5kZXguanM/e1xcXCJ2dWVcXFwiOnRydWUsXFxcImlkXFxcIjpcXFwiZGF0YS12LWQxZjBlZWRlXFxcIixcXFwic2NvcGVkXFxcIjpmYWxzZSxcXFwiaGFzSW5saW5lQ29uZmlnXFxcIjpmYWxzZX0hLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Z1ZS1sb2FkZXIvbGliL3NlbGVjdG9yLmpzP3R5cGU9c3R5bGVzJmluZGV4PTAhLi91c2VySW5mby52dWVcIiwgZnVuY3Rpb24oKSB7XG4gICAgIHZhciBuZXdDb250ZW50ID0gcmVxdWlyZShcIiEhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL2Nzcy1sb2FkZXIvaW5kZXguanM/c291cmNlTWFwIS4uLy4uLy4uL25vZGVfbW9kdWxlcy92dWUtbG9hZGVyL2xpYi9zdHlsZS1jb21waWxlci9pbmRleC5qcz97XFxcInZ1ZVxcXCI6dHJ1ZSxcXFwiaWRcXFwiOlxcXCJkYXRhLXYtZDFmMGVlZGVcXFwiLFxcXCJzY29wZWRcXFwiOmZhbHNlLFxcXCJoYXNJbmxpbmVDb25maWdcXFwiOmZhbHNlfSEuLi8uLi8uLi9ub2RlX21vZHVsZXMvdnVlLWxvYWRlci9saWIvc2VsZWN0b3IuanM/dHlwZT1zdHlsZXMmaW5kZXg9MCEuL3VzZXJJbmZvLnZ1ZVwiKTtcbiAgICAgaWYodHlwZW9mIG5ld0NvbnRlbnQgPT09ICdzdHJpbmcnKSBuZXdDb250ZW50ID0gW1ttb2R1bGUuaWQsIG5ld0NvbnRlbnQsICcnXV07XG4gICAgIHVwZGF0ZShuZXdDb250ZW50KTtcbiAgIH0pO1xuIH1cbiAvLyBXaGVuIHRoZSBtb2R1bGUgaXMgZGlzcG9zZWQsIHJlbW92ZSB0aGUgPHN0eWxlPiB0YWdzXG4gbW9kdWxlLmhvdC5kaXNwb3NlKGZ1bmN0aW9uKCkgeyB1cGRhdGUoKTsgfSk7XG59XG5cblxuLy8vLy8vLy8vLy8vLy8vLy8vXG4vLyBXRUJQQUNLIEZPT1RFUlxuLy8gLi9+L3Z1ZS1zdHlsZS1sb2FkZXIhLi9+L2Nzcy1sb2FkZXI/c291cmNlTWFwIS4vfi92dWUtbG9hZGVyL2xpYi9zdHlsZS1jb21waWxlcj97XCJ2dWVcIjp0cnVlLFwiaWRcIjpcImRhdGEtdi1kMWYwZWVkZVwiLFwic2NvcGVkXCI6ZmFsc2UsXCJoYXNJbmxpbmVDb25maWdcIjpmYWxzZX0hLi9+L3Z1ZS1sb2FkZXIvbGliL3NlbGVjdG9yLmpzP3R5cGU9c3R5bGVzJmluZGV4PTAhLi9wdWJsaWMvY29tcG9uZW50cy9wcm9maWxlL3VzZXJJbmZvLnZ1ZVxuLy8gbW9kdWxlIGlkID0gMTA1XG4vLyBtb2R1bGUgY2h1bmtzID0gMiJdLCJzb3VyY2VSb290IjoiIn0=");
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(70);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(6)("225530d3", content, false);
+// Hot Module Replacement
+if(true) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept(70, function() {
+     var newContent = __webpack_require__(70);
+     if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
 
 /***/ }),
 
-/***/ 62:
+/***/ 65:
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var disposed = false\nfunction injectStyle (ssrContext) {\n  if (disposed) return\n  __webpack_require__(105)\n}\nvar Component = __webpack_require__(5)(\n  /* script */\n  __webpack_require__(76),\n  /* template */\n  __webpack_require__(97),\n  /* styles */\n  injectStyle,\n  /* scopeId */\n  null,\n  /* moduleIdentifier (server only) */\n  null\n)\nComponent.options.__file = \"F:\\\\Program\\\\ele\\\\public\\\\components\\\\profile\\\\userInfo.vue\"\nif (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== \"default\" && key.substr(0, 2) !== \"__\"})) {console.error(\"named exports are not supported in *.vue files.\")}\nif (Component.options.functional) {console.error(\"[vue-loader] userInfo.vue: functional components are not supported with templates, they should use render functions.\")}\n\n/* hot reload */\nif (true) {(function () {\n  var hotAPI = __webpack_require__(2)\n  hotAPI.install(__webpack_require__(1), false)\n  if (!hotAPI.compatible) return\n  module.hot.accept()\n  if (!module.hot.data) {\n    hotAPI.createRecord(\"data-v-d1f0eede\", Component.options)\n  } else {\n    hotAPI.reload(\"data-v-d1f0eede\", Component.options)\n  }\n  module.hot.dispose(function (data) {\n    disposed = true\n  })\n})()}\n\nmodule.exports = Component.exports\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wdWJsaWMvY29tcG9uZW50cy9wcm9maWxlL3VzZXJJbmZvLnZ1ZT84YWY1Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBLHlCQUFpTTtBQUNqTTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0Esd0JBQXNHO0FBQ3RHO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSwrRUFBK0Usc0RBQXNELElBQUk7QUFDekksbUNBQW1DOztBQUVuQztBQUNBLFdBQWlCO0FBQ2pCO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLEdBQUc7QUFDSDtBQUNBO0FBQ0E7QUFDQTtBQUNBLEdBQUc7QUFDSCxDQUFDOztBQUVEIiwiZmlsZSI6IjYyLmpzIiwic291cmNlc0NvbnRlbnQiOlsidmFyIGRpc3Bvc2VkID0gZmFsc2VcbmZ1bmN0aW9uIGluamVjdFN0eWxlIChzc3JDb250ZXh0KSB7XG4gIGlmIChkaXNwb3NlZCkgcmV0dXJuXG4gIHJlcXVpcmUoXCIhIXZ1ZS1zdHlsZS1sb2FkZXIhY3NzLWxvYWRlcj9zb3VyY2VNYXAhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Z1ZS1sb2FkZXIvbGliL3N0eWxlLWNvbXBpbGVyL2luZGV4P3tcXFwidnVlXFxcIjp0cnVlLFxcXCJpZFxcXCI6XFxcImRhdGEtdi1kMWYwZWVkZVxcXCIsXFxcInNjb3BlZFxcXCI6ZmFsc2UsXFxcImhhc0lubGluZUNvbmZpZ1xcXCI6ZmFsc2V9IS4uLy4uLy4uL25vZGVfbW9kdWxlcy92dWUtbG9hZGVyL2xpYi9zZWxlY3Rvcj90eXBlPXN0eWxlcyZpbmRleD0wIS4vdXNlckluZm8udnVlXCIpXG59XG52YXIgQ29tcG9uZW50ID0gcmVxdWlyZShcIiEuLi8uLi8uLi9ub2RlX21vZHVsZXMvdnVlLWxvYWRlci9saWIvY29tcG9uZW50LW5vcm1hbGl6ZXJcIikoXG4gIC8qIHNjcmlwdCAqL1xuICByZXF1aXJlKFwiISFiYWJlbC1sb2FkZXIhLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Z1ZS1sb2FkZXIvbGliL3NlbGVjdG9yP3R5cGU9c2NyaXB0JmluZGV4PTAhLi91c2VySW5mby52dWVcIiksXG4gIC8qIHRlbXBsYXRlICovXG4gIHJlcXVpcmUoXCIhIS4uLy4uLy4uL25vZGVfbW9kdWxlcy92dWUtbG9hZGVyL2xpYi90ZW1wbGF0ZS1jb21waWxlci9pbmRleD97XFxcImlkXFxcIjpcXFwiZGF0YS12LWQxZjBlZWRlXFxcIn0hLi4vLi4vLi4vbm9kZV9tb2R1bGVzL3Z1ZS1sb2FkZXIvbGliL3NlbGVjdG9yP3R5cGU9dGVtcGxhdGUmaW5kZXg9MCEuL3VzZXJJbmZvLnZ1ZVwiKSxcbiAgLyogc3R5bGVzICovXG4gIGluamVjdFN0eWxlLFxuICAvKiBzY29wZUlkICovXG4gIG51bGwsXG4gIC8qIG1vZHVsZUlkZW50aWZpZXIgKHNlcnZlciBvbmx5KSAqL1xuICBudWxsXG4pXG5Db21wb25lbnQub3B0aW9ucy5fX2ZpbGUgPSBcIkY6XFxcXFByb2dyYW1cXFxcZWxlXFxcXHB1YmxpY1xcXFxjb21wb25lbnRzXFxcXHByb2ZpbGVcXFxcdXNlckluZm8udnVlXCJcbmlmIChDb21wb25lbnQuZXNNb2R1bGUgJiYgT2JqZWN0LmtleXMoQ29tcG9uZW50LmVzTW9kdWxlKS5zb21lKGZ1bmN0aW9uIChrZXkpIHtyZXR1cm4ga2V5ICE9PSBcImRlZmF1bHRcIiAmJiBrZXkuc3Vic3RyKDAsIDIpICE9PSBcIl9fXCJ9KSkge2NvbnNvbGUuZXJyb3IoXCJuYW1lZCBleHBvcnRzIGFyZSBub3Qgc3VwcG9ydGVkIGluICoudnVlIGZpbGVzLlwiKX1cbmlmIChDb21wb25lbnQub3B0aW9ucy5mdW5jdGlvbmFsKSB7Y29uc29sZS5lcnJvcihcIlt2dWUtbG9hZGVyXSB1c2VySW5mby52dWU6IGZ1bmN0aW9uYWwgY29tcG9uZW50cyBhcmUgbm90IHN1cHBvcnRlZCB3aXRoIHRlbXBsYXRlcywgdGhleSBzaG91bGQgdXNlIHJlbmRlciBmdW5jdGlvbnMuXCIpfVxuXG4vKiBob3QgcmVsb2FkICovXG5pZiAobW9kdWxlLmhvdCkgeyhmdW5jdGlvbiAoKSB7XG4gIHZhciBob3RBUEkgPSByZXF1aXJlKFwidnVlLWhvdC1yZWxvYWQtYXBpXCIpXG4gIGhvdEFQSS5pbnN0YWxsKHJlcXVpcmUoXCJ2dWVcIiksIGZhbHNlKVxuICBpZiAoIWhvdEFQSS5jb21wYXRpYmxlKSByZXR1cm5cbiAgbW9kdWxlLmhvdC5hY2NlcHQoKVxuICBpZiAoIW1vZHVsZS5ob3QuZGF0YSkge1xuICAgIGhvdEFQSS5jcmVhdGVSZWNvcmQoXCJkYXRhLXYtZDFmMGVlZGVcIiwgQ29tcG9uZW50Lm9wdGlvbnMpXG4gIH0gZWxzZSB7XG4gICAgaG90QVBJLnJlbG9hZChcImRhdGEtdi1kMWYwZWVkZVwiLCBDb21wb25lbnQub3B0aW9ucylcbiAgfVxuICBtb2R1bGUuaG90LmRpc3Bvc2UoZnVuY3Rpb24gKGRhdGEpIHtcbiAgICBkaXNwb3NlZCA9IHRydWVcbiAgfSlcbn0pKCl9XG5cbm1vZHVsZS5leHBvcnRzID0gQ29tcG9uZW50LmV4cG9ydHNcblxuXG5cbi8vLy8vLy8vLy8vLy8vLy8vL1xuLy8gV0VCUEFDSyBGT09URVJcbi8vIC4vcHVibGljL2NvbXBvbmVudHMvcHJvZmlsZS91c2VySW5mby52dWVcbi8vIG1vZHVsZSBpZCA9IDYyXG4vLyBtb2R1bGUgY2h1bmtzID0gMiJdLCJzb3VyY2VSb290IjoiIn0=");
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(102)
+}
+var Component = __webpack_require__(5)(
+  /* script */
+  __webpack_require__(81),
+  /* template */
+  __webpack_require__(93),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "F:\\Program\\ele\\public\\components\\shop\\shopOrder.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] shopOrder.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (true) {(function () {
+  var hotAPI = __webpack_require__(2)
+  hotAPI.install(__webpack_require__(1), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-4e47871e", Component.options)
+  } else {
+    hotAPI.reload("data-v-4e47871e", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
 
 /***/ }),
 
-/***/ 73:
+/***/ 67:
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(3)(true);\n// imports\nexports.i(__webpack_require__(82), \"\");\n\n// module\nexports.push([module.i, \"\\n\", \"\", {\"version\":3,\"sources\":[],\"names\":[],\"mappings\":\"\",\"file\":\"userInfo.vue\",\"sourceRoot\":\"\"}]);\n\n// exports\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wdWJsaWMvY29tcG9uZW50cy9wcm9maWxlL3VzZXJJbmZvLnZ1ZT83NGE4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBLG1DQUFvQyx3RkFBd0Y7O0FBRTVIIiwiZmlsZSI6IjczLmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0cyA9IG1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcIi4uLy4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2xpYi9jc3MtYmFzZS5qc1wiKSh0cnVlKTtcbi8vIGltcG9ydHNcbmV4cG9ydHMuaShyZXF1aXJlKFwiLSEuLi8uLi8uLi9ub2RlX21vZHVsZXMvY3NzLWxvYWRlci9pbmRleC5qcz9zb3VyY2VNYXAhLi4vLi4vY3NzL3Byb2ZpbGUuY3NzXCIpLCBcIlwiKTtcblxuLy8gbW9kdWxlXG5leHBvcnRzLnB1c2goW21vZHVsZS5pZCwgXCJcXG5cIiwgXCJcIiwge1widmVyc2lvblwiOjMsXCJzb3VyY2VzXCI6W10sXCJuYW1lc1wiOltdLFwibWFwcGluZ3NcIjpcIlwiLFwiZmlsZVwiOlwidXNlckluZm8udnVlXCIsXCJzb3VyY2VSb290XCI6XCJcIn1dKTtcblxuLy8gZXhwb3J0c1xuXG5cblxuLy8vLy8vLy8vLy8vLy8vLy8vXG4vLyBXRUJQQUNLIEZPT1RFUlxuLy8gLi9+L2Nzcy1sb2FkZXI/c291cmNlTWFwIS4vfi92dWUtbG9hZGVyL2xpYi9zdHlsZS1jb21waWxlcj97XCJ2dWVcIjp0cnVlLFwiaWRcIjpcImRhdGEtdi1kMWYwZWVkZVwiLFwic2NvcGVkXCI6ZmFsc2UsXCJoYXNJbmxpbmVDb25maWdcIjpmYWxzZX0hLi9+L3Z1ZS1sb2FkZXIvbGliL3NlbGVjdG9yLmpzP3R5cGU9c3R5bGVzJmluZGV4PTAhLi9wdWJsaWMvY29tcG9uZW50cy9wcm9maWxlL3VzZXJJbmZvLnZ1ZVxuLy8gbW9kdWxlIGlkID0gNzNcbi8vIG1vZHVsZSBjaHVua3MgPSAyIl0sInNvdXJjZVJvb3QiOiIifQ==");
+exports = module.exports = __webpack_require__(3)(true);
+// imports
+exports.i(__webpack_require__(86), "");
+
+// module
+exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"shopOrder.vue","sourceRoot":""}]);
+
+// exports
+
 
 /***/ }),
 
-/***/ 76:
+/***/ 70:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(true);
+// imports
+
+
+// module
+exports.push([module.i, "\n.cartview{\n    font-size: .3rem;\n}\n.bottomNav-3XM6c_0 {\n    position: fixed;\n    right: 0;\n    bottom: 0;\n    width:100%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n    padding-left: 1.35rem;\n    background-color: #3d3d3f;\n    height: .9rem;\n    opacity: .95;\n    max-width: 768px;\n    margin: 0 auto;\n    left: 0;\n    box-sizing:border-box;\n}\n.bottomNav-18KRG_0 {\n    position: absolute;\n    left: .15rem;\n    bottom: .25rem;\n    width: 1rem;\n    height: 1rem;\n    box-sizing: border-box;\n    border-radius: 100%;\n    background-color: #3190e8;\n    border: .133333rem solid #444;\n    box-shadow: 0 -0.08rem 0.053333rem 0 rgba(0,0,0,.1);\n    will-change: transform;\n}\n.bottomNav-18KRG_0.bottomNav-6KjUI_0 {\n    background-image: -webkit-radial-gradient(circle,#363636 .626667rem,#444 0);\n    background-image: radial-gradient(circle,#363636 .626667rem,#444 0);\n}\n.bottomNav-18KRG_0:before {\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    background-size: .6rem;\n    content: \"\";\n}\n.bottomNav-wzCAW_0 {\n    -webkit-box-flex: 1;\n    -ms-flex: 1;\n    flex: 1;\n    display: block;\n    width: 0;\n}\n.bottomNav-3Ak_E_0 {\n    font-size: .32rem;\n    line-height: normal;\n    color: #fff;\n}\n.bottomNav-3zqFz_0 {\n    color: #f5f5f5;\n    font-size: .2rem;\n}\n.bottomNav-1urxC_0 {\n    height: 100%;\n    width: 2.5rem;\n    background-color: #4cd964;\n    color: #fff;\n    text-align: center;\n    text-decoration: none;\n    font-size: .36rem;\n    font-weight: 700;\n    line-height: .9rem;\n    outline:none;\n}\n.bottomNav-1urxC_0.bottomNav-9FCIh_0 {\n    background-color: #535356;\n}\n", "", {"version":3,"sources":["F:/Program/ele/public/components/shop/cart.vue?40dbc512"],"names":[],"mappings":";AAiDA;IACA,iBAAA;CACA;AACA;IACA,gBAAA;IACA,SAAA;IACA,UAAA;IACA,WAAA;IACA,qBAAA;IACA,qBAAA;IACA,cAAA;IACA,0BAAA;IACA,uBAAA;IACA,oBAAA;IACA,sBAAA;IACA,0BAAA;IACA,cAAA;IACA,aAAA;IACA,iBAAA;IACA,eAAA;IACA,QAAA;IACA,sBAAA;CACA;AACA;IACA,mBAAA;IACA,aAAA;IACA,eAAA;IACA,YAAA;IACA,aAAA;IACA,uBAAA;IACA,oBAAA;IACA,0BAAA;IACA,8BAAA;IACA,oDAAA;IACA,uBAAA;CACA;AACA;IACA,4EAAA;IACA,oEAAA;CACA;AACA;IACA,mBAAA;IACA,OAAA;IACA,SAAA;IACA,UAAA;IACA,QAAA;IACA,uBAAA;IACA,YAAA;CACA;AACA;IACA,oBAAA;IACA,YAAA;IACA,QAAA;IACA,eAAA;IACA,SAAA;CACA;AACA;IACA,kBAAA;IACA,oBAAA;IACA,YAAA;CACA;AACA;IACA,eAAA;IACA,iBAAA;CACA;AACA;IACA,aAAA;IACA,cAAA;IACA,0BAAA;IACA,YAAA;IACA,mBAAA;IACA,sBAAA;IACA,kBAAA;IACA,iBAAA;IACA,mBAAA;IACA,aAAA;CACA;AACA;IACA,0BAAA;CACA","file":"cart.vue","sourcesContent":["<template>\r\n    <footer class=\"cartview \">\r\n        <!--<div class=\"cartview-bIr0V\" style=\"z-index: 10; display: none;\"></div>-->\r\n        <!--<div class=\"cartview-JFaw9 cartview-WUJTe\" style=\"z-index: 11;\">-->\r\n            <!--<section class=\"discount-tip-1sl_7_0\" style=\"display: none;\">此处为原价，「去结算」享优惠哦</section>-->\r\n            <!--<div class=\"cartview-37dYf\"><span class=\"cartview-2IL0z\">购物车</span> &lt;!&ndash;&ndash;&gt; <a href=\"javascript:\"-->\r\n                                                                                           <!--class=\"cartview-3ElqP\">-->\r\n                <!--<svg>-->\r\n                    <!--<use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#cart-remove\"></use>-->\r\n                <!--</svg>-->\r\n                <!--<span>清空</span></a></div>-->\r\n            <!--<div class=\"entityList-yrs9v_0\">&lt;!&ndash;&ndash;&gt;-->\r\n                <!--<ul>-->\r\n                    <!--<li class=\"entityList-1eODF_0\"><span class=\"entityList-30u-R_0\"><em class=\"entityList-2g5ra_0\">极度可乐（瓶）</em>-->\r\n                        <!--&lt;!&ndash;&ndash;&gt; &lt;!&ndash;&ndash;&gt; &lt;!&ndash;&ndash;&gt; <p class=\"entityList-1IZul_0\"> </p></span> <span-->\r\n                            <!--class=\"entityList-1vr8H_0\"><span class=\"entityList-1XZvm_0\">50</span></span> <span-->\r\n                            <!--class=\"entityList-3cAE9_0\"><span class=\"cartbutton-2tycR\"><a href=\"javascript:\"-->\r\n                                                                                         <!--role=\"button\"-->\r\n                                                                                         <!--aria-label=\"删减商品\"><svg><use-->\r\n                            <!--xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#cart-add\"></use></svg></a> <span-->\r\n                            <!--role=\"button\" aria-label=\"已选5份\" class=\"cartbutton-2OSi7\">-->\r\n      <!--5-->\r\n    <!--</span> <a href=\"javascript:\" role=\"button\" aria-label=\"添加商品\"><svg><use xmlns:xlink=\"http://www.w3.org/1999/xlink\"-->\r\n                                                                            <!--xlink:href=\"#cart-minus\"></use></svg></a></span></span>-->\r\n                    <!--</li>-->\r\n                    <!--<li class=\"entityList-1eODF_0\"><span class=\"entityList-30u-R_0\"><em class=\"entityList-2g5ra_0\">百事可乐（瓶）</em>-->\r\n                        <!--&lt;!&ndash;&ndash;&gt; &lt;!&ndash;&ndash;&gt; &lt;!&ndash;&ndash;&gt; <p class=\"entityList-1IZul_0\"> </p></span> <span-->\r\n                            <!--class=\"entityList-1vr8H_0\"><span class=\"entityList-1XZvm_0\">20</span></span> <span-->\r\n                            <!--class=\"entityList-3cAE9_0\"><span class=\"cartbutton-2tycR\"><a href=\"javascript:\"-->\r\n                                                                                         <!--role=\"button\"-->\r\n                                                                                         <!--aria-label=\"删减商品\"><svg><use-->\r\n                            <!--xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#cart-add\"></use></svg></a> <span-->\r\n                            <!--role=\"button\" aria-label=\"已选2份\" class=\"cartbutton-2OSi7\">-->\r\n      <!--2-->\r\n    <!--</span> <a href=\"javascript:\" role=\"button\" aria-label=\"添加商品\"><svg><use xmlns:xlink=\"http://www.w3.org/1999/xlink\"-->\r\n                                                                            <!--xlink:href=\"#cart-minus\"></use></svg></a></span></span>-->\r\n                    <!--</li>-->\r\n                <!--</ul> &lt;!&ndash;&ndash;&gt;</div>-->\r\n        <!--</div>-->\r\n        <div class=\"bottomNav-3XM6c_0\" style=\"z-index: 11;\">\r\n            <span role=\"button\" class=\"bottomNav-18KRG_0\"></span>\r\n            <div role=\"button\" class=\"bottomNav-wzCAW_0\">\r\n                <p class=\"bottomNav-3Ak_E_0\"><span>¥70</span> </p>\r\n                <p class=\"bottomNav-3zqFz_0\">配送费¥5</p></div>\r\n            <a href=\"javascript:\" role=\"button\" class=\"bottomNav-1urxC_0\">去结算</a>\r\n        </div>\r\n    </footer>\r\n</template>\r\n<style>\r\n    .cartview{\r\n        font-size: .3rem;\r\n    }\r\n    .bottomNav-3XM6c_0 {\r\n        position: fixed;\r\n        right: 0;\r\n        bottom: 0;\r\n        width:100%;\r\n        display: -webkit-box;\r\n        display: -ms-flexbox;\r\n        display: flex;\r\n        -webkit-box-align: center;\r\n        -ms-flex-align: center;\r\n        align-items: center;\r\n        padding-left: 1.35rem;\r\n        background-color: #3d3d3f;\r\n        height: .9rem;\r\n        opacity: .95;\r\n        max-width: 768px;\r\n        margin: 0 auto;\r\n        left: 0;\r\n        box-sizing:border-box;\r\n    }\r\n    .bottomNav-18KRG_0 {\r\n        position: absolute;\r\n        left: .15rem;\r\n        bottom: .25rem;\r\n        width: 1rem;\r\n        height: 1rem;\r\n        box-sizing: border-box;\r\n        border-radius: 100%;\r\n        background-color: #3190e8;\r\n        border: .133333rem solid #444;\r\n        box-shadow: 0 -0.08rem 0.053333rem 0 rgba(0,0,0,.1);\r\n        will-change: transform;\r\n    }\r\n    .bottomNav-18KRG_0.bottomNav-6KjUI_0 {\r\n        background-image: -webkit-radial-gradient(circle,#363636 .626667rem,#444 0);\r\n        background-image: radial-gradient(circle,#363636 .626667rem,#444 0);\r\n    }\r\n    .bottomNav-18KRG_0:before {\r\n        position: absolute;\r\n        top: 0;\r\n        right: 0;\r\n        bottom: 0;\r\n        left: 0;\r\n        background-size: .6rem;\r\n        content: \"\";\r\n    }\r\n    .bottomNav-wzCAW_0 {\r\n        -webkit-box-flex: 1;\r\n        -ms-flex: 1;\r\n        flex: 1;\r\n        display: block;\r\n        width: 0;\r\n    }\r\n    .bottomNav-3Ak_E_0 {\r\n        font-size: .32rem;\r\n        line-height: normal;\r\n        color: #fff;\r\n    }\r\n    .bottomNav-3zqFz_0 {\r\n        color: #f5f5f5;\r\n        font-size: .2rem;\r\n    }\r\n    .bottomNav-1urxC_0 {\r\n        height: 100%;\r\n        width: 2.5rem;\r\n        background-color: #4cd964;\r\n        color: #fff;\r\n        text-align: center;\r\n        text-decoration: none;\r\n        font-size: .36rem;\r\n        font-weight: 700;\r\n        line-height: .9rem;\r\n        outline:none;\r\n    }\r\n    .bottomNav-1urxC_0.bottomNav-9FCIh_0 {\r\n        background-color: #535356;\r\n    }\r\n</style>"],"sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 81:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n//\n\nexports.default = {};//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vdXNlckluZm8udnVlPzM0MWMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBZUEiLCJmaWxlIjoiNzYuanMiLCJzb3VyY2VzQ29udGVudCI6WyI8dGVtcGxhdGU+XHJcbiAgICA8IS0t5Liq5Lq65L+h5oGv57uE5Lu2LS0+XHJcbiAgICA8c2VjdGlvbiBjbGFzcz1cInVzZXJJbmZvXCI+XHJcbiAgICAgICA8ZGl2IGNsYXNzPVwicHJvZmlsZS1oZWFkZXJcIj5cclxuICAgICAgICAgICA8aW1nIHNyYz1cIi4uLy4uL2ltYWdlcy9oZWFkLnBuZ1wiIGFsdD1cIlwiPlxyXG4gICAgICAgPC9kaXY+XHJcbiAgICAgICAgPGRpdiBjbGFzcz1cInByb2ZpbGUtaW5mb1wiPlxyXG4gICAgICAgICAgICA8cCBjbGFzcz1cInByb2ZpbGUtdGlwc1wiPueZu+W9lS/ms6jlhow8L3A+XHJcbiAgICAgICAgICAgIDxwIGNsYXNzPVwicHJvZmlsZS0xVVA3MlwiPlxyXG4gICAgICAgICAgICAgICAgPHNwYW4+55m75b2V5ZCO5Lqr5Y+X5pu05aSa54m55p2DPC9zcGFuPlxyXG4gICAgICAgICAgICA8L3A+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICA8L3NlY3Rpb24+XHJcbjwvdGVtcGxhdGU+XHJcbjxzY3JpcHQ+XHJcbiAgICBleHBvcnQgZGVmYXVsdCB7IH1cclxuPC9zY3JpcHQ+XHJcblxyXG48c3R5bGU+XHJcbiAgICBAaW1wb3J0IFwiLi4vLi4vY3NzL3Byb2ZpbGUuY3NzXCI7XHJcbjwvc3R5bGU+XG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIHVzZXJJbmZvLnZ1ZT80YjYzZTkxNSJdLCJzb3VyY2VSb290IjoiIn0=");
 
-/***/ }),
 
-/***/ 82:
-/***/ (function(module, exports, __webpack_require__) {
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 
-eval("exports = module.exports = __webpack_require__(3)(true);\n// imports\n\n\n// module\nexports.push([module.i, \".userInfo{\\r\\n    display: -webkit-box;\\r\\n    display: -webkit-flex;\\r\\n    display: -ms-flexbox;\\r\\n    display: flex;\\r\\n    background: #0097ff;\\r\\n    padding: .4rem .3rem;\\r\\n    color: #fff;\\r\\n    -webkit-box-align: center;\\r\\n    -webkit-align-items: center;\\r\\n    -ms-flex-align: center;\\r\\n    align-items: center;\\r\\n}\\r\\n.userInfo .profile-header{\\r\\n    width: 1.4rem;\\r\\n    height: 1.4rem;\\r\\n}\\r\\n.userInfo .profile-header img{\\r\\n    width:100%;\\r\\n}\\r\\n.profile-info{\\r\\n    margin-left: .3rem;\\r\\n    -webkit-box-flex: 1;\\r\\n    -webkit-flex-grow: 1;\\r\\n    -ms-flex-positive: 1;\\r\\n    flex-grow: 1;\\r\\n}\\r\\n.profile-info .profile-tips{\\r\\n    overflow: hidden;\\r\\n    white-space: nowrap;\\r\\n    text-overflow: ellipsis;\\r\\n    font-size: .4rem;\\r\\n    margin-bottom: .1rem;\\r\\n}\\r\\n.profile-info .profile-1UP72{\\r\\n    display: -webkit-box;\\r\\n    display: -webkit-flex;\\r\\n    display: -ms-flexbox;\\r\\n    display: flex;\\r\\n    -webkit-box-align: center;\\r\\n    -webkit-align-items: center;\\r\\n    -ms-flex-align: center;\\r\\n    align-items: center;\\r\\n    font-size: .28rem;\\r\\n}\", \"\", {\"version\":3,\"sources\":[\"F:/Program/ele/public/css/profile.css\"],\"names\":[],\"mappings\":\"AAAA;IACI,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,oBAAoB;IACpB,qBAAqB;IACrB,YAAY;IACZ,0BAA0B;IAC1B,4BAA4B;IAC5B,uBAAuB;IACvB,oBAAoB;CACvB;AACD;IACI,cAAc;IACd,eAAe;CAClB;AACD;IACI,WAAW;CACd;AACD;IACI,mBAAmB;IACnB,oBAAoB;IACpB,qBAAqB;IACrB,qBAAqB;IACrB,aAAa;CAChB;AACD;IACI,iBAAiB;IACjB,oBAAoB;IACpB,wBAAwB;IACxB,iBAAiB;IACjB,qBAAqB;CACxB;AACD;IACI,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,0BAA0B;IAC1B,4BAA4B;IAC5B,uBAAuB;IACvB,oBAAoB;IACpB,kBAAkB;CACrB\",\"file\":\"profile.css\",\"sourcesContent\":[\".userInfo{\\r\\n    display: -webkit-box;\\r\\n    display: -webkit-flex;\\r\\n    display: -ms-flexbox;\\r\\n    display: flex;\\r\\n    background: #0097ff;\\r\\n    padding: .4rem .3rem;\\r\\n    color: #fff;\\r\\n    -webkit-box-align: center;\\r\\n    -webkit-align-items: center;\\r\\n    -ms-flex-align: center;\\r\\n    align-items: center;\\r\\n}\\r\\n.userInfo .profile-header{\\r\\n    width: 1.4rem;\\r\\n    height: 1.4rem;\\r\\n}\\r\\n.userInfo .profile-header img{\\r\\n    width:100%;\\r\\n}\\r\\n.profile-info{\\r\\n    margin-left: .3rem;\\r\\n    -webkit-box-flex: 1;\\r\\n    -webkit-flex-grow: 1;\\r\\n    -ms-flex-positive: 1;\\r\\n    flex-grow: 1;\\r\\n}\\r\\n.profile-info .profile-tips{\\r\\n    overflow: hidden;\\r\\n    white-space: nowrap;\\r\\n    text-overflow: ellipsis;\\r\\n    font-size: .4rem;\\r\\n    margin-bottom: .1rem;\\r\\n}\\r\\n.profile-info .profile-1UP72{\\r\\n    display: -webkit-box;\\r\\n    display: -webkit-flex;\\r\\n    display: -ms-flexbox;\\r\\n    display: flex;\\r\\n    -webkit-box-align: center;\\r\\n    -webkit-align-items: center;\\r\\n    -ms-flex-align: center;\\r\\n    align-items: center;\\r\\n    font-size: .28rem;\\r\\n}\"],\"sourceRoot\":\"\"}]);\n\n// exports\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wdWJsaWMvY3NzL3Byb2ZpbGUuY3NzPzNmNjgiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTs7O0FBR0E7QUFDQSxtQ0FBb0MsNkJBQTZCLDhCQUE4Qiw2QkFBNkIsc0JBQXNCLDRCQUE0Qiw2QkFBNkIsb0JBQW9CLGtDQUFrQyxvQ0FBb0MsK0JBQStCLDRCQUE0QixLQUFLLDhCQUE4QixzQkFBc0IsdUJBQXVCLEtBQUssa0NBQWtDLG1CQUFtQixLQUFLLGtCQUFrQiwyQkFBMkIsNEJBQTRCLDZCQUE2Qiw2QkFBNkIscUJBQXFCLEtBQUssZ0NBQWdDLHlCQUF5Qiw0QkFBNEIsZ0NBQWdDLHlCQUF5Qiw2QkFBNkIsS0FBSyxpQ0FBaUMsNkJBQTZCLDhCQUE4Qiw2QkFBNkIsc0JBQXNCLGtDQUFrQyxvQ0FBb0MsK0JBQStCLDRCQUE0QiwwQkFBMEIsS0FBSyxRQUFRLDRGQUE0RixZQUFZLGFBQWEsYUFBYSxXQUFXLFlBQVksYUFBYSxXQUFXLFlBQVksYUFBYSxhQUFhLGFBQWEsTUFBTSxLQUFLLFVBQVUsVUFBVSxNQUFNLEtBQUssVUFBVSxLQUFLLEtBQUssWUFBWSxhQUFhLGFBQWEsYUFBYSxXQUFXLE1BQU0sS0FBSyxZQUFZLGFBQWEsYUFBYSxhQUFhLGFBQWEsTUFBTSxLQUFLLFlBQVksYUFBYSxhQUFhLFdBQVcsWUFBWSxhQUFhLGFBQWEsYUFBYSxhQUFhLHlEQUF5RCw2QkFBNkIsOEJBQThCLDZCQUE2QixzQkFBc0IsNEJBQTRCLDZCQUE2QixvQkFBb0Isa0NBQWtDLG9DQUFvQywrQkFBK0IsNEJBQTRCLEtBQUssOEJBQThCLHNCQUFzQix1QkFBdUIsS0FBSyxrQ0FBa0MsbUJBQW1CLEtBQUssa0JBQWtCLDJCQUEyQiw0QkFBNEIsNkJBQTZCLDZCQUE2QixxQkFBcUIsS0FBSyxnQ0FBZ0MseUJBQXlCLDRCQUE0QixnQ0FBZ0MseUJBQXlCLDZCQUE2QixLQUFLLGlDQUFpQyw2QkFBNkIsOEJBQThCLDZCQUE2QixzQkFBc0Isa0NBQWtDLG9DQUFvQywrQkFBK0IsNEJBQTRCLDBCQUEwQixLQUFLLG1CQUFtQjs7QUFFN3lGIiwiZmlsZSI6IjgyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0cyA9IG1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcIi4uLy4uL25vZGVfbW9kdWxlcy9jc3MtbG9hZGVyL2xpYi9jc3MtYmFzZS5qc1wiKSh0cnVlKTtcbi8vIGltcG9ydHNcblxuXG4vLyBtb2R1bGVcbmV4cG9ydHMucHVzaChbbW9kdWxlLmlkLCBcIi51c2VySW5mb3tcXHJcXG4gICAgZGlzcGxheTogLXdlYmtpdC1ib3g7XFxyXFxuICAgIGRpc3BsYXk6IC13ZWJraXQtZmxleDtcXHJcXG4gICAgZGlzcGxheTogLW1zLWZsZXhib3g7XFxyXFxuICAgIGRpc3BsYXk6IGZsZXg7XFxyXFxuICAgIGJhY2tncm91bmQ6ICMwMDk3ZmY7XFxyXFxuICAgIHBhZGRpbmc6IC40cmVtIC4zcmVtO1xcclxcbiAgICBjb2xvcjogI2ZmZjtcXHJcXG4gICAgLXdlYmtpdC1ib3gtYWxpZ246IGNlbnRlcjtcXHJcXG4gICAgLXdlYmtpdC1hbGlnbi1pdGVtczogY2VudGVyO1xcclxcbiAgICAtbXMtZmxleC1hbGlnbjogY2VudGVyO1xcclxcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xcclxcbn1cXHJcXG4udXNlckluZm8gLnByb2ZpbGUtaGVhZGVye1xcclxcbiAgICB3aWR0aDogMS40cmVtO1xcclxcbiAgICBoZWlnaHQ6IDEuNHJlbTtcXHJcXG59XFxyXFxuLnVzZXJJbmZvIC5wcm9maWxlLWhlYWRlciBpbWd7XFxyXFxuICAgIHdpZHRoOjEwMCU7XFxyXFxufVxcclxcbi5wcm9maWxlLWluZm97XFxyXFxuICAgIG1hcmdpbi1sZWZ0OiAuM3JlbTtcXHJcXG4gICAgLXdlYmtpdC1ib3gtZmxleDogMTtcXHJcXG4gICAgLXdlYmtpdC1mbGV4LWdyb3c6IDE7XFxyXFxuICAgIC1tcy1mbGV4LXBvc2l0aXZlOiAxO1xcclxcbiAgICBmbGV4LWdyb3c6IDE7XFxyXFxufVxcclxcbi5wcm9maWxlLWluZm8gLnByb2ZpbGUtdGlwc3tcXHJcXG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcXHJcXG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcXHJcXG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XFxyXFxuICAgIGZvbnQtc2l6ZTogLjRyZW07XFxyXFxuICAgIG1hcmdpbi1ib3R0b206IC4xcmVtO1xcclxcbn1cXHJcXG4ucHJvZmlsZS1pbmZvIC5wcm9maWxlLTFVUDcye1xcclxcbiAgICBkaXNwbGF5OiAtd2Via2l0LWJveDtcXHJcXG4gICAgZGlzcGxheTogLXdlYmtpdC1mbGV4O1xcclxcbiAgICBkaXNwbGF5OiAtbXMtZmxleGJveDtcXHJcXG4gICAgZGlzcGxheTogZmxleDtcXHJcXG4gICAgLXdlYmtpdC1ib3gtYWxpZ246IGNlbnRlcjtcXHJcXG4gICAgLXdlYmtpdC1hbGlnbi1pdGVtczogY2VudGVyO1xcclxcbiAgICAtbXMtZmxleC1hbGlnbjogY2VudGVyO1xcclxcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xcclxcbiAgICBmb250LXNpemU6IC4yOHJlbTtcXHJcXG59XCIsIFwiXCIsIHtcInZlcnNpb25cIjozLFwic291cmNlc1wiOltcIkY6L1Byb2dyYW0vZWxlL3B1YmxpYy9jc3MvcHJvZmlsZS5jc3NcIl0sXCJuYW1lc1wiOltdLFwibWFwcGluZ3NcIjpcIkFBQUE7SUFDSSxxQkFBcUI7SUFDckIsc0JBQXNCO0lBQ3RCLHFCQUFxQjtJQUNyQixjQUFjO0lBQ2Qsb0JBQW9CO0lBQ3BCLHFCQUFxQjtJQUNyQixZQUFZO0lBQ1osMEJBQTBCO0lBQzFCLDRCQUE0QjtJQUM1Qix1QkFBdUI7SUFDdkIsb0JBQW9CO0NBQ3ZCO0FBQ0Q7SUFDSSxjQUFjO0lBQ2QsZUFBZTtDQUNsQjtBQUNEO0lBQ0ksV0FBVztDQUNkO0FBQ0Q7SUFDSSxtQkFBbUI7SUFDbkIsb0JBQW9CO0lBQ3BCLHFCQUFxQjtJQUNyQixxQkFBcUI7SUFDckIsYUFBYTtDQUNoQjtBQUNEO0lBQ0ksaUJBQWlCO0lBQ2pCLG9CQUFvQjtJQUNwQix3QkFBd0I7SUFDeEIsaUJBQWlCO0lBQ2pCLHFCQUFxQjtDQUN4QjtBQUNEO0lBQ0kscUJBQXFCO0lBQ3JCLHNCQUFzQjtJQUN0QixxQkFBcUI7SUFDckIsY0FBYztJQUNkLDBCQUEwQjtJQUMxQiw0QkFBNEI7SUFDNUIsdUJBQXVCO0lBQ3ZCLG9CQUFvQjtJQUNwQixrQkFBa0I7Q0FDckJcIixcImZpbGVcIjpcInByb2ZpbGUuY3NzXCIsXCJzb3VyY2VzQ29udGVudFwiOltcIi51c2VySW5mb3tcXHJcXG4gICAgZGlzcGxheTogLXdlYmtpdC1ib3g7XFxyXFxuICAgIGRpc3BsYXk6IC13ZWJraXQtZmxleDtcXHJcXG4gICAgZGlzcGxheTogLW1zLWZsZXhib3g7XFxyXFxuICAgIGRpc3BsYXk6IGZsZXg7XFxyXFxuICAgIGJhY2tncm91bmQ6ICMwMDk3ZmY7XFxyXFxuICAgIHBhZGRpbmc6IC40cmVtIC4zcmVtO1xcclxcbiAgICBjb2xvcjogI2ZmZjtcXHJcXG4gICAgLXdlYmtpdC1ib3gtYWxpZ246IGNlbnRlcjtcXHJcXG4gICAgLXdlYmtpdC1hbGlnbi1pdGVtczogY2VudGVyO1xcclxcbiAgICAtbXMtZmxleC1hbGlnbjogY2VudGVyO1xcclxcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xcclxcbn1cXHJcXG4udXNlckluZm8gLnByb2ZpbGUtaGVhZGVye1xcclxcbiAgICB3aWR0aDogMS40cmVtO1xcclxcbiAgICBoZWlnaHQ6IDEuNHJlbTtcXHJcXG59XFxyXFxuLnVzZXJJbmZvIC5wcm9maWxlLWhlYWRlciBpbWd7XFxyXFxuICAgIHdpZHRoOjEwMCU7XFxyXFxufVxcclxcbi5wcm9maWxlLWluZm97XFxyXFxuICAgIG1hcmdpbi1sZWZ0OiAuM3JlbTtcXHJcXG4gICAgLXdlYmtpdC1ib3gtZmxleDogMTtcXHJcXG4gICAgLXdlYmtpdC1mbGV4LWdyb3c6IDE7XFxyXFxuICAgIC1tcy1mbGV4LXBvc2l0aXZlOiAxO1xcclxcbiAgICBmbGV4LWdyb3c6IDE7XFxyXFxufVxcclxcbi5wcm9maWxlLWluZm8gLnByb2ZpbGUtdGlwc3tcXHJcXG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcXHJcXG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcXHJcXG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XFxyXFxuICAgIGZvbnQtc2l6ZTogLjRyZW07XFxyXFxuICAgIG1hcmdpbi1ib3R0b206IC4xcmVtO1xcclxcbn1cXHJcXG4ucHJvZmlsZS1pbmZvIC5wcm9maWxlLTFVUDcye1xcclxcbiAgICBkaXNwbGF5OiAtd2Via2l0LWJveDtcXHJcXG4gICAgZGlzcGxheTogLXdlYmtpdC1mbGV4O1xcclxcbiAgICBkaXNwbGF5OiAtbXMtZmxleGJveDtcXHJcXG4gICAgZGlzcGxheTogZmxleDtcXHJcXG4gICAgLXdlYmtpdC1ib3gtYWxpZ246IGNlbnRlcjtcXHJcXG4gICAgLXdlYmtpdC1hbGlnbi1pdGVtczogY2VudGVyO1xcclxcbiAgICAtbXMtZmxleC1hbGlnbjogY2VudGVyO1xcclxcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xcclxcbiAgICBmb250LXNpemU6IC4yOHJlbTtcXHJcXG59XCJdLFwic291cmNlUm9vdFwiOlwiXCJ9XSk7XG5cbi8vIGV4cG9ydHNcblxuXG5cbi8vLy8vLy8vLy8vLy8vLy8vL1xuLy8gV0VCUEFDSyBGT09URVJcbi8vIC4vfi9jc3MtbG9hZGVyP3NvdXJjZU1hcCEuL3B1YmxpYy9jc3MvcHJvZmlsZS5jc3Ncbi8vIG1vZHVsZSBpZCA9IDgyXG4vLyBtb2R1bGUgY2h1bmtzID0gMiJdLCJzb3VyY2VSb290IjoiIn0=");
+var _vue = __webpack_require__(1);
+
+var _vue2 = _interopRequireDefault(_vue);
+
+var _cart = __webpack_require__(90);
+
+var _cart2 = _interopRequireDefault(_cart);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var ifOnScroll = false;
+exports.default = {
+    data: function data() {
+        return {
+            'menuCategory': [{
+                'id': '10001',
+                'name': '热销榜',
+                'descript': '大家喜欢吃，才叫真好吃。',
+                'category': [{
+                    'id': '1001001',
+                    'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                    'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                    'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                    'monthSale': '319',
+                    'goodNum': '100',
+                    'limit': '',
+                    'price': '20'
+                }, {
+                    'id': '1001001',
+                    'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                    'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                    'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                    'monthSale': '319',
+                    'goodNum': '100',
+                    'limit': '1',
+                    'price': '20'
+                }, {
+                    'id': '1001001',
+                    'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                    'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                    'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                    'monthSale': '319',
+                    'goodNum': '100',
+                    'limit': '1',
+                    'price': '20'
+                }]
+            }, {
+                'id': '10002',
+                'name': '优惠',
+                'descript': '大家喜欢吃，才叫真好吃。',
+                'category': [{
+                    'id': '1001001',
+                    'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                    'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                    'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                    'monthSale': '319',
+                    'goodNum': '100',
+                    'limit': '1',
+                    'price': '20'
+                }, {
+                    'id': '1001001',
+                    'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                    'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                    'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                    'monthSale': '319',
+                    'goodNum': '100',
+                    'limit': '1',
+                    'price': '20'
+                }, {
+                    'id': '1001001',
+                    'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                    'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                    'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                    'monthSale': '319',
+                    'goodNum': '100',
+                    'limit': '1',
+                    'price': '20'
+                }]
+            }, {
+                'id': '10003',
+                'name': '主餐主餐主餐',
+                'descript': '大家喜欢吃，才叫真好吃。',
+                'category': [{
+                    'id': '1001001',
+                    'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                    'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                    'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                    'monthSale': '319',
+                    'goodNum': '100',
+                    'limit': '1',
+                    'price': '20'
+                }, {
+                    'id': '1001001',
+                    'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                    'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                    'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                    'monthSale': '319',
+                    'goodNum': '100',
+                    'limit': '1',
+                    'price': '20'
+                }, {
+                    'id': '1001001',
+                    'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                    'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                    'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                    'monthSale': '319',
+                    'goodNum': '100',
+                    'limit': '1',
+                    'price': '20'
+                }]
+            }],
+            'choseMenu': undefined
+        };
+    },
+
+    components: {
+        cart: _cart2.default
+    },
+    mounted: function mounted() {
+        this.$nextTick(function () {
+            document.getElementById("container").addEventListener('scroll', this.onScroll);
+        });
+    },
+
+    methods: {
+        choseThis: function choseThis(thisItem, index) {
+            ifOnScroll = true;
+            this.menuCategory.forEach(function (item) {
+                if (typeof item.checked == 'undefined') {
+                    _vue2.default.set(item, 'checked', false);
+                } else {
+                    item.checked = false;
+                }
+            });
+            thisItem.checked = true;
+            this.choseMenu = thisItem;
+            //平滑滚动
+            this.jump(index);
+        },
+        jump: function jump(index) {
+            var jump = document.querySelectorAll('.category-title'
+            // 获取需要滚动的距离
+            );var total = jump[index].offsetTop;
+            var distance = document.getElementById("container").scrollTop;
+            // 平滑滚动，时长500ms，每10ms一跳，共50跳
+            var step = total / 50;
+            if (total > distance) {
+                smoothDown();
+            } else {
+                var newTotal = distance - total;
+                step = newTotal / 50;
+                smoothUp();
+            }
+            function smoothDown() {
+                if (distance < total) {
+                    distance += step;
+                    document.getElementById("container").scrollTop = distance;
+                    setTimeout(smoothDown, 10);
+                } else {
+                    document.getElementById("container").scrollTop = total;
+                    ifOnScroll = false;
+                }
+            }
+            function smoothUp() {
+                if (distance > total) {
+                    distance -= step;
+                    document.getElementById("container").scrollTop = distance;
+                    setTimeout(smoothUp, 10);
+                } else {
+                    document.getElementById("container").scrollTop = total;
+                    ifOnScroll = false;
+                }
+            }
+        },
+        onScroll: function onScroll() {
+            if (!ifOnScroll) {
+                var scrolled = document.getElementById("container").scrollTop;
+                var title = document.querySelectorAll('.category-title');
+                var _this = this;
+                title.forEach(function (it) {
+                    if (it.offsetTop > scrolled - 20 && it.offsetTop < scrolled + 20) {
+                        var menuId = it.dataset.menuid;
+                        _this.menuCategory.forEach(function (items) {
+                            if (items.id == menuId) {
+                                if (typeof items.checked == 'undefined') {
+                                    _vue2.default.set(items, 'checked', true);
+                                } else {
+                                    items.checked = true;
+                                }
+                                _this.choseMenu = items;
+                            } else {
+                                if (typeof items.checked == 'undefined') {
+                                    _vue2.default.set(items, 'checked', false);
+                                } else {
+                                    items.checked = false;
+                                }
+                            }
+                        });
+                    }
+                });
+            }
+        }
+    }
+};
 
 /***/ }),
 
 /***/ 86:
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA3CAYAAACo29JGAAAFH0lEQVRogd2aP4gcVRzHfxd2YRfcgV25LfZCNnghKhKUGFS4K1LEwiIpbFJooYWFjUUELVJYWVgkRZqUWmiRIinSaBFIQiLEQgwngic5ccWcZEN2YbeYhR2I95nljTOzszvvzXt7d+QLx+5y8978vvP7O+/3W5LLT5/KM4oDey3AIlFaxKaHayJnD/myUg3C72BteSzlcln+Gk5+P+iN5Z9RWX7sluRRUJVb2+7lWHJllmvNQF5/biBfnJj89jxPSqX5zy4IgvBzPB7Lg34QEry2XXNG1Jrc+dcCOXd0EH5vNBpWwkAWor93fbnyd1W++q1qtV9hcmjq8lu+HKmXpFq1EyILw+EwNN2r/3ry5f1i3mNMDh+6dGIY+pCtpvKgNInJnrlZi/xVF0bk0Nb1k4OFk0oDkr8+HMjpW5489PW1qJ0K3lu1I4aAvu8XWktgOrbiyfdv+6GPa6/TuejzV3z5bOfPlFiv15PRaDRFCmFJC81mMzeixtcca9V23GIobHdxs5a7JtcsMUWeWK2Wv5kCZLa38+M5ArOv6UMj2BBJ8wLNXLM82ZLQFE2IcWMdYgBT7ff70ul0Qi3rAnkoEnjw8zCTHFHx6nrP6KmisW63q329giJpQvDlZlUuvtqLKqAszCTHQlNzKUIsDgjqBh1M+ni7IdfWZz+QTHJExlPtspFgmKMqp2wAQV1A8KUdDc4yz0xyREcTPwNFw3waJG0TEHWplLIwRQ5HpaQyhStyaN/EAtAe8iJ3GlPk0FqRWtGFSSro5j4F5EXuNBLkPnhR5EjDzNeKCuQaVDCkrjgS5I7vZP9FVPi7hbRpJsidOlQqrAEcey+B3G/WZ5DDJA9Wi/uNK7M0jdJxkBbiphmRa4idSboiZyMD1hPXXkSOMsZGQKp/FzDNc2msxKwvIhdYbuoqz1HpFAXKideaEbl0GDWByxxnmsTnISJXsfQ3VymEvWzc42DlfwuMyNlESmAT5eLg7dwG8SIkIscxmg0g1263rfZotVpOi4iInOmxWRZszdMFsRudDLMsOaowKpVKoXWuzJr+g4JTzYGiT98VuTgichx2ushVkKvX60ZrIObCJEkhcSVF5L79s+wsEdPh0RUWP7WNkArIT5dIIaG5245aRyZ5yvXbRKbmwJMlz+mNdhvfbCZ/H0j/05Vp7jaoSX/qJ10hQQ7TpPHnArrVve1bQBzfbSXdIUEOe73wh2etPU6OdYtfrjM5ac4C8n50Z9rPp06/aMD/sFWcHDcyOVgFXG/zqkNzkjZzGlPklPZMb6Y0oNsESYO1HMebvu4g58f3stNOZsxGe0wUvLMaaE0kDAYDY21l7YOgaJ4cqZPYWYOcyJuFmf05XtdpMryxmp1gEQJhbMwpD4rkrNLsl05P3r3bmFk6zm0+QnDjdLJVrNpULt++86CqmLgmkeHsvebcmZW5zUdSwyc/e1H0Uz61m8QA94OMiqp8Mt2QN4yTWyeROw7XPPlwueNE0KJQDUpO2S5t1acSdha0phnoPX/9uL3nR+3c/9z9uvZkkdEcigoyz8vigsgsMPx2frNlNBdmNJKIDxKdNnyz9zVbDEp1WbtpRgwUnv2itfzp0UF4DL+oAAMpCop0zagLq6k9TncheWZ5YqqEbBdEn0hNrj9uFB5oU3AybwlJ/PH9F8ZhI8IL9KqV+MPAp650KrIxauyfecssQHR9eRxOGXACPA4mE7Mc/D4aT07HqCo4qcKPCev7elJ2P+KZHuD+D9itc2tnip2aAAAAAElFTkSuQmCC\"//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wdWJsaWMvaW1hZ2VzL2hlYWQucG5nPzQ4NmEiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsaUNBQWlDIiwiZmlsZSI6Ijg2LmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSBcImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBRGNBQUFBM0NBWUFBQUNvMjlKR0FBQUZIMGxFUVZSb2dkMmFQNGdjVlJ6SGZ4ZDJZUmZjZ1YyNUxmWkNObmdoS2hLVUdGUzRLMUxFd2lJcGJGSm9vWVdGalVVRUxWSllXVmdrUlpxVVdtaVJJaW5TYUJGSVFpTEVRZ3duZ2ljNWNjV2NaRU4yWWJlWWhSMkk5NW5salRPenN6dnZ6WHQ3ZCtRTHgrNXk4OTc4dnZQN08rLzNXNUxMVDUvS000b0RleTNBSWxGYXhLYUhheUpuRC9teVVnM0M3MkJ0ZVN6bGNsbitHazUrUCtpTjVaOVJXWDdzbHVSUlVKVmIyKzdsV0hKbGxtdk5RRjUvYmlCZm5Kajg5anhQU3FYNXp5NElndkJ6UEI3TGczNFFFcnkyWFhORzFKcmMrZGNDT1hkMEVINXZOQnBXd2tBV29yOTNmYm55ZDFXKytxMXF0VjloY21qcThsdStIS21YcEZxMUV5SUx3K0V3Tk4yci8zcnk1ZjFpM21OTURoKzZkR0lZK3BDdHB2S2dOSW5KbnJsWmkveFZGMGJrME5iMWs0T0ZrMG9Ea3I4K0hNanBXNTQ4OVBXMXFKMEszbHUxSTRhQXZ1OFhXa3RnT3JiaXlmZHYrNkdQYTYvVHVlanpWM3o1Yk9mUGxGaXYxNVBSYURSRkNtRkpDODFtTXplaXh0Y2NhOVYyM0dJb2JIZHhzNWE3SnRjc01VV2VXSzJXdjVrQ1pMYTM4K001QXJPdjZVTWoyQkJKOHdMTlhMTTgyWkxRRkUySWNXTWRZZ0JUN2ZmNzB1bDBRaTNyQW5rb0Vuanc4ekNUSEZIeDZuclA2S21pc1c2M3EzMjlnaUpwUXZEbFpsVXV2dHFMS3FBc3pDVEhRbE56S1VJc0RnanFCaDFNK25pN0lkZldaeitRVEhKRXhsUHRzcEZnbUtNcXAyd0FRVjFBOEtVZERjNHl6MHh5UkVjVFB3TkZ3M3dhSkcwVEVIV3BsTEl3UlE1SHBhUXloU3R5YU4vRUF0QWU4aUozR2xQazBGcVJXdEdGU1NybzVqNEY1RVh1TkJMa1BuaFI1RWpEek5lS0N1UWFWRENrcmpnUzVJN3ZaUDlGVlBpN2hiUnBKc2lkT2xRcXJBRWNleStCM0cvV1o1RERKQTlXaS91Tks3TTBqZEp4a0JiaXBobVJhNGlkU2JvaVp5TUQxaFBYWGtTT01zWkdRS3AvRnpETmMybXN4S3d2SWhkWWJ1b3F6MUhwRkFYS2lkZWFFYmwwR0RXQnl4eG5tc1RuSVNKWHNmUTNWeW1Fdld6YzQyRGxmd3VNeU5sRVNtQVQ1ZUxnN2R3RzhTSWtJc2N4bWcwZzEyNjNyZlpvdFZwT2k0aUluT214V1Jac3pkTUZzUnVkRExNc09hb3dLcFZLb1hXdXpKcitnNEpUellHaVQ5OFZ1VGdpY2h4MnVzaFZrS3ZYNjBacklPYkNKRWtoY1NWRjVMNzlzK3dzRWRQaDBSVVdQN1dOa0FySVQ1ZElJYUc1MjQ1YVJ5WjV5dlhiUktibXdKTWx6K21OZGh2ZmJDWi9IMGovMDVWcDdqYW9TWC9xSjEwaFFRN1RwUEhuQXJyVnZlMWJRQnpmYlNYZElVRU9lNzN3aDJldFBVNk9kWXRmcmpNNWFjNEM4bjUwWjlyUHAwNi9hTUQvc0ZXY0hEY3lPVmdGWEcvenFrTnpralp6R2xQa2xQWk1iNlkwb05zRVNZTzFITWVidnU0ZzU4ZjNzdE5PWnN4R2Uwd1V2TE1hYUUwa0RBWURZMjFsN1lPZ2FKNGNxWlBZV1lPY3lKdUZtZjA1WHRkcE1yeXhtcDFnRVFKaGJNd3BENHJrck5Mc2wwNVAzcjNibUZrNnptMCtRbkRqZExKVnJOcFVMdCsrODZDcW1MZ21rZUhzdmViY21aVzV6VWRTd3ljL2UxSDBVejYxbThRQTk0T01pcXA4TXQyUU40eVRXeWVST3c3WFBQbHd1ZU5FMEtKUURVcE8yUzV0MWFjU2RoYTBwaG5vUFgvOXVMM25SKzNjLzl6OXV2WmtrZEVjaWdveXo4dmlnc2dzTVB4MmZyTmxOQmRtTkpLSUR4S2RObnl6OXpWYkRFcDFXYnRwUmd3VW52Mml0ZnpwMFVGNERMK29BQU1wQ29wMHphZ0xxNms5VG5jaGVXWjVZcXFFYkJkRW4waE5yajl1RkI1b1UzQXlid2xKL1BIOUY4WmhJOElMOUtxVitNUEFwNjUwS3JJeGF1eWZlY3NzUUhSOWVSeE9HWEFDUEE0bUU3TWMvRDRhVDA3SHFDbzRxY0tQQ2V2N2VsSjJQK0taSHVEK0Q5aXRjMnRuaXAyYUFBQUFBRWxGVGtTdVFtQ0NcIlxuXG5cbi8vLy8vLy8vLy8vLy8vLy8vL1xuLy8gV0VCUEFDSyBGT09URVJcbi8vIC4vcHVibGljL2ltYWdlcy9oZWFkLnBuZ1xuLy8gbW9kdWxlIGlkID0gODZcbi8vIG1vZHVsZSBjaHVua3MgPSAyIl0sInNvdXJjZVJvb3QiOiIifQ==");
+exports = module.exports = __webpack_require__(3)(true);
+// imports
+
+
+// module
+exports.push([module.i, ".shop-main{\r\n    height:100%;\r\n    overflow: hidden;\r\n    background:#fff;\r\n}\r\n.menuview{\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    height: 100%;\r\n    padding-bottom:1rem;\r\n    box-sizing:border-box;\r\n}\r\n.menucategory{\r\n    overflow-y: auto;\r\n    height: 100%;\r\n    background-color: #f8f8f8;\r\n    -webkit-overflow-scrolling: touch;\r\n}\r\n.menucategory-item{\r\n    position: relative;\r\n    padding:.15rem  .2rem ;\r\n    border-bottom: 1px solid #ededed;\r\n    font-size: .26rem;\r\n    color: #666;\r\n    width:0.8rem;\r\n}\r\n.menucategory-item.active{\r\n    background:#fff;\r\n    border-left:3px solid #3190e8;\r\n    font-weight:bold;\r\n}\r\n.container-menuview{\r\n    -webkit-box-flex: 1;\r\n    -ms-flex: 1;\r\n    flex: 1;\r\n    display: block;\r\n    width: 0;\r\n    height: 100%;\r\n    overflow-y:auto;\r\n}\r\n.category-title{\r\n    position: relative;\r\n    padding: .16rem .18rem;\r\n    background-color: #f1f1f1;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: end;\r\n    -ms-flex-align: end;\r\n    align-items: flex-end;\r\n    overflow: hidden;\r\n}\r\n.category-name{\r\n    margin-right: .133333rem;\r\n    font-weight: 700;\r\n    font-size: .3rem;\r\n    color: #666;\r\n    -webkit-box-flex: 0;\r\n    -ms-flex: none;\r\n    flex: none;\r\n}\r\n.category-description{\r\n    -webkit-box-flex: 1;\r\n    -ms-flex: 1;\r\n    flex: 1;\r\n    display: block;\r\n    width: 0;\r\n    color: #999;\r\n    font-size: .2rem;\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n}\r\n\r\n.category-item{\r\n    position: relative;\r\n    background-color: #fff;\r\n    margin: 0;\r\n    padding: .3rem .2rem;\r\n    margin-bottom: 1px;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    min-height: 2.5rem;\r\n    box-shadow: 0.4rem 0.013333rem 0 0 #ddd;\r\n}\r\n.foodimg{\r\n    margin-right: .1rem;\r\n    -webkit-box-flex: 2;\r\n    -ms-flex: 2;\r\n    flex: 2;\r\n    display: block;\r\n    width: 0;\r\n    vertical-align: top;\r\n}\r\n.foodimg img{\r\n    width: 100%;\r\n    border-radius: .053333rem;\r\n}\r\n.foodinfo{\r\n    position: relative;\r\n    -webkit-box-flex: 8;\r\n    -ms-flex: 8;\r\n    flex: 8;\r\n    display: block;\r\n    width: 0;\r\n    padding-bottom: .5rem;\r\n}\r\n.foodtitle{\r\n    font-size: .3rem;\r\n    font-weight: 700;\r\n    line-height: 1.1;\r\n    overflow: hidden;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n}\r\n.fooddescription{\r\n    margin: .1rem 0;\r\n    font-size: .2rem;\r\n    color: #999;\r\n    line-height:.4rem;\r\n}\r\n.foodsales{\r\n    color: #666;\r\n    font-size: .2rem;\r\n    line-height: 1;\r\n}\r\n.foodsales span{\r\n    vertical-align: middle;\r\n}\r\n.foodactivity{\r\n    font-size: .22rem;\r\n    -webkit-transform: scale(.8);\r\n    transform: scale(.8);\r\n    -webkit-transform-origin: left;\r\n    transform-origin: left;\r\n    color: #f07373;\r\n    white-space: nowrap;\r\n}\r\n.foodactivity span:first-child {\r\n    border: 1px solid currentColor;\r\n    padding: 0 .066667rem;\r\n}\r\n.foodprice{\r\n    position: absolute;\r\n    left: 0;\r\n    bottom: 0;\r\n    font-weight: 700;\r\n    font-size: .4rem;\r\n    line-height: .4rem;\r\n    color: #f60;\r\n}\r\n.foodprice:before {\r\n    font-weight: 400;\r\n    content: \"\\A5\";\r\n    font-size: .293333rem;\r\n    display: inline-block;\r\n}\r\n.cartbutton {\r\n    position: absolute;\r\n    right: 0;\r\n    bottom: -.066667rem;\r\n}\r\n.cartbutton-2tycR {\r\n    display: inline-block;\r\n    font-size: .346667rem;\r\n    white-space: nowrap;\r\n}\r\n.cartbutton-2tycR a {\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    text-decoration: none;\r\n    outline:none;\r\n    -webkit-border-radius:50%;\r\n    -moz-border-radius:50%;\r\n    border-radius:50%;\r\n    border:1px solid #3190e8;\r\n    line-height:.4rem;\r\n    height:.4rem;\r\n    width:.4rem;\r\n    text-align:center;\r\n    font-size:.4rem;\r\n}\r\n.cartbutton-2tycR a.cut{\r\n    color:#3190e8;\r\n}\r\n.cartbutton-2tycR a.add{\r\n    background:#3190e8;\r\n    color:#fff;\r\n}\r\n.cartbutton-2OSi7{\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    text-align: center;\r\n    color: #666;\r\n    font-size: .373333rem;\r\n    min-width: .4rem;\r\n    max-width: 2em;\r\n    overflow: hidden;\r\n}", "", {"version":3,"sources":["F:/Program/ele/public/css/shopOrder.css"],"names":[],"mappings":"AAAA;IACI,YAAY;IACZ,iBAAiB;IACjB,gBAAgB;CACnB;AACD;IACI,qBAAqB;IACrB,qBAAqB;IACrB,cAAc;IACd,aAAa;IACb,oBAAoB;IACpB,sBAAsB;CACzB;AACD;IACI,iBAAiB;IACjB,aAAa;IACb,0BAA0B;IAC1B,kCAAkC;CACrC;AACD;IACI,mBAAmB;IACnB,uBAAuB;IACvB,iCAAiC;IACjC,kBAAkB;IAClB,YAAY;IACZ,aAAa;CAChB;AACD;IACI,gBAAgB;IAChB,8BAA8B;IAC9B,iBAAiB;CACpB;AACD;IACI,oBAAoB;IACpB,YAAY;IACZ,QAAQ;IACR,eAAe;IACf,SAAS;IACT,aAAa;IACb,gBAAgB;CACnB;AACD;IACI,mBAAmB;IACnB,uBAAuB;IACvB,0BAA0B;IAC1B,qBAAqB;IACrB,qBAAqB;IACrB,cAAc;IACd,uBAAuB;IACvB,oBAAoB;IACpB,sBAAsB;IACtB,iBAAiB;CACpB;AACD;IACI,yBAAyB;IACzB,iBAAiB;IACjB,iBAAiB;IACjB,YAAY;IACZ,oBAAoB;IACpB,eAAe;IACf,WAAW;CACd;AACD;IACI,oBAAoB;IACpB,YAAY;IACZ,QAAQ;IACR,eAAe;IACf,SAAS;IACT,YAAY;IACZ,iBAAiB;IACjB,oBAAoB;IACpB,iBAAiB;CACpB;;AAED;IACI,mBAAmB;IACnB,uBAAuB;IACvB,UAAU;IACV,qBAAqB;IACrB,mBAAmB;IACnB,qBAAqB;IACrB,qBAAqB;IACrB,cAAc;IACd,mBAAmB;IACnB,wCAAwC;CAC3C;AACD;IACI,oBAAoB;IACpB,oBAAoB;IACpB,YAAY;IACZ,QAAQ;IACR,eAAe;IACf,SAAS;IACT,oBAAoB;CACvB;AACD;IACI,YAAY;IACZ,0BAA0B;CAC7B;AACD;IACI,mBAAmB;IACnB,oBAAoB;IACpB,YAAY;IACZ,QAAQ;IACR,eAAe;IACf,SAAS;IACT,sBAAsB;CACzB;AACD;IACI,iBAAiB;IACjB,iBAAiB;IACjB,iBAAiB;IACjB,iBAAiB;IACjB,qBAAqB;IACrB,qBAAqB;IACrB,cAAc;IACd,0BAA0B;IAC1B,uBAAuB;IACvB,+BAA+B;CAClC;AACD;IACI,gBAAgB;IAChB,iBAAiB;IACjB,YAAY;IACZ,kBAAkB;CACrB;AACD;IACI,YAAY;IACZ,iBAAiB;IACjB,eAAe;CAClB;AACD;IACI,uBAAuB;CAC1B;AACD;IACI,kBAAkB;IAClB,6BAA6B;IAC7B,qBAAqB;IACrB,+BAA+B;IAC/B,uBAAuB;IACvB,eAAe;IACf,oBAAoB;CACvB;AACD;IACI,+BAA+B;IAC/B,sBAAsB;CACzB;AACD;IACI,mBAAmB;IACnB,QAAQ;IACR,UAAU;IACV,iBAAiB;IACjB,iBAAiB;IACjB,mBAAmB;IACnB,YAAY;CACf;AACD;IACI,iBAAiB;IACjB,eAAe;IACf,sBAAsB;IACtB,sBAAsB;CACzB;AACD;IACI,mBAAmB;IACnB,SAAS;IACT,oBAAoB;CACvB;AACD;IACI,sBAAsB;IACtB,sBAAsB;IACtB,oBAAoB;CACvB;AACD;IACI,sBAAsB;IACtB,uBAAuB;IACvB,sBAAsB;IACtB,aAAa;IACb,0BAA0B;IAC1B,uBAAuB;IACvB,kBAAkB;IAClB,yBAAyB;IACzB,kBAAkB;IAClB,aAAa;IACb,YAAY;IACZ,kBAAkB;IAClB,gBAAgB;CACnB;AACD;IACI,cAAc;CACjB;AACD;IACI,mBAAmB;IACnB,WAAW;CACd;AACD;IACI,sBAAsB;IACtB,uBAAuB;IACvB,mBAAmB;IACnB,YAAY;IACZ,sBAAsB;IACtB,iBAAiB;IACjB,eAAe;IACf,iBAAiB;CACpB","file":"shopOrder.css","sourcesContent":[".shop-main{\r\n    height:100%;\r\n    overflow: hidden;\r\n    background:#fff;\r\n}\r\n.menuview{\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    height: 100%;\r\n    padding-bottom:1rem;\r\n    box-sizing:border-box;\r\n}\r\n.menucategory{\r\n    overflow-y: auto;\r\n    height: 100%;\r\n    background-color: #f8f8f8;\r\n    -webkit-overflow-scrolling: touch;\r\n}\r\n.menucategory-item{\r\n    position: relative;\r\n    padding:.15rem  .2rem ;\r\n    border-bottom: 1px solid #ededed;\r\n    font-size: .26rem;\r\n    color: #666;\r\n    width:0.8rem;\r\n}\r\n.menucategory-item.active{\r\n    background:#fff;\r\n    border-left:3px solid #3190e8;\r\n    font-weight:bold;\r\n}\r\n.container-menuview{\r\n    -webkit-box-flex: 1;\r\n    -ms-flex: 1;\r\n    flex: 1;\r\n    display: block;\r\n    width: 0;\r\n    height: 100%;\r\n    overflow-y:auto;\r\n}\r\n.category-title{\r\n    position: relative;\r\n    padding: .16rem .18rem;\r\n    background-color: #f1f1f1;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: end;\r\n    -ms-flex-align: end;\r\n    align-items: flex-end;\r\n    overflow: hidden;\r\n}\r\n.category-name{\r\n    margin-right: .133333rem;\r\n    font-weight: 700;\r\n    font-size: .3rem;\r\n    color: #666;\r\n    -webkit-box-flex: 0;\r\n    -ms-flex: none;\r\n    flex: none;\r\n}\r\n.category-description{\r\n    -webkit-box-flex: 1;\r\n    -ms-flex: 1;\r\n    flex: 1;\r\n    display: block;\r\n    width: 0;\r\n    color: #999;\r\n    font-size: .2rem;\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n}\r\n\r\n.category-item{\r\n    position: relative;\r\n    background-color: #fff;\r\n    margin: 0;\r\n    padding: .3rem .2rem;\r\n    margin-bottom: 1px;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    min-height: 2.5rem;\r\n    box-shadow: 0.4rem 0.013333rem 0 0 #ddd;\r\n}\r\n.foodimg{\r\n    margin-right: .1rem;\r\n    -webkit-box-flex: 2;\r\n    -ms-flex: 2;\r\n    flex: 2;\r\n    display: block;\r\n    width: 0;\r\n    vertical-align: top;\r\n}\r\n.foodimg img{\r\n    width: 100%;\r\n    border-radius: .053333rem;\r\n}\r\n.foodinfo{\r\n    position: relative;\r\n    -webkit-box-flex: 8;\r\n    -ms-flex: 8;\r\n    flex: 8;\r\n    display: block;\r\n    width: 0;\r\n    padding-bottom: .5rem;\r\n}\r\n.foodtitle{\r\n    font-size: .3rem;\r\n    font-weight: 700;\r\n    line-height: 1.1;\r\n    overflow: hidden;\r\n    display: -webkit-box;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n}\r\n.fooddescription{\r\n    margin: .1rem 0;\r\n    font-size: .2rem;\r\n    color: #999;\r\n    line-height:.4rem;\r\n}\r\n.foodsales{\r\n    color: #666;\r\n    font-size: .2rem;\r\n    line-height: 1;\r\n}\r\n.foodsales span{\r\n    vertical-align: middle;\r\n}\r\n.foodactivity{\r\n    font-size: .22rem;\r\n    -webkit-transform: scale(.8);\r\n    transform: scale(.8);\r\n    -webkit-transform-origin: left;\r\n    transform-origin: left;\r\n    color: #f07373;\r\n    white-space: nowrap;\r\n}\r\n.foodactivity span:first-child {\r\n    border: 1px solid currentColor;\r\n    padding: 0 .066667rem;\r\n}\r\n.foodprice{\r\n    position: absolute;\r\n    left: 0;\r\n    bottom: 0;\r\n    font-weight: 700;\r\n    font-size: .4rem;\r\n    line-height: .4rem;\r\n    color: #f60;\r\n}\r\n.foodprice:before {\r\n    font-weight: 400;\r\n    content: \"\\A5\";\r\n    font-size: .293333rem;\r\n    display: inline-block;\r\n}\r\n.cartbutton {\r\n    position: absolute;\r\n    right: 0;\r\n    bottom: -.066667rem;\r\n}\r\n.cartbutton-2tycR {\r\n    display: inline-block;\r\n    font-size: .346667rem;\r\n    white-space: nowrap;\r\n}\r\n.cartbutton-2tycR a {\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    text-decoration: none;\r\n    outline:none;\r\n    -webkit-border-radius:50%;\r\n    -moz-border-radius:50%;\r\n    border-radius:50%;\r\n    border:1px solid #3190e8;\r\n    line-height:.4rem;\r\n    height:.4rem;\r\n    width:.4rem;\r\n    text-align:center;\r\n    font-size:.4rem;\r\n}\r\n.cartbutton-2tycR a.cut{\r\n    color:#3190e8;\r\n}\r\n.cartbutton-2tycR a.add{\r\n    background:#3190e8;\r\n    color:#fff;\r\n}\r\n.cartbutton-2OSi7{\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    text-align: center;\r\n    color: #666;\r\n    font-size: .373333rem;\r\n    min-width: .4rem;\r\n    max-width: 2em;\r\n    overflow: hidden;\r\n}"],"sourceRoot":""}]);
+
+// exports
+
 
 /***/ }),
 
-/***/ 97:
+/***/ 90:
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;\n  return _vm._m(0)\n},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;\n  return _c('section', {\n    staticClass: \"userInfo\"\n  }, [_c('div', {\n    staticClass: \"profile-header\"\n  }, [_c('img', {\n    attrs: {\n      \"src\": __webpack_require__(86),\n      \"alt\": \"\"\n    }\n  })]), _vm._v(\" \"), _c('div', {\n    staticClass: \"profile-info\"\n  }, [_c('p', {\n    staticClass: \"profile-tips\"\n  }, [_vm._v(\"登录/注册\")]), _vm._v(\" \"), _c('p', {\n    staticClass: \"profile-1UP72\"\n  }, [_c('span', [_vm._v(\"登录后享受更多特权\")])])])])\n}]}\nmodule.exports.render._withStripped = true\nif (true) {\n  module.hot.accept()\n  if (module.hot.data) {\n     __webpack_require__(2).rerender(\"data-v-d1f0eede\", module.exports)\n  }\n}//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wdWJsaWMvY29tcG9uZW50cy9wcm9maWxlL3VzZXJJbmZvLnZ1ZT8zOWVhIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGdCQUFnQixtQkFBbUIsYUFBYSwwQkFBMEI7QUFDMUU7QUFDQSxDQUFDLCtCQUErQixhQUFhLDBCQUEwQjtBQUN2RTtBQUNBO0FBQ0EsR0FBRztBQUNIO0FBQ0EsR0FBRztBQUNIO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsR0FBRztBQUNIO0FBQ0EsR0FBRztBQUNIO0FBQ0EsR0FBRztBQUNIO0FBQ0EsR0FBRztBQUNILENBQUM7QUFDRDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsImZpbGUiOiI5Ny5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzPXtyZW5kZXI6ZnVuY3Rpb24gKCl7dmFyIF92bT10aGlzO3ZhciBfaD1fdm0uJGNyZWF0ZUVsZW1lbnQ7dmFyIF9jPV92bS5fc2VsZi5fY3x8X2g7XG4gIHJldHVybiBfdm0uX20oMClcbn0sc3RhdGljUmVuZGVyRm5zOiBbZnVuY3Rpb24gKCl7dmFyIF92bT10aGlzO3ZhciBfaD1fdm0uJGNyZWF0ZUVsZW1lbnQ7dmFyIF9jPV92bS5fc2VsZi5fY3x8X2g7XG4gIHJldHVybiBfYygnc2VjdGlvbicsIHtcbiAgICBzdGF0aWNDbGFzczogXCJ1c2VySW5mb1wiXG4gIH0sIFtfYygnZGl2Jywge1xuICAgIHN0YXRpY0NsYXNzOiBcInByb2ZpbGUtaGVhZGVyXCJcbiAgfSwgW19jKCdpbWcnLCB7XG4gICAgYXR0cnM6IHtcbiAgICAgIFwic3JjXCI6IHJlcXVpcmUoXCIuLi8uLi9pbWFnZXMvaGVhZC5wbmdcIiksXG4gICAgICBcImFsdFwiOiBcIlwiXG4gICAgfVxuICB9KV0pLCBfdm0uX3YoXCIgXCIpLCBfYygnZGl2Jywge1xuICAgIHN0YXRpY0NsYXNzOiBcInByb2ZpbGUtaW5mb1wiXG4gIH0sIFtfYygncCcsIHtcbiAgICBzdGF0aWNDbGFzczogXCJwcm9maWxlLXRpcHNcIlxuICB9LCBbX3ZtLl92KFwi55m75b2VL+azqOWGjFwiKV0pLCBfdm0uX3YoXCIgXCIpLCBfYygncCcsIHtcbiAgICBzdGF0aWNDbGFzczogXCJwcm9maWxlLTFVUDcyXCJcbiAgfSwgW19jKCdzcGFuJywgW192bS5fdihcIueZu+W9leWQjuS6q+WPl+abtOWkmueJueadg1wiKV0pXSldKV0pXG59XX1cbm1vZHVsZS5leHBvcnRzLnJlbmRlci5fd2l0aFN0cmlwcGVkID0gdHJ1ZVxuaWYgKG1vZHVsZS5ob3QpIHtcbiAgbW9kdWxlLmhvdC5hY2NlcHQoKVxuICBpZiAobW9kdWxlLmhvdC5kYXRhKSB7XG4gICAgIHJlcXVpcmUoXCJ2dWUtaG90LXJlbG9hZC1hcGlcIikucmVyZW5kZXIoXCJkYXRhLXYtZDFmMGVlZGVcIiwgbW9kdWxlLmV4cG9ydHMpXG4gIH1cbn1cblxuXG4vLy8vLy8vLy8vLy8vLy8vLy9cbi8vIFdFQlBBQ0sgRk9PVEVSXG4vLyAuL34vdnVlLWxvYWRlci9saWIvdGVtcGxhdGUtY29tcGlsZXI/e1wiaWRcIjpcImRhdGEtdi1kMWYwZWVkZVwifSEuL34vdnVlLWxvYWRlci9saWIvc2VsZWN0b3IuanM/dHlwZT10ZW1wbGF0ZSZpbmRleD0wIS4vcHVibGljL2NvbXBvbmVudHMvcHJvZmlsZS91c2VySW5mby52dWVcbi8vIG1vZHVsZSBpZCA9IDk3XG4vLyBtb2R1bGUgY2h1bmtzID0gMiJdLCJzb3VyY2VSb290IjoiIn0=");
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(105)
+}
+var Component = __webpack_require__(5)(
+  /* script */
+  null,
+  /* template */
+  __webpack_require__(96),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+Component.options.__file = "F:\\Program\\ele\\public\\components\\shop\\cart.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] cart.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (true) {(function () {
+  var hotAPI = __webpack_require__(2)
+  hotAPI.install(__webpack_require__(1), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7bf75592", Component.options)
+  } else {
+    hotAPI.reload("data-v-7bf75592", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 93:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('section', {
+    staticClass: "shop-main"
+  }, [_c('div', {
+    staticClass: "menuview"
+  }, [_c('ul', {
+    staticClass: "menucategory"
+  }, _vm._l((_vm.menuCategory), function(item, index) {
+    return _c('li', {
+      staticClass: "menucategory-item",
+      class: {
+        'active': !!item.checked || (_vm.choseMenu == undefined && index == 0)
+      },
+      on: {
+        "click": function($event) {
+          _vm.choseThis(item, index)
+        }
+      }
+    }, [_c('span', {
+      staticClass: "menucategory-qwsbd"
+    }, [_vm._v(_vm._s(item.name))])])
+  })), _vm._v(" "), _c('section', {
+    staticClass: "container-menuview",
+    attrs: {
+      "id": "container"
+    }
+  }, [_vm._l((_vm.menuCategory), function(cate) {
+    return [_c('div', {
+      staticClass: "category-title",
+      attrs: {
+        "data-menuid": cate.id
+      }
+    }, [_c('strong', {
+      staticClass: "category-name"
+    }, [_vm._v(_vm._s(cate.name))]), _vm._v(" "), _c('span', {
+      staticClass: "category-description"
+    }, [_vm._v(_vm._s(cate.descript))])]), _vm._v(" "), _c('ul', {
+      staticClass: "categoryList"
+    }, _vm._l((cate.category), function(list) {
+      return _c('li', {
+        staticClass: "category-item"
+      }, [_c('span', {
+        staticClass: "foodimg"
+      }, [_c('img', {
+        attrs: {
+          "src": list.headImg
+        }
+      })]), _vm._v(" "), _c('section', {
+        staticClass: "foodinfo"
+      }, [_c('div', {
+        staticClass: "foodtitle"
+      }, [_c('span', [_vm._v(_vm._s(list.name))])]), _vm._v(" "), _c('p', {
+        staticClass: "fooddescription"
+      }, [_vm._v(_vm._s(list.description))]), _vm._v(" "), _c('p', {
+        staticClass: "foodsales"
+      }, [_c('span', [_vm._v("月售" + _vm._s(list.monthSale) + "份")]), _vm._v(" "), _c('span', [_vm._v("好评率" + _vm._s(list.goodNum) + "%")])]), _vm._v(" "), (list.limit != '') ? _c('p', {
+        staticClass: "foodactivity"
+      }, [_c('span', [_vm._v("限" + _vm._s(list.limit) + "份")])]) : _vm._e(), _vm._v(" "), _c('strong', {
+        staticClass: "foodprice"
+      }, [_c('span', [_vm._v(_vm._s(list.price))])]), _vm._v(" "), _vm._m(0, true)])])
+    }))]
+  })], 2)]), _vm._v(" "), _c('cart')], 1)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "cartbutton"
+  }, [_c('span', [_c('span', {
+    staticClass: "cartbutton-2tycR"
+  }, [_c('a', {
+    staticClass: "cut",
+    attrs: {
+      "href": "javascript:",
+      "role": "button"
+    }
+  }, [_vm._v("-")]), _vm._v(" "), _c('span', {
+    staticClass: "cartbutton-2OSi7",
+    attrs: {
+      "role": "button"
+    }
+  }, [_vm._v("9")]), _vm._v(" "), _c('a', {
+    staticClass: "add",
+    attrs: {
+      "href": "javascript:",
+      "role": "button"
+    }
+  }, [_vm._v("+")])])])])
+}]}
+module.exports.render._withStripped = true
+if (true) {
+  module.hot.accept()
+  if (module.hot.data) {
+     __webpack_require__(2).rerender("data-v-4e47871e", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 96:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('footer', {
+    staticClass: "cartview "
+  }, [_c('div', {
+    staticClass: "bottomNav-3XM6c_0",
+    staticStyle: {
+      "z-index": "11"
+    }
+  }, [_c('span', {
+    staticClass: "bottomNav-18KRG_0",
+    attrs: {
+      "role": "button"
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "bottomNav-wzCAW_0",
+    attrs: {
+      "role": "button"
+    }
+  }, [_c('p', {
+    staticClass: "bottomNav-3Ak_E_0"
+  }, [_c('span', [_vm._v("¥70")])]), _vm._v(" "), _c('p', {
+    staticClass: "bottomNav-3zqFz_0"
+  }, [_vm._v("配送费¥5")])]), _vm._v(" "), _c('a', {
+    staticClass: "bottomNav-1urxC_0",
+    attrs: {
+      "href": "javascript:",
+      "role": "button"
+    }
+  }, [_vm._v("去结算")])])])
+}]}
+module.exports.render._withStripped = true
+if (true) {
+  module.hot.accept()
+  if (module.hot.data) {
+     __webpack_require__(2).rerender("data-v-7bf75592", module.exports)
+  }
+}
 
 /***/ })
 
 });
+//# sourceMappingURL=2.js.map

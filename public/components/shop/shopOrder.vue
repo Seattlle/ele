@@ -2,221 +2,247 @@
     <section class="shop-main">
         <div class="menuview">
             <ul class="menucategory">
-                <li class="menucategory-item" v-for="item in menucategory" :class="{'active':item.id=='10001'}">
+                <li class="menucategory-item" v-for="(item,index) in menuCategory" :class="{'active':!!item.checked||(choseMenu==undefined&&index==0)}"   @click="choseThis(item,index)">
                     <span class="menucategory-qwsbd">{{item.name}}</span>
                 </li>
             </ul>
-            <section class="container-menuview">
-                <div class="category-title">
-                    <strong class="category-name">热销榜</strong>
-                    <span  class="category-description">大家喜欢吃，才叫真好吃。</span>
-                </div>
-                <ul class="categoryList">
-                    <li class="category-item">
-                        <span class="foodimg">
-                            <img alt="冬（香）菇鸡腿肉满足餐（配外婆菜）" title="冬（香）菇鸡腿肉满足餐（配外婆菜）" src="https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/">
-                        </span>
-                        <section class="foodinfo">
-                            <div class="foodtitle">
-                                <span data-v-f433384a="">冬（香）菇鸡腿肉满足餐（配外婆菜）</span>
-                            </div>
-                            <p class="fooddescription">冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1</p>
-                            <p class="foodsales">
-                                <span >月售319份</span>
-                                <span >好评率98%</span>
-                            </p>
-                            <p class="foodactivity">
-                                <span  >限1份</span>
-                            </p>
-                            <strong class="foodprice">
-                                <span >34.5</span>
-                            </strong>
-                            <div class="cartbutton">
+            <section id="container" class="container-menuview">
+                <template v-for="cate in menuCategory">
+                    <div class="category-title" :data-menuid="cate.id">
+                        <strong class="category-name">{{cate.name}}</strong>
+                        <span  class="category-description">{{cate.descript}}</span>
+                    </div>
+                    <ul class="categoryList">
+                        <li class="category-item" v-for="list in cate.category">
+                            <span class="foodimg">
+                                <img  :src="list.headImg">
+                            </span>
+                            <section class="foodinfo">
+                                <div class="foodtitle">
+                                    <span>{{list.name}}</span>
+                                </div>
+                                <p class="fooddescription">{{list.description}}</p>
+                                <p class="foodsales">
+                                    <span >月售{{list.monthSale}}份</span>
+                                    <span >好评率{{list.goodNum}}%</span>
+                                </p>
+                                <p class="foodactivity" v-if="list.limit!=''">
+                                    <span  >限{{list.limit}}份</span>
+                                </p>
+                                <strong class="foodprice">
+                                    <span >{{list.price}}</span>
+                                </strong>
+                                <div class="cartbutton">
                                 <span>
                                     <span class="cartbutton-2tycR">
                                         <a href="javascript:" role="button" class="cut">-</a>
-                                        <span role="button" aria-label="已选9份" class="cartbutton-2OSi7">9</span>
+                                        <span role="button" class="cartbutton-2OSi7">9</span>
                                         <a href="javascript:" role="button" class="add">+</a>
                                     </span>
                                 </span>
-                            </div>
-                        </section>
-                    </li>
-                    <li class="category-item">
-                        <span class="foodimg">
-                            <img alt="冬（香）菇鸡腿肉满足餐（配外婆菜）" title="冬（香）菇鸡腿肉满足餐（配外婆菜）" src="https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/">
-                        </span>
-                        <section class="foodinfo">
-                            <div class="foodtitle">
-                                <span data-v-f433384a="">冬（香）菇鸡腿肉满足餐（配外婆菜）</span>
-                            </div>
-                            <p class="fooddescription">冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1</p>
-                            <p class="foodsales">
-                                <span >月售319份</span>
-                                <span >好评率98%</span>
-                            </p>
-                            <p class="foodactivity">
-                                <span  >限1份</span>
-                            </p>
-                            <strong class="foodprice">
-                                <span >34.5</span>
-                            </strong>
-                            <div class="cartbutton">
-                                <span>
-                                    <span class="cartbutton-2tycR">
-                                        <a href="javascript:" role="button" class="cut">-</a>
-                                        <span role="button" aria-label="已选9份" class="cartbutton-2OSi7">9</span>
-                                        <a href="javascript:" role="button" class="add">+</a>
-                                    </span>
-                                </span>
-                            </div>
-                        </section>
-                    </li>
-                    <li class="category-item">
-                        <span class="foodimg">
-                            <img alt="冬（香）菇鸡腿肉满足餐（配外婆菜）" title="冬（香）菇鸡腿肉满足餐（配外婆菜）" src="https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/">
-                        </span>
-                        <section class="foodinfo">
-                            <div class="foodtitle">
-                                <span data-v-f433384a="">冬（香）菇鸡腿肉满足餐（配外婆菜）</span>
-                            </div>
-                            <p class="fooddescription">冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1</p>
-                            <p class="foodsales">
-                                <span >月售319份</span>
-                                <span >好评率98%</span>
-                            </p>
-                            <p class="foodactivity">
-                                <span  >限1份</span>
-                            </p>
-                            <strong class="foodprice">
-                                <span >34.5</span>
-                            </strong>
-                            <div class="cartbutton">
-                                <span>
-                                    <span class="cartbutton-2tycR">
-                                        <a href="javascript:" role="button" class="cut">-</a>
-                                        <span role="button" aria-label="已选9份" class="cartbutton-2OSi7">9</span>
-                                        <a href="javascript:" role="button" class="add">+</a>
-                                    </span>
-                                </span>
-                            </div>
-                        </section>
-                    </li>
-                    <li class="category-item">
-                        <span class="foodimg">
-                            <img alt="冬（香）菇鸡腿肉满足餐（配外婆菜）" title="冬（香）菇鸡腿肉满足餐（配外婆菜）" src="https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/">
-                        </span>
-                        <section class="foodinfo">
-                            <div class="foodtitle">
-                                <span data-v-f433384a="">冬（香）菇鸡腿肉满足餐（配外婆菜）</span>
-                            </div>
-                            <p class="fooddescription">冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1</p>
-                            <p class="foodsales">
-                                <span >月售319份</span>
-                                <span >好评率98%</span>
-                            </p>
-                            <p class="foodactivity">
-                                <span  >限1份</span>
-                            </p>
-                            <strong class="foodprice">
-                                <span >34.5</span>
-                            </strong>
-                            <div class="cartbutton">
-                                <span>
-                                    <span class="cartbutton-2tycR">
-                                        <a href="javascript:" role="button" class="cut">-</a>
-                                        <span role="button" aria-label="已选9份" class="cartbutton-2OSi7">9</span>
-                                        <a href="javascript:" role="button" class="add">+</a>
-                                    </span>
-                                </span>
-                            </div>
-                        </section>
-                    </li>
-                    <li class="category-item">
-                        <span class="foodimg">
-                            <img alt="冬（香）菇鸡腿肉满足餐（配外婆菜）" title="冬（香）菇鸡腿肉满足餐（配外婆菜）" src="https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/">
-                        </span>
-                        <section class="foodinfo">
-                            <div class="foodtitle">
-                                <span data-v-f433384a="">冬（香）菇鸡腿肉满足餐（配外婆菜）</span>
-                            </div>
-                            <p class="fooddescription">冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1</p>
-                            <p class="foodsales">
-                                <span >月售319份</span>
-                                <span >好评率98%</span>
-                            </p>
-                            <p class="foodactivity">
-                                <span  >限1份</span>
-                            </p>
-                            <strong class="foodprice">
-                                <span >34.5</span>
-                            </strong>
-                            <div class="cartbutton">
-                                <span>
-                                    <span class="cartbutton-2tycR">
-                                        <a href="javascript:" role="button" class="cut">-</a>
-                                        <span role="button" aria-label="已选9份" class="cartbutton-2OSi7">9</span>
-                                        <a href="javascript:" role="button" class="add">+</a>
-                                    </span>
-                                </span>
-                            </div>
-                        </section>
-                    </li>
-                    <li class="category-item">
-                        <span class="foodimg">
-                            <img alt="冬（香）菇鸡腿肉满足餐（配外婆菜）" title="冬（香）菇鸡腿肉满足餐（配外婆菜）" src="https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/">
-                        </span>
-                        <section class="foodinfo">
-                            <div class="foodtitle">
-                                <span data-v-f433384a="">冬（香）菇鸡腿肉满足餐（配外婆菜）</span>
-                            </div>
-                            <p class="fooddescription">冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1</p>
-                            <p class="foodsales">
-                                <span >月售319份</span>
-                                <span >好评率98%</span>
-                            </p>
-                            <p class="foodactivity">
-                                <span  >限1份</span>
-                            </p>
-                            <strong class="foodprice">
-                                <span >34.5</span>
-                            </strong>
-                            <div class="cartbutton">
-                                <span>
-                                    <span class="cartbutton-2tycR">
-                                        <a href="javascript:" role="button" class="cut">-</a>
-                                        <span role="button" aria-label="已选9份" class="cartbutton-2OSi7">9</span>
-                                        <a href="javascript:" role="button" class="add">+</a>
-                                    </span>
-                                </span>
-                            </div>
-                        </section>
-                    </li>
-                </ul>
+                                </div>
+                            </section>
+                        </li>
+                    </ul>
+                </template>
             </section>
         </div>
         <cart></cart>
     </section>
 </template>
 <script>
+    let ifOnScroll=false;
+    import Vue from 'vue'
     import cart from './cart.vue'
     export default{
         data(){
             return {
-                'menucategory':[{
+                'menuCategory':[{
                     'id':'10001',
-                    'name':'热销榜'
+                    'name':'热销榜',
+                    'descript':'大家喜欢吃，才叫真好吃。',
+                    'category':[{
+                        'id':'1001001',
+                        'name':'冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                        'headImg':'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                        'description':'冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                        'monthSale':'319',
+                        'goodNum':'100',
+                        'limit':'',
+                        'price':'20'
+                    },{
+                        'id':'1001001',
+                        'name':'冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                        'headImg':'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                        'description':'冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                        'monthSale':'319',
+                        'goodNum':'100',
+                        'limit':'1',
+                        'price':'20'
+                    },{
+                        'id':'1001001',
+                        'name':'冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                        'headImg':'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                        'description':'冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                        'monthSale':'319',
+                        'goodNum':'100',
+                        'limit':'1',
+                        'price':'20'
+                    }]
                 },{
                     'id':'10002',
-                    'name':'优惠'
+                    'name':'优惠',
+                    'descript':'大家喜欢吃，才叫真好吃。',
+                    'category':[{
+                        'id':'1001001',
+                        'name':'冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                        'headImg':'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                        'description':'冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                        'monthSale':'319',
+                        'goodNum':'100',
+                        'limit':'1',
+                        'price':'20'
+                    },{
+                        'id':'1001001',
+                        'name':'冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                        'headImg':'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                        'description':'冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                        'monthSale':'319',
+                        'goodNum':'100',
+                        'limit':'1',
+                        'price':'20'
+                    },{
+                        'id':'1001001',
+                        'name':'冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                        'headImg':'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                        'description':'冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                        'monthSale':'319',
+                        'goodNum':'100',
+                        'limit':'1',
+                        'price':'20'
+                    }]
                 },{
-                    'id':'10002',
-                    'name':'主餐'
-                }]
+                    'id':'10003',
+                    'name':'主餐主餐主餐',
+                    'descript':'大家喜欢吃，才叫真好吃。',
+                    'category':[{
+                        'id':'1001001',
+                        'name':'冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                        'headImg':'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                        'description':'冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                        'monthSale':'319',
+                        'goodNum':'100',
+                        'limit':'1',
+                        'price':'20'
+                    },{
+                        'id':'1001001',
+                        'name':'冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                        'headImg':'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                        'description':'冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                        'monthSale':'319',
+                        'goodNum':'100',
+                        'limit':'1',
+                        'price':'20'
+                    },{
+                        'id':'1001001',
+                        'name':'冬（香）菇鸡腿肉满足餐（配外婆菜）',
+                        'headImg':'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+                        'description':'冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+                        'monthSale':'319',
+                        'goodNum':'100',
+                        'limit':'1',
+                        'price':'20'
+                    }]
+                }],
+                'choseMenu':undefined
             }
         },
         components:{
             cart
+        },
+        mounted(){
+            this.$nextTick(function () {
+                document.getElementById("container").addEventListener('scroll', this.onScroll)
+            })
+        },
+        methods:{
+            choseThis(thisItem,index) {
+                ifOnScroll=true;
+                this.menuCategory.forEach(function(item){
+                    if(typeof item.checked=='undefined'){
+                        Vue.set(item,'checked',false);
+                    }else{
+                        item.checked=false;
+                    }
+                });
+                thisItem.checked=true;
+                this.choseMenu=thisItem;
+                //平滑滚动
+                this.jump(index)
+            },
+            jump(index){
+                let jump = document.querySelectorAll('.category-title')
+                // 获取需要滚动的距离
+                let total = jump[index].offsetTop;
+                let distance = document.getElementById("container").scrollTop
+                // 平滑滚动，时长500ms，每10ms一跳，共50跳
+                let step = total / 50
+                if (total > distance) {
+                    smoothDown()
+                } else {
+                    let newTotal = distance - total
+                    step = newTotal / 50
+                    smoothUp()
+                }
+                function smoothDown () {
+                    if (distance < total) {
+                        distance += step
+                        document.getElementById("container").scrollTop=distance;
+                        setTimeout(smoothDown, 10)
+                    } else {
+                        document.getElementById("container").scrollTop=total;
+                        ifOnScroll=false;
+                    }
+                }
+                function smoothUp () {
+                    if (distance > total) {
+                        distance -= step
+                        document.getElementById("container").scrollTop=distance;
+                        setTimeout(smoothUp, 10)
+                    } else {
+                        document.getElementById("container").scrollTop=total;
+                        ifOnScroll=false;
+                    }
+                }
+            },
+            onScroll(){
+                if(!ifOnScroll){
+                    let scrolled = document.getElementById("container").scrollTop;
+                    let title=document.querySelectorAll('.category-title');
+                    var _this=this;
+                    title.forEach(function (it) {
+                        if(it.offsetTop>scrolled-20&&it.offsetTop<scrolled+20){
+                            let menuId=it.dataset.menuid;
+                            _this.menuCategory.forEach(function(items){
+                                if(items.id==menuId){
+                                    if(typeof items.checked=='undefined'){
+                                        Vue.set(items,'checked',true);
+                                    }else{
+                                        items.checked=true;
+                                    }
+                                    _this.choseMenu=items;
+                                }else{
+                                    if(typeof items.checked=='undefined'){
+                                        Vue.set(items,'checked',false);
+                                    }else{
+                                        items.checked=false;
+                                    }
+                                }
+                            });
+                        }
+                    })
+                }
+            }
         }
     }
 </script>

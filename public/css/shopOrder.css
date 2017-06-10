@@ -19,10 +19,11 @@
 }
 .menucategory-item{
     position: relative;
-    padding: .2rem ;
+    padding:.15rem  .2rem ;
     border-bottom: 1px solid #ededed;
     font-size: .26rem;
     color: #666;
+    width:0.8rem;
 }
 .menucategory-item.active{
     background:#fff;

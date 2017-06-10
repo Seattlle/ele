@@ -54,7 +54,7 @@
         position: fixed;
         right: 0;
         bottom: 0;
-        left: 0;
+        width:100%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -63,8 +63,12 @@
         align-items: center;
         padding-left: 1.35rem;
         background-color: #3d3d3f;
-        height: 1rem;
+        height: .9rem;
         opacity: .95;
+        max-width: 768px;
+        margin: 0 auto;
+        left: 0;
+        box-sizing:border-box;
     }
     .bottomNav-18KRG_0 {
         position: absolute;
@@ -117,7 +121,7 @@
         text-decoration: none;
         font-size: .36rem;
         font-weight: 700;
-        line-height: 1rem;
+        line-height: .9rem;
         outline:none;
     }
     .bottomNav-1urxC_0.bottomNav-9FCIh_0 {
