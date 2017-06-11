@@ -170,7 +170,7 @@
     font-size: .346667rem;
     white-space: nowrap;
 }
-.cartbutton-2tycR a {
+.cartbutton-2tycR a ,.flyball{
     display: inline-block;
     vertical-align: middle;
     text-decoration: none;
@@ -188,7 +188,7 @@
 .cartbutton-2tycR a.cut{
     color:#3190e8;
 }
-.cartbutton-2tycR a.add{
+.cartbutton-2tycR a.add,.flyball{
     background:#3190e8;
     color:#fff;
 }
@@ -197,8 +197,17 @@
     vertical-align: middle;
     text-align: center;
     color: #666;
-    font-size: .373333rem;
+    font-size: .33rem;
     min-width: .4rem;
     max-width: 2em;
     overflow: hidden;
+    line-height:.4rem;
+    height:.4rem;
+}
+
+.flyball{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:100;
 }

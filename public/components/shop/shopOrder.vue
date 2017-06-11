@@ -35,9 +35,9 @@
                                 <div class="cartbutton">
                                 <span>
                                     <span class="cartbutton-2tycR">
-                                        <a href="javascript:" role="button" class="cut">-</a>
-                                        <span role="button" class="cartbutton-2OSi7">9</span>
-                                        <a href="javascript:" role="button" class="add">+</a>
+                                        <a href="javascript:" role="button" class="cut" @click="method(list,-1)" v-if="list.selectNum>0">-</a>
+                                        <span role="button" class="cartbutton-2OSi7" v-if="list.selectNum>0">{{list.selectNum}}</span>
+                                        <a href="javascript:" role="button" class="add" @click="method(list,1)">+</a>
                                     </span>
                                 </span>
                                 </div>
@@ -241,6 +241,49 @@
                             });
                         }
                     })
+                }
+            },
+            method(list,i){
+                if(typeof list.selectNum=='undefined'){
+                    Vue.set(list,'selectNum',i);
+                }else{
+                    list.selectNum+=i;
+                }
+                if(i>0){
+                   this.flyball(event.clientX-event.target.clientWidth,event.clientY-event.target.clientHeight);
+                }
+            },
+            flyball(startX,startY){
+                let flyball=document.createElement('div');
+                flyball.className='flyball';
+                flyball.style.top=startY+'px';
+                flyball.style.left=startX+'px';
+
+                document.getElementById('app').appendChild(flyball);
+
+                let target=document.querySelector('.bottomNav-18KRG_0');
+                let targetX=target.clientLeft+15;
+                let targetY=screen.height-target.clientTop-40;
+
+                let stepsX=(startX-targetX)/50;
+                let stepsY=(targetY-startY)/50;
+
+               moveBall();
+
+                function moveBall(){
+                    if (startX > targetX) {
+                        startX -= stepsX;
+                        flyball.style.left=startX+'px';
+                        if(startY<targetY){
+                            startY += stepsY;
+                            flyball.style.top=startY+'px';
+                        }
+                        setTimeout(moveBall, 10)
+                    } else {
+                        document.getElementById('app').removeChild(flyball);
+//                        flyball.style.top=startY+'px';
+//                        flyball.style.left=startX+'px';
+                    }
                 }
             }
         }
