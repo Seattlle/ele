@@ -2,7 +2,7 @@
     <section class="shopComment">
         <section class="overview-container">
             <div class="overview-col1">
-                <strong class="overview-overallScore">4.6</strong>
+                <strong class="overview-overallScore">{{$store.state.shop.overallScore}}</strong>
                 <div>综合评价</div>
                 <p class="overview-small">高于周边商家32.2%</p>
             </div>
@@ -19,7 +19,7 @@
                                 <i class="start">★</i>
                             </div>
                         </div>
-                        <span class="overview-lineScore">4.7</span>
+                        <span class="overview-lineScore">{{$store.state.shop.serviceNum}}</span>
                     </span>
                 </div>
                 <div class="overview-line">
@@ -34,18 +34,18 @@
                                 <i class="start">★</i>
                             </div>
                         </div>
-                        <span class="overview-lineScore">4.6</span>
+                        <span class="overview-lineScore">{{$store.state.shop.goodNum}}</span>
                     </span>
                 </div>
                 <div class="overview-line">
                     <span>送达时间</span>
-                    <span class="overview-lineContent overview-small">57分钟</span>
+                    <span class="overview-lineContent overview-small">{{$store.state.shop.sendTime}}</span>
                 </div>
             </div>
         </section>
         <section class="index-rateDetail">
             <ul class="commit-list">
-                <comment-list v-for="comment in commentList" :item="comment" :key="comment.id"></comment-list>
+                <comment-list v-for="comment in $store.state.shop.commentList" :item="comment" :key="comment.id"></comment-list>
             </ul>
         </section>
     </section>
@@ -54,33 +54,7 @@
     import commentList from './commentList.vue'
     export default{
         data(){
-            return {
-                'commentList':[{
-                    'id':'10001',
-                    'name':'啊拉萨',
-                    'date':'2017-06-08 11:33:59'
-                },{
-                    'id':'10002',
-                    'name':'啊拉萨',
-                    'date':'2017-06-08 11:33:59'
-                },{
-                    'id':'10003',
-                    'name':'啊拉萨',
-                    'date':'2017-06-08 11:33:59'
-                },{
-                    'id':'10004',
-                    'name':'啊拉萨',
-                    'date':'2017-06-08 11:33:59'
-                },{
-                    'id':'10005',
-                    'name':'啊拉萨',
-                    'date':'2017-06-08 11:33:59'
-                },{
-                    'id':'10006',
-                    'name':'啊拉萨',
-                    'date':'2017-06-08 11:33:59'
-                }]
-            }
+            return { }
         },
         components:{
             commentList
