@@ -19,7 +19,7 @@
 }
 .menucategory-item{
     position: relative;
-    padding:.15rem  .2rem ;
+    padding:.2rem  .25rem ;
     border-bottom: 1px solid #ededed;
     font-size: .26rem;
     color: #666;
@@ -210,4 +210,19 @@
     top:0;
     left:0;
     z-index:100;
+}
+
+.menucategory-28BIn{
+    position: absolute;
+    right: .05rem;
+    top: .05rem;
+    color: #fff;
+    background-color: #ff461d;
+    border-radius: .2rem;
+    font-size: .2rem;
+    font-weight: 700;
+    text-align: center;
+    min-width: .25rem;
+    padding: .03rem .05rem;
+    line-height: .25rem;
 }

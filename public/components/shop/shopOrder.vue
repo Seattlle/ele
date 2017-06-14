@@ -4,6 +4,7 @@
             <ul class="menucategory">
                 <li class="menucategory-item" v-for="(item,index) in menuCategory" :class="{'active':!!item.checked||(choseMenu==undefined&&index==0)}"   @click="choseThis(item,index)">
                     <span class="menucategory-qwsbd">{{item.name}}</span>
+                    <span class="menucategory-28BIn" v-if="item.selectNum!=undefined&&item.selectNum>0">{{item.selectNum}}</span>
                 </li>
             </ul>
             <section id="container" class="container-menuview">
@@ -47,7 +48,7 @@
                 </template>
             </section>
         </div>
-        <cart></cart>
+        <cart :money="totalMoney" :sendprice="sendPrice" :num="totalNum"></cart>
     </section>
 </template>
 <script>
@@ -154,7 +155,11 @@
                         'price':'20'
                     }]
                 }],
-                'choseMenu':undefined
+                'choseMenu':undefined,
+                'totalMoney':0,
+                'sendPrice':15,
+                'selectedItem':[],
+                'totalNum':0
             }
         },
         components:{
@@ -252,6 +257,7 @@
                 if(i>0){
                    this.flyball(event.clientX-event.target.clientWidth,event.clientY-event.target.clientHeight);
                 }
+                this.calculateMoney();
             },
             flyball(startX,startY){
                 let flyball=document.createElement('div');
@@ -281,10 +287,26 @@
                         setTimeout(moveBall, 10)
                     } else {
                         document.getElementById('app').removeChild(flyball);
-//                        flyball.style.top=startY+'px';
-//                        flyball.style.left=startX+'px';
                     }
                 }
+            },
+            calculateMoney(){
+                var _this=this;
+                this.selectedItem=[];
+                this.totalMoney=0;
+                this.totalNum=0;
+                this.menuCategory.forEach(function (menuType) {
+                    let num=0;
+                    menuType.category.forEach(function (item) {
+                        if(item.selectNum>0){
+                            _this.selectedItem.push(item);
+                            _this.totalMoney+=item.selectNum*item.price;
+                            num+=item.selectNum;
+                        }
+                    });
+                    Vue.set(menuType,'selectNum',num);
+                    _this.totalNum+=num;
+                });
             }
         }
     }

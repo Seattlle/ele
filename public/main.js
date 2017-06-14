@@ -7,6 +7,11 @@ import store from './vuex/store'
 import App from './App.vue'
 
 Vue.use(VueAxios,axios, vuex)
+
+Vue.filter("toMoney", function(value) {
+    return "￥"+value;
+});
+
 new Vue({
     el: '#app',
     store,

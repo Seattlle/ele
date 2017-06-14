@@ -1,0 +1,95 @@
+.cartview{
+    font-size: .3rem;
+}
+.bottomNav-3XM6c_0 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width:100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 1.35rem;
+    background-color: #3d3d3f;
+    height: .9rem;
+    opacity: .95;
+    max-width: 768px;
+    margin: 0 auto;
+    left: 0;
+    box-sizing:border-box;
+}
+.bottomNav-18KRG_0 {
+    position: absolute;
+    left: .15rem;
+    bottom: .25rem;
+    width: 1rem;
+    height: 1rem;
+    box-sizing: border-box;
+    border-radius: 100%;
+    background-color: #3190e8;
+    border: .133333rem solid #444;
+    box-shadow: 0 -0.08rem 0.053333rem 0 rgba(0,0,0,.1);
+    will-change: transform;
+}
+.bottomNav-18KRG_0.bottomNav-6KjUI_0 {
+    background-image: -webkit-radial-gradient(circle,#363636 .626667rem,#444 0);
+    background-image: radial-gradient(circle,#363636 .626667rem,#444 0);
+}
+.bottomNav-18KRG_0:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: .6rem;
+    content: "";
+}
+.bottomNav-wzCAW_0 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    width: 0;
+}
+.bottomNav-3Ak_E_0 {
+    font-size: .32rem;
+    line-height: normal;
+    color: #fff;
+}
+.bottomNav-3zqFz_0 {
+    color: #f5f5f5;
+    font-size: .2rem;
+}
+.bottomNav-1urxC_0 {
+    height: 100%;
+    width: 2.5rem;
+    background-color: #4cd964;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: .36rem;
+    font-weight: 700;
+    line-height: .9rem;
+    outline:none;
+}
+.bottomNav-1urxC_0.bottomNav-9FCIh_0 {
+    background-color: #535356;
+}
+.bottomNav-18KRG_0:after {
+    position: absolute;
+    right: -.12rem;
+    top: -.133333rem;
+    background-color: #ff461d;
+    color: #fff;
+    border-radius: .2rem;
+    font-size: .2rem;
+    font-weight: 700;
+    text-align: center;
+    min-width: .25rem;
+    padding: .03rem .05rem;
+    line-height: .25rem;
+    content: attr(attr-quantity);
+}
