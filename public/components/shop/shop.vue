@@ -40,14 +40,7 @@
 
 </template>
 <script>
-    export default{
-        data(){
-            return{}
-        },
-        mounted(){
-            this.$store.commit('toggleFooter');
-        }
-    }
+    export default{}
 </script>
 <style>
     @import url('../../css/shop.css');

@@ -1,12 +1,94 @@
 webpackJsonp([4],{
 
-/***/ 106:
+/***/ 100:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "shop"
+  }, [_c('section', {
+    staticClass: "shopInfo"
+  }, [_c('div', {
+    staticClass: "shop-header-main_1B2kH_0"
+  }, [_c('img', {
+    staticClass: "shop-header-logo_3woDQ_0",
+    attrs: {
+      "src": _vm.$store.state.shop.head
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "shop-header-content_3UjPs_0"
+  }, [_c('h2', {
+    staticClass: "shop-header-shopName_2QrHh_0",
+    domProps: {
+      "textContent": _vm._s(_vm.$store.state.shop.name)
+    }
+  }), _vm._v(" "), _c('p', {
+    staticClass: "shop-header-delivery_1mcTe_0"
+  }, [_c('span', {
+    staticClass: "shop-header-deliveryItem_Fari3_0"
+  }, [_vm._v("\n                 " + _vm._s(_vm.$store.state.shop.sendMethods) + "\n             ")]), _vm._v(" "), _c('span', {
+    staticClass: "shop-header-deliveryItem_Fari3_0"
+  }, [_vm._v("\n                " + _vm._s(_vm.$store.state.shop.sendTime) + "送达\n             ")]), _vm._v(" "), _c('span', {
+    staticClass: "shop-header-deliveryItem_Fari3_0"
+  }, [_vm._v("\n                配送费" + _vm._s(_vm._f("toMoney")(_vm.$store.state.shop.sendPrice)) + "\n              ")])]), _vm._v(" "), _c('div', {
+    staticClass: "shop-header-notice_2DzmG_0"
+  }, [_c('span', [_vm._v("公告：")]), _vm._v(" "), _c('span', {
+    domProps: {
+      "textContent": _vm._s(_vm.$store.state.shop.gongGao)
+    }
+  })])])])]), _vm._v(" "), _c('div', {
+    staticClass: "shop-tab-container_3skq8_0"
+  }, [_c('router-link', {
+    staticClass: "shop-tab-tab_r4SDi_0 ",
+    class: {
+      'shop-tab-active': _vm.$route.path.indexOf('comment') === -1
+    },
+    attrs: {
+      "to": {
+        path: '/shopInfo',
+        query: {
+          shophash: _vm.$route.query.shophash
+        }
+      }
+    }
+  }, [_c('span', {
+    staticClass: "shop-tab-title_1crD1_0"
+  }, [_vm._v("商品")])]), _vm._v(" "), _c('router-link', {
+    staticClass: "shop-tab-tab_r4SDi_0",
+    class: {
+      'shop-tab-active': _vm.$route.path.indexOf('comment') > -1
+    },
+    attrs: {
+      "to": {
+        path: '/shopInfo/comment',
+        query: {
+          shophash: _vm.$route.query.shophash
+        }
+      }
+    }
+  }, [_c('span', {
+    staticClass: "shop-tab-title_1crD1_0"
+  }, [_vm._v("评价")])])], 1), _vm._v(" "), _c('section', {
+    staticClass: "subPage"
+  }, [_c('router-view')], 1)])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (true) {
+  module.hot.accept()
+  if (module.hot.data) {
+     __webpack_require__(2).rerender("data-v-a5e84be6", module.exports)
+  }
+}
+
+/***/ }),
+
+/***/ 109:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(71);
+var content = __webpack_require__(72);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -15,8 +97,8 @@ var update = __webpack_require__(6)("5f0c49ac", content, false);
 if(true) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept(71, function() {
-     var newContent = __webpack_require__(71);
+   module.hot.accept(72, function() {
+     var newContent = __webpack_require__(72);
      if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
      update(newContent);
    });
@@ -27,19 +109,19 @@ if(true) {
 
 /***/ }),
 
-/***/ 64:
+/***/ 65:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(106)
+  __webpack_require__(109)
 }
 var Component = __webpack_require__(5)(
   /* script */
-  __webpack_require__(80),
+  __webpack_require__(82),
   /* template */
-  __webpack_require__(97),
+  __webpack_require__(100),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -72,12 +154,12 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 71:
+/***/ 72:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(true);
 // imports
-exports.i(__webpack_require__(84), "");
+exports.i(__webpack_require__(87), "");
 
 // module
 exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"shop.vue","sourceRoot":""}]);
@@ -87,7 +169,7 @@ exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings
 
 /***/ }),
 
-/***/ 80:
+/***/ 82:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -140,18 +222,7 @@ Object.defineProperty(exports, "__esModule", {
 
 exports.default = {
     data: function data() {
-        return {
-            'shop': {
-                'shopInfo': {
-                    'name': '放牛斑（滨北官任店）',
-                    'head': 'https://fuss10.elemecdn.com/f/db/4e3454fcacc68667ef8ee8832179cjpeg.jpeg?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/',
-                    'sendMethods': '蜂鸟专送',
-                    'sendTime': '31分钟',
-                    'sendPrice': '15',
-                    'gongGao': '各位放牛斑的粉丝，请在饮料下单的时候备注一下购买饮料的需求：1、甜度选择（多糖、正常糖、少糖、半塘、微糖、无糖）。2、放牛斑会员卡的手机号，以便我们帮您把积分积进去喔！3、选购加料（波霸、燕麦、红豆）的时候要备注清楚加料要加在哪一杯饮料中，确保我们给您的饮料是无误的，谢谢！'
-                }
-            }
-        };
+        return {};
     },
     mounted: function mounted() {
         this.$store.commit('toggleFooter');
@@ -160,7 +231,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 84:
+/***/ 87:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(true);
@@ -172,88 +243,6 @@ exports.push([module.i, ".shopInfo{\r\n    padding:0.3rem;\r\n    background-col
 
 // exports
 
-
-/***/ }),
-
-/***/ 97:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "shop"
-  }, [_c('section', {
-    staticClass: "shopInfo"
-  }, [_c('div', {
-    staticClass: "shop-header-main_1B2kH_0"
-  }, [_c('img', {
-    staticClass: "shop-header-logo_3woDQ_0",
-    attrs: {
-      "src": _vm.shop.shopInfo.head
-    }
-  }), _vm._v(" "), _c('div', {
-    staticClass: "shop-header-content_3UjPs_0"
-  }, [_c('h2', {
-    staticClass: "shop-header-shopName_2QrHh_0",
-    domProps: {
-      "textContent": _vm._s(_vm.shop.shopInfo.name)
-    }
-  }), _vm._v(" "), _c('p', {
-    staticClass: "shop-header-delivery_1mcTe_0"
-  }, [_c('span', {
-    staticClass: "shop-header-deliveryItem_Fari3_0"
-  }, [_vm._v("\n                 " + _vm._s(_vm.shop.shopInfo.sendMethods) + "\n             ")]), _vm._v(" "), _c('span', {
-    staticClass: "shop-header-deliveryItem_Fari3_0"
-  }, [_vm._v("\n                " + _vm._s(_vm.shop.shopInfo.sendTime) + "送达\n             ")]), _vm._v(" "), _c('span', {
-    staticClass: "shop-header-deliveryItem_Fari3_0"
-  }, [_vm._v("\n                配送费¥" + _vm._s(_vm.shop.shopInfo.sendPrice) + "\n              ")])]), _vm._v(" "), _c('div', {
-    staticClass: "shop-header-notice_2DzmG_0"
-  }, [_c('span', [_vm._v("公告：")]), _vm._v(" "), _c('span', {
-    domProps: {
-      "textContent": _vm._s(_vm.shop.shopInfo.gongGao)
-    }
-  })])])])]), _vm._v(" "), _c('div', {
-    staticClass: "shop-tab-container_3skq8_0"
-  }, [_c('router-link', {
-    staticClass: "shop-tab-tab_r4SDi_0 ",
-    class: {
-      'shop-tab-active': _vm.$route.path.indexOf('comment') === -1
-    },
-    attrs: {
-      "to": {
-        path: '/shopInfo',
-        query: {
-          shophash: _vm.$route.query.shophash
-        }
-      }
-    }
-  }, [_c('span', {
-    staticClass: "shop-tab-title_1crD1_0"
-  }, [_vm._v("商品")])]), _vm._v(" "), _c('router-link', {
-    staticClass: "shop-tab-tab_r4SDi_0",
-    class: {
-      'shop-tab-active': _vm.$route.path.indexOf('comment') > -1
-    },
-    attrs: {
-      "to": {
-        path: '/shopInfo/comment',
-        query: {
-          shophash: _vm.$route.query.shophash
-        }
-      }
-    }
-  }, [_c('span', {
-    staticClass: "shop-tab-title_1crD1_0"
-  }, [_vm._v("评价")])])], 1), _vm._v(" "), _c('section', {
-    staticClass: "subPage"
-  }, [_c('router-view')], 1)])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-if (true) {
-  module.hot.accept()
-  if (module.hot.data) {
-     __webpack_require__(2).rerender("data-v-a5e84be6", module.exports)
-  }
-}
 
 /***/ })
 

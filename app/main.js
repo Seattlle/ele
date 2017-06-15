@@ -83,7 +83,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "7357d795806f2289f3dd"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "efe778cf97268017a54f"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -1108,7 +1108,7 @@ module.exports = {
   trim: trim
 };
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(45).Buffer))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(46).Buffer))
 
 /***/ }),
 /* 1 */
@@ -8793,7 +8793,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(60)
+var listToStyles = __webpack_require__(61)
 
 /*
 type StyleObject = {
@@ -9100,8 +9100,8 @@ module.exports = defaults;
 
 exports = module.exports = __webpack_require__(3)(true);
 // imports
+exports.i(__webpack_require__(48), "");
 exports.i(__webpack_require__(47), "");
-exports.i(__webpack_require__(46), "");
 
 // module
 exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"App.vue","sourceRoot":""}]);
@@ -9118,7 +9118,7 @@ exports = module.exports = __webpack_require__(3)(true);
 
 
 // module
-exports.push([module.i, "\n#header-title{\n    height:0.8rem;\n    line-height:0.8rem;\n    background-color:rgb(0, 151, 255);\n    color:#fff;\n    text-align: center;\n}\n.go-back{\n    position: absolute;\n    left:0;\n    top:0;\n    line-height: 0.8rem;\n    width:0.8rem;\n    height:.8rem;\n    display: inline-block;\n    font-size:0.6rem;\n    color:#fff;\n    outline:none;\n}\n.go-back:before,.go-back:after{\n    content:'';\n    width:.3rem;\n    height:2px;\n    background:#fff;\n    display: block;\n    position: absolute;\n    top:50%;\n    left:50%;\n    margin-left:-.15rem;\n    -webkit-transform-origin:left center;\n    -moz-transform-origin:left center;\n    -ms-transform-origin:left center;\n    -o-transform-origin:left center;\n    transform-origin:left center;\n}\n.go-back:before{\n    -webkit-transform: rotate(-40deg);\n    -moz-transform: rotate(-40deg);\n    -ms-transform:rotate(-40deg);\n    -o-transform:rotate(-40deg);\n    transform: rotate(-40deg);\n}\n.go-back:after{\n    -webkit-transform: rotate(40deg);\n    -moz-transform: rotate(40deg);\n    -ms-transform:rotate(40deg);\n    -o-transform:rotate(40deg);\n    transform: rotate(40deg);\n}\n.go-back:active{\n    outline:none;\n}\n#header-title h1{\n    font-size:0.36rem;\n}\n", "", {"version":3,"sources":["F:/Program/ele/public/components/main/header.vue?4afae3b4"],"names":[],"mappings":";AAQA;IACA,cAAA;IACA,mBAAA;IACA,kCAAA;IACA,WAAA;IACA,mBAAA;CACA;AACA;IACA,mBAAA;IACA,OAAA;IACA,MAAA;IACA,oBAAA;IACA,aAAA;IACA,aAAA;IACA,sBAAA;IACA,iBAAA;IACA,WAAA;IACA,aAAA;CACA;AACA;IACA,WAAA;IACA,YAAA;IACA,WAAA;IACA,gBAAA;IACA,eAAA;IACA,mBAAA;IACA,QAAA;IACA,SAAA;IACA,oBAAA;IACA,qCAAA;IACA,kCAAA;IACA,iCAAA;IACA,gCAAA;IACA,6BAAA;CACA;AACA;IACA,kCAAA;IACA,+BAAA;IACA,6BAAA;IACA,4BAAA;IACA,0BAAA;CACA;AACA;IACA,iCAAA;IACA,8BAAA;IACA,4BAAA;IACA,2BAAA;IACA,yBAAA;CACA;AACA;IACA,aAAA;CACA;AACA;IACA,kBAAA;CACA","file":"header.vue","sourcesContent":["<template>\r\n    <div id=\"header-title\">\r\n        <a href=\"/\" class=\"go-back\" v-if=\"$route.path!='/'\"></a>\r\n        <h1>{{$store.state.currentPageName}}</h1>\r\n    </div>\r\n</template>\r\n\r\n<style>\r\n    #header-title{\r\n        height:0.8rem;\r\n        line-height:0.8rem;\r\n        background-color:rgb(0, 151, 255);\r\n        color:#fff;\r\n        text-align: center;\r\n    }\r\n    .go-back{\r\n        position: absolute;\r\n        left:0;\r\n        top:0;\r\n        line-height: 0.8rem;\r\n        width:0.8rem;\r\n        height:.8rem;\r\n        display: inline-block;\r\n        font-size:0.6rem;\r\n        color:#fff;\r\n        outline:none;\r\n    }\r\n    .go-back:before,.go-back:after{\r\n        content:'';\r\n        width:.3rem;\r\n        height:2px;\r\n        background:#fff;\r\n        display: block;\r\n        position: absolute;\r\n        top:50%;\r\n        left:50%;\r\n        margin-left:-.15rem;\r\n        -webkit-transform-origin:left center;\r\n        -moz-transform-origin:left center;\r\n        -ms-transform-origin:left center;\r\n        -o-transform-origin:left center;\r\n        transform-origin:left center;\r\n    }\r\n    .go-back:before{\r\n        -webkit-transform: rotate(-40deg);\r\n        -moz-transform: rotate(-40deg);\r\n        -ms-transform:rotate(-40deg);\r\n        -o-transform:rotate(-40deg);\r\n        transform: rotate(-40deg);\r\n    }\r\n    .go-back:after{\r\n        -webkit-transform: rotate(40deg);\r\n        -moz-transform: rotate(40deg);\r\n        -ms-transform:rotate(40deg);\r\n        -o-transform:rotate(40deg);\r\n        transform: rotate(40deg);\r\n    }\r\n    .go-back:active{\r\n        outline:none;\r\n    }\r\n    #header-title h1{\r\n        font-size:0.36rem;\r\n    }\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n#header-title{\n    height:0.8rem;\n    line-height:0.8rem;\n    background-color:rgb(0, 151, 255);\n    color:#fff;\n    text-align: center;\n}\n.go-back{\n    position: absolute;\n    left:0;\n    top:0;\n    line-height: 0.8rem;\n    width:0.8rem;\n    height:.8rem;\n    display: inline-block;\n    font-size:0.6rem;\n    color:#fff;\n    outline:none;\n}\n.go-back:before,.go-back:after{\n    content:'';\n    width:.3rem;\n    height:2px;\n    background:#fff;\n    display: block;\n    position: absolute;\n    top:50%;\n    left:50%;\n    margin-left:-.15rem;\n    -webkit-transform-origin:left center;\n    -moz-transform-origin:left center;\n    -ms-transform-origin:left center;\n    -o-transform-origin:left center;\n    transform-origin:left center;\n}\n.go-back:before{\n    -webkit-transform: rotate(-40deg);\n    -moz-transform: rotate(-40deg);\n    -ms-transform:rotate(-40deg);\n    -o-transform:rotate(-40deg);\n    transform: rotate(-40deg);\n}\n.go-back:after{\n    -webkit-transform: rotate(40deg);\n    -moz-transform: rotate(40deg);\n    -ms-transform:rotate(40deg);\n    -o-transform:rotate(40deg);\n    transform: rotate(40deg);\n}\n.go-back:active{\n    outline:none;\n}\n#header-title h1{\n    font-size:0.36rem;\n}\n", "", {"version":3,"sources":["F:/Program/ele/public/components/main/header.vue?d7e14c14"],"names":[],"mappings":";AAQA;IACA,cAAA;IACA,mBAAA;IACA,kCAAA;IACA,WAAA;IACA,mBAAA;CACA;AACA;IACA,mBAAA;IACA,OAAA;IACA,MAAA;IACA,oBAAA;IACA,aAAA;IACA,aAAA;IACA,sBAAA;IACA,iBAAA;IACA,WAAA;IACA,aAAA;CACA;AACA;IACA,WAAA;IACA,YAAA;IACA,WAAA;IACA,gBAAA;IACA,eAAA;IACA,mBAAA;IACA,QAAA;IACA,SAAA;IACA,oBAAA;IACA,qCAAA;IACA,kCAAA;IACA,iCAAA;IACA,gCAAA;IACA,6BAAA;CACA;AACA;IACA,kCAAA;IACA,+BAAA;IACA,6BAAA;IACA,4BAAA;IACA,0BAAA;CACA;AACA;IACA,iCAAA;IACA,8BAAA;IACA,4BAAA;IACA,2BAAA;IACA,yBAAA;CACA;AACA;IACA,aAAA;CACA;AACA;IACA,kBAAA;CACA","file":"header.vue","sourcesContent":["<template>\r\n    <div id=\"header-title\">\r\n        <router-link to=\"/\" class=\"go-back\" v-if=\"$route.path!='/'\"></router-link>\r\n        <h1>{{$store.state.currentPageName}}</h1>\r\n    </div>\r\n</template>\r\n\r\n<style>\r\n    #header-title{\r\n        height:0.8rem;\r\n        line-height:0.8rem;\r\n        background-color:rgb(0, 151, 255);\r\n        color:#fff;\r\n        text-align: center;\r\n    }\r\n    .go-back{\r\n        position: absolute;\r\n        left:0;\r\n        top:0;\r\n        line-height: 0.8rem;\r\n        width:0.8rem;\r\n        height:.8rem;\r\n        display: inline-block;\r\n        font-size:0.6rem;\r\n        color:#fff;\r\n        outline:none;\r\n    }\r\n    .go-back:before,.go-back:after{\r\n        content:'';\r\n        width:.3rem;\r\n        height:2px;\r\n        background:#fff;\r\n        display: block;\r\n        position: absolute;\r\n        top:50%;\r\n        left:50%;\r\n        margin-left:-.15rem;\r\n        -webkit-transform-origin:left center;\r\n        -moz-transform-origin:left center;\r\n        -ms-transform-origin:left center;\r\n        -o-transform-origin:left center;\r\n        transform-origin:left center;\r\n    }\r\n    .go-back:before{\r\n        -webkit-transform: rotate(-40deg);\r\n        -moz-transform: rotate(-40deg);\r\n        -ms-transform:rotate(-40deg);\r\n        -o-transform:rotate(-40deg);\r\n        transform: rotate(-40deg);\r\n    }\r\n    .go-back:after{\r\n        -webkit-transform: rotate(40deg);\r\n        -moz-transform: rotate(40deg);\r\n        -ms-transform:rotate(40deg);\r\n        -o-transform:rotate(40deg);\r\n        transform: rotate(40deg);\r\n    }\r\n    .go-back:active{\r\n        outline:none;\r\n    }\r\n    #header-title h1{\r\n        font-size:0.36rem;\r\n    }\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -9132,7 +9132,7 @@ exports = module.exports = __webpack_require__(3)(true);
 
 
 // module
-exports.push([module.i, "\n#footer{\n    position: relative;\n    width:100%;\n    background:#fff;\n    box-sizing:border-box;\n    padding-top: .12rem;\n    box-shadow: 0 -0.026667rem 0.053333rem rgba(0,0,0,.1);\n}\n#footer .nav-list{\n    display:-ms-flex;\n    display:-webkit-flex;\n    display:flex;\n    align-items:center;\n}\n.nav-list .nav-item{\n    -webkit-flex:1;\n    -webkit-box-flex:1;\n    -ms-flex:1;\n    flex:1;\n    display: block;\n    width:0;\n    text-align:center;\n}\n.nav-list .nav-item span{\n    display: block;\n    color:#666;\n    font-size:0.2rem;\n}\n.nav-list .nav-item.active span{\n    color:rgb(0, 151, 255);\n}\n.nav-list .nav-item .nav-icon{\n    width:0.5rem;\n    height:0.5rem;\n    margin:0 auto;\n    background-repeat:no-repeat;\n    background-size:100%;\n}\n.nav-list .nav-item .nav-icon.icon1{\n    background-image:url(" + __webpack_require__(50) + ");\n}\n", "", {"version":3,"sources":["F:/Program/ele/public/components/main/footer.vue?7ff42c60"],"names":[],"mappings":";AAgCA;IACA,mBAAA;IACA,WAAA;IACA,gBAAA;IACA,sBAAA;IACA,oBAAA;IACA,sDAAA;CACA;AACA;IACA,iBAAA;IACA,qBAAA;IACA,aAAA;IACA,mBAAA;CACA;AACA;IACA,eAAA;IACA,mBAAA;IACA,WAAA;IACA,OAAA;IACA,eAAA;IACA,QAAA;IACA,kBAAA;CACA;AACA;IACA,eAAA;IACA,WAAA;IACA,iBAAA;CACA;AACA;IACA,uBAAA;CACA;AACA;IACA,aAAA;IACA,cAAA;IACA,cAAA;IACA,4BAAA;IACA,qBAAA;CACA;AACA;IACA,+CAAA;CACA","file":"footer.vue","sourcesContent":["<template>\r\n    <div id=\"footer\">\r\n        <ul class=\"nav-list\">\r\n            <li class=\"nav-item \" :class=\"{'active':$route.path==='/'}\">\r\n                <router-link to=\"/\">\r\n                    <div class=\"nav-icon icon1\"></div>\r\n                    <span>外卖</span>\r\n                </router-link>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a href=\"javascript:;\">\r\n                    <div class=\"nav-icon icon1\"></div>\r\n                    <span>发现</span>\r\n                </a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a href=\"javascript:;\">\r\n                    <div class=\"nav-icon icon1\"></div>\r\n                    <span>订单</span>\r\n                </a>\r\n            </li>\r\n            <li class=\"nav-item\" :class=\"{'active':$route.path.indexOf('profile')>0}\">\r\n                <router-link to=\"/profile\">\r\n                    <div class=\"nav-icon icon1\"></div>\r\n                    <span>我的</span>\r\n                </router-link>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</template>\r\n\r\n<style>\r\n    #footer{\r\n        position: relative;\r\n        width:100%;\r\n        background:#fff;\r\n        box-sizing:border-box;\r\n        padding-top: .12rem;\r\n        box-shadow: 0 -0.026667rem 0.053333rem rgba(0,0,0,.1);\r\n    }\r\n    #footer .nav-list{\r\n        display:-ms-flex;\r\n        display:-webkit-flex;\r\n        display:flex;\r\n        align-items:center;\r\n    }\r\n    .nav-list .nav-item{\r\n        -webkit-flex:1;\r\n        -webkit-box-flex:1;\r\n        -ms-flex:1;\r\n        flex:1;\r\n        display: block;\r\n        width:0;\r\n        text-align:center;\r\n    }\r\n    .nav-list .nav-item span{\r\n        display: block;\r\n        color:#666;\r\n        font-size:0.2rem;\r\n    }\r\n    .nav-list .nav-item.active span{\r\n        color:rgb(0, 151, 255);\r\n    }\r\n    .nav-list .nav-item .nav-icon{\r\n        width:0.5rem;\r\n        height:0.5rem;\r\n        margin:0 auto;\r\n        background-repeat:no-repeat;\r\n        background-size:100%;\r\n    }\r\n    .nav-list .nav-item .nav-icon.icon1{\r\n        background-image:url('../../images/ele.png');\r\n    }\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n#footer{\n    position: relative;\n    width:100%;\n    background:#fff;\n    box-sizing:border-box;\n    padding-top: .12rem;\n    box-shadow: 0 -0.026667rem 0.053333rem rgba(0,0,0,.1);\n}\n#footer .nav-list{\n    display:-ms-flex;\n    display:-webkit-flex;\n    display:flex;\n    align-items:center;\n}\n.nav-list .nav-item{\n    -webkit-flex:1;\n    -webkit-box-flex:1;\n    -ms-flex:1;\n    flex:1;\n    display: block;\n    width:0;\n    text-align:center;\n}\n.nav-list .nav-item span{\n    display: block;\n    color:#666;\n    font-size:0.2rem;\n}\n.nav-list .nav-item.active span{\n    color:rgb(0, 151, 255);\n}\n.nav-list .nav-item .nav-icon{\n    width:0.5rem;\n    height:0.5rem;\n    margin:0 auto;\n    background-repeat:no-repeat;\n    background-size:100%;\n}\n.nav-list .nav-item .nav-icon.icon1{\n    background-image:url(" + __webpack_require__(51) + ");\n}\n", "", {"version":3,"sources":["F:/Program/ele/public/components/main/footer.vue?7ff42c60"],"names":[],"mappings":";AAgCA;IACA,mBAAA;IACA,WAAA;IACA,gBAAA;IACA,sBAAA;IACA,oBAAA;IACA,sDAAA;CACA;AACA;IACA,iBAAA;IACA,qBAAA;IACA,aAAA;IACA,mBAAA;CACA;AACA;IACA,eAAA;IACA,mBAAA;IACA,WAAA;IACA,OAAA;IACA,eAAA;IACA,QAAA;IACA,kBAAA;CACA;AACA;IACA,eAAA;IACA,WAAA;IACA,iBAAA;CACA;AACA;IACA,uBAAA;CACA;AACA;IACA,aAAA;IACA,cAAA;IACA,cAAA;IACA,4BAAA;IACA,qBAAA;CACA;AACA;IACA,+CAAA;CACA","file":"footer.vue","sourcesContent":["<template>\r\n    <div id=\"footer\">\r\n        <ul class=\"nav-list\">\r\n            <li class=\"nav-item \" :class=\"{'active':$route.path==='/'}\">\r\n                <router-link to=\"/\">\r\n                    <div class=\"nav-icon icon1\"></div>\r\n                    <span>外卖</span>\r\n                </router-link>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a href=\"javascript:;\">\r\n                    <div class=\"nav-icon icon1\"></div>\r\n                    <span>发现</span>\r\n                </a>\r\n            </li>\r\n            <li class=\"nav-item\">\r\n                <a href=\"javascript:;\">\r\n                    <div class=\"nav-icon icon1\"></div>\r\n                    <span>订单</span>\r\n                </a>\r\n            </li>\r\n            <li class=\"nav-item\" :class=\"{'active':$route.path.indexOf('profile')>0}\">\r\n                <router-link to=\"/profile\">\r\n                    <div class=\"nav-icon icon1\"></div>\r\n                    <span>我的</span>\r\n                </router-link>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</template>\r\n\r\n<style>\r\n    #footer{\r\n        position: relative;\r\n        width:100%;\r\n        background:#fff;\r\n        box-sizing:border-box;\r\n        padding-top: .12rem;\r\n        box-shadow: 0 -0.026667rem 0.053333rem rgba(0,0,0,.1);\r\n    }\r\n    #footer .nav-list{\r\n        display:-ms-flex;\r\n        display:-webkit-flex;\r\n        display:flex;\r\n        align-items:center;\r\n    }\r\n    .nav-list .nav-item{\r\n        -webkit-flex:1;\r\n        -webkit-box-flex:1;\r\n        -ms-flex:1;\r\n        flex:1;\r\n        display: block;\r\n        width:0;\r\n        text-align:center;\r\n    }\r\n    .nav-list .nav-item span{\r\n        display: block;\r\n        color:#666;\r\n        font-size:0.2rem;\r\n    }\r\n    .nav-list .nav-item.active span{\r\n        color:rgb(0, 151, 255);\r\n    }\r\n    .nav-list .nav-item .nav-icon{\r\n        width:0.5rem;\r\n        height:0.5rem;\r\n        margin:0 auto;\r\n        background-repeat:no-repeat;\r\n        background-size:100%;\r\n    }\r\n    .nav-list .nav-item .nav-icon.icon1{\r\n        background-image:url('../../images/ele.png');\r\n    }\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
@@ -10266,7 +10266,7 @@ var _vue = __webpack_require__(1);
 
 var _vue2 = _interopRequireDefault(_vue);
 
-var _vueRouter = __webpack_require__(56);
+var _vueRouter = __webpack_require__(57);
 
 var _vueRouter2 = _interopRequireDefault(_vueRouter);
 
@@ -10281,29 +10281,29 @@ var routes = [{
     path: '/',
     name: '饿了么-首页',
     component: function component(resolve) {
-        return __webpack_require__.e/* require */(0).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(61)]; (resolve.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this)).catch(__webpack_require__.oe);
+        return __webpack_require__.e/* require */(0).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(62)]; (resolve.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this)).catch(__webpack_require__.oe);
     }
 }, {
     path: '/profile',
     name: '我的',
     component: function component(resolve) {
-        return __webpack_require__.e/* require */(3).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(62)]; (resolve.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this)).catch(__webpack_require__.oe);
+        return __webpack_require__.e/* require */(3).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(63)]; (resolve.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this)).catch(__webpack_require__.oe);
     }
 }, {
     path: '/shopInfo',
     name: '',
     component: function component(resolve) {
-        return __webpack_require__.e/* require */(4).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(64)]; (resolve.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this)).catch(__webpack_require__.oe);
+        return __webpack_require__.e/* require */(4).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(65)]; (resolve.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this)).catch(__webpack_require__.oe);
     },
     children: [{
         path: '',
         component: function component(resolve) {
-            return __webpack_require__.e/* require */(2).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(65)]; (resolve.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this)).catch(__webpack_require__.oe);
+            return __webpack_require__.e/* require */(1).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(66)]; (resolve.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this)).catch(__webpack_require__.oe);
         }
     }, {
         path: 'comment',
         component: function component(resolve) {
-            return __webpack_require__.e/* require */(1).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(63)]; (resolve.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this)).catch(__webpack_require__.oe);
+            return __webpack_require__.e/* require */(2).then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(64)]; (resolve.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));}.bind(this)).catch(__webpack_require__.oe);
         }
     }]
 }];
@@ -10336,9 +10336,13 @@ var _method = __webpack_require__(42);
 
 var _method2 = _interopRequireDefault(_method);
 
-var _shopList = __webpack_require__(43);
+var _shopList = __webpack_require__(44);
 
 var _shopList2 = _interopRequireDefault(_shopList);
+
+var _shoInfo = __webpack_require__(43);
+
+var _shoInfo2 = _interopRequireDefault(_shoInfo);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10347,7 +10351,8 @@ _vue2.default.use(_vuex2.default);
 var state = {
     currentPageName: '饿了么',
     hidefooter: false,
-    indexShopList: _shopList2.default
+    indexShopList: _shopList2.default,
+    shop: _shoInfo2.default
 };
 
 exports.default = new _vuex2.default.Store({
@@ -10370,13 +10375,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof="fun
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(57)
+  __webpack_require__(58)
 }
 var Component = __webpack_require__(5)(
   /* script */
   __webpack_require__(40),
   /* template */
-  __webpack_require__(53),
+  __webpack_require__(54),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -11255,11 +11260,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _header = __webpack_require__(52);
+var _header = __webpack_require__(53);
 
 var _header2 = _interopRequireDefault(_header);
 
-var _footer = __webpack_require__(51);
+var _footer = __webpack_require__(52);
 
 var _footer2 = _interopRequireDefault(_footer);
 
@@ -11343,6 +11348,11 @@ var _App2 = _interopRequireDefault(_App);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _vue2.default.use(_vueAxios2.default, _axios2.default, _vuex2.default);
+
+_vue2.default.filter("toMoney", function (value) {
+    return "￥" + value;
+});
+
 new _vue2.default({
     el: '#app',
     store: _store2.default,
@@ -11362,22 +11372,240 @@ new _vue2.default({
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-/**
- * Created by Seattle on 2017/6/6.
- */
+
+var _vue = __webpack_require__(1);
+
+var _vue2 = _interopRequireDefault(_vue);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 var mutations = {
     setPageName: function setPageName(store, name) {
         store.currentPageName = name;
     },
     toggleFooter: function toggleFooter(store) {
         store.hidefooter = !store.hidefooter;
+    },
+    choseMenu: function choseMenu(store, thisItem) {
+        store.shop.menuCategory.forEach(function (item) {
+            if (thisItem == item) {
+                if (typeof item.checked == 'undefined') {
+                    _vue2.default.set(item, 'checked', true);
+                } else {
+                    item.checked = true;
+                }
+            } else {
+                if (typeof item.checked == 'undefined') {
+                    _vue2.default.set(item, 'checked', false);
+                } else {
+                    item.checked = false;
+                }
+            }
+        });
+    },
+    scrollMenu: function scrollMenu(store, menuId) {
+        store.shop.menuCategory.forEach(function (items) {
+            if (items.id == menuId) {
+                if (typeof items.checked == 'undefined') {
+                    _vue2.default.set(items, 'checked', true);
+                } else {
+                    items.checked = true;
+                }
+            } else {
+                if (typeof items.checked == 'undefined') {
+                    _vue2.default.set(items, 'checked', false);
+                } else {
+                    items.checked = false;
+                }
+            }
+        });
+    },
+    addOrder: function addOrder(store, obj) {
+        if (typeof obj.list.selectNum == 'undefined') {
+            _vue2.default.set(obj.list, 'selectNum', obj.num);
+        } else {
+            obj.list.selectNum += obj.num;
+        }
+    },
+    calculateMoney: function calculateMoney(store) {
+        store.shop.selectedItem = [];
+        store.shop.totalMoney = 0;
+        store.shop.totalNum = 0;
+        store.shop.menuCategory.forEach(function (menuType) {
+            var num = 0;
+            menuType.category.forEach(function (item) {
+                if (item.selectNum > 0) {
+                    store.shop.selectedItem.push(item);
+                    store.shop.totalMoney += item.selectNum * item.price;
+                    num += item.selectNum;
+                }
+            });
+            _vue2.default.set(menuType, 'selectNum', num);
+            store.shop.totalNum += num;
+        });
     }
-};
-
+}; /**
+    * Created by Seattle on 2017/6/6.
+    */
 exports.default = mutations;
 
 /***/ }),
 /* 43 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+/**
+ * Created by Seattle on 2017/6/14.
+ */
+var shoInfo = {
+    'name': '放牛斑（滨北官任店）',
+    'head': 'https://fuss10.elemecdn.com/f/db/4e3454fcacc68667ef8ee8832179cjpeg.jpeg?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/',
+    'sendMethods': '蜂鸟专送',
+    'sendTime': '31分钟', //送达时间
+    'sendPrice': '15', //配送费
+    'overallScore': '4.6', //综合评价
+    'serviceNum': '4.6', //服务评价
+    'goodNum': '4.6', //菜品评价
+    //公告
+    'gongGao': '各位放牛斑的粉丝，请在饮料下单的时候备注一下购买饮料的需求：1、甜度选择（多糖、正常糖、少糖、半塘、微糖、无糖）。2、放牛斑会员卡的手机号，以便我们帮您把积分积进去喔！3、选购加料（波霸、燕麦、红豆）的时候要备注清楚加料要加在哪一杯饮料中，确保我们给您的饮料是无误的，谢谢！',
+    //菜单
+    'menuCategory': [{
+        'id': '10001',
+        'name': '热销榜',
+        'descript': '大家喜欢吃，才叫真好吃。',
+        'category': [{
+            'id': '1001001',
+            'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+            'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+            'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+            'monthSale': '319',
+            'goodNum': '100',
+            'limit': '',
+            'price': '20'
+        }, {
+            'id': '1001001',
+            'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+            'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+            'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+            'monthSale': '319',
+            'goodNum': '100',
+            'limit': '1',
+            'price': '20'
+        }, {
+            'id': '1001001',
+            'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+            'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+            'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+            'monthSale': '319',
+            'goodNum': '100',
+            'limit': '1',
+            'price': '20'
+        }]
+    }, {
+        'id': '10002',
+        'name': '优惠',
+        'descript': '大家喜欢吃，才叫真好吃。',
+        'category': [{
+            'id': '1001001',
+            'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+            'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+            'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+            'monthSale': '319',
+            'goodNum': '100',
+            'limit': '1',
+            'price': '20'
+        }, {
+            'id': '1001001',
+            'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+            'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+            'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+            'monthSale': '319',
+            'goodNum': '100',
+            'limit': '1',
+            'price': '20'
+        }, {
+            'id': '1001001',
+            'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+            'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+            'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+            'monthSale': '319',
+            'goodNum': '100',
+            'limit': '1',
+            'price': '20'
+        }]
+    }, {
+        'id': '10003',
+        'name': '主餐主餐主餐',
+        'descript': '大家喜欢吃，才叫真好吃。',
+        'category': [{
+            'id': '1001001',
+            'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+            'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+            'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+            'monthSale': '319',
+            'goodNum': '100',
+            'limit': '1',
+            'price': '20'
+        }, {
+            'id': '1001001',
+            'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+            'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+            'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+            'monthSale': '319',
+            'goodNum': '100',
+            'limit': '1',
+            'price': '20'
+        }, {
+            'id': '1001001',
+            'name': '冬（香）菇鸡腿肉满足餐（配外婆菜）',
+            'headImg': 'https://fuss10.elemecdn.com/3/a8/2cdc1acf305611ebe21ac8428970djpeg.jpeg?imageMogr/format/webp/thumbnail/!140x140r/gravity/Center/crop/140x140/',
+            'description': '冬菇鸡腿肉饭X1四季猪骨汤X1蒸蛋X1外婆菜X1',
+            'monthSale': '319',
+            'goodNum': '100',
+            'limit': '1',
+            'price': '20'
+        }]
+    }],
+    //评论列表
+    'commentList': [{
+        'id': '10001',
+        'name': '啊拉萨',
+        'date': '2017-06-08 11:33:59'
+    }, {
+        'id': '10002',
+        'name': '啊拉萨',
+        'date': '2017-06-08 11:33:59'
+    }, {
+        'id': '10003',
+        'name': '啊拉萨',
+        'date': '2017-06-08 11:33:59'
+    }, {
+        'id': '10004',
+        'name': '啊拉萨',
+        'date': '2017-06-08 11:33:59'
+    }, {
+        'id': '10005',
+        'name': '啊拉萨',
+        'date': '2017-06-08 11:33:59'
+    }, {
+        'id': '10006',
+        'name': '啊拉萨',
+        'date': '2017-06-08 11:33:59'
+    }],
+    'selectedItem': [], //已选菜单
+    'totalMoney': 0, //总价
+    'totalNum': 0 //已选数目
+};
+
+exports.default = shoInfo;
+
+/***/ }),
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11418,7 +11646,7 @@ var shopList = [{
 exports.default = shopList;
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11539,7 +11767,7 @@ function fromByteArray (uint8) {
 
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11553,9 +11781,9 @@ function fromByteArray (uint8) {
 
 
 
-var base64 = __webpack_require__(44)
-var ieee754 = __webpack_require__(48)
-var isArray = __webpack_require__(49)
+var base64 = __webpack_require__(45)
+var ieee754 = __webpack_require__(49)
+var isArray = __webpack_require__(50)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -13336,7 +13564,7 @@ function isnan (val) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(true);
@@ -13350,7 +13578,7 @@ exports.push([module.i, ".app-header,.app-footer{\r\n    position: fixed;\r\n   
 
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(true);
@@ -13364,7 +13592,7 @@ exports.push([module.i, "blockquote,body,dd,dir,dl,fieldset,figure,form,h1,h2,h3
 
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -13454,7 +13682,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -13465,25 +13693,25 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAADh0lEQVRIieVWSU9TURT+WiyIgK0UZSZMVUASFI0miBInNA6JkRij6MKFrly7MvEHuGfXnYkaY4I4YIwGNRoVJCDKjMwyKQIFCmXS73prHu+9ThASFpzkpX33nXu+M3z3nGv4Q8EqiHE1QNcm8LqlKLvmgQEnMOICpvjfwLVQWogMAeLCgCDDCgM3jAD3WoFm/jaN8f23+vveLUB8OLBrM3DBBiSG+7dp8Mfqkm/Ay17gaZd/Y2ZGfiAWOJ8OnEvzresz4puVQHk3UM8IDQGk0TEDPKGDg1PyuZ69DOBbVYC9CRhjPY2LQDM3ATYzYAoC5hdk3b/Ssd4JRaf6J+CcA6zrmfr0JQA/+M7UMtLxGQU0gXU7ngicSQF2s5bhJrk+Rp2KPuBRB/C8R+4R0jwKPGwHdlils36BJ2YlaMuoArqNG69mANey9AbMwXQmmeTaAMySLWUdyrcXPTIzdw8HACxqWjWkgEbQ8KWtnkGFCN2yTjKdjr7qVZdFyMg00OEAUjb6Aa5kffpIDIO7tRTEETRDD/imn0SikzXUr/4l1wyadiSyIEoizrhWdMB9k2qvRT1DF2m9Zj1LGWEjz/RnN6A2ytwoIMsCHEsCTiTqQT0CG42KIeFxdqTybZz1tzdLEnkCzImUTeRkkjzPvkQHPDStGIxlisIWaXRPSPJpAQ8SJIsETOMxK3Yfn1KS7A6dDGIg9wsDAI4NBerchmuHgWGX8m07jaeSJPUj8j3XKktxOpnMN8u1TyTb7RrZzz8MAvl0qt0h9/kEDjaqu9QX1vFUkvJ+I0eezTk2j6MJPN8a4vwbJCRnI1keapLEE476BU6KUKeyflTtcTQzctmm3aXIvmg5MDqdbgDamlnQ6+nmcR43ZpgluHjeMV32FrbHAC9IoqZ5TK+NrM6PAYpSgbPJej1dxId4bsvZCNrGlbXHXWKM8TxnMiNeRp4gXkiQzMgVZsTFKI/ESR54Eo9jUTSRkgbg7YB6XUSw0yprHMUBMMVB0MIy1LKOP5wSWFwG7Pu9JsR7xEL2kKltiZIkrQ5l/f2gfIQI8MlZ9XchBTGSWJmWZQALucjaiFw865EZ0Eqd+xaiPdPCEaG/bGAhxbxFpJLlZaxxHaNoG/OuG2GSYCLdhfG+QYX4vfr8lwoOhY9sDv2s5dSCnMMWggUTyMIJls3mYiKji5IDsbYE4JWWtXehXzXgvy7zFZZl1WFMAAAAAElFTkSuQmCC"
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(59)
+  __webpack_require__(60)
 }
 var Component = __webpack_require__(5)(
   /* script */
   null,
   /* template */
-  __webpack_require__(55),
+  __webpack_require__(56),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -13515,19 +13743,19 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(58)
+  __webpack_require__(59)
 }
 var Component = __webpack_require__(5)(
   /* script */
   null,
   /* template */
-  __webpack_require__(54),
+  __webpack_require__(55),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -13559,7 +13787,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -13593,7 +13821,7 @@ if (true) {
 }
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -13601,12 +13829,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "header-title"
     }
-  }, [(_vm.$route.path != '/') ? _c('a', {
+  }, [(_vm.$route.path != '/') ? _c('router-link', {
     staticClass: "go-back",
     attrs: {
-      "href": "/"
+      "to": "/"
     }
-  }) : _vm._e(), _vm._v(" "), _c('h1', [_vm._v(_vm._s(_vm.$store.state.currentPageName))])])
+  }) : _vm._e(), _vm._v(" "), _c('h1', [_vm._v(_vm._s(_vm.$store.state.currentPageName))])], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (true) {
@@ -13617,7 +13845,7 @@ if (true) {
 }
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -13680,7 +13908,7 @@ if (true) {
 }
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16153,7 +16381,7 @@ if (inBrowser && window.Vue) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(4)))
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -16179,7 +16407,7 @@ if(true) {
 }
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -16205,7 +16433,7 @@ if(true) {
 }
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -16231,7 +16459,7 @@ if(true) {
 }
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports) {
 
 /**

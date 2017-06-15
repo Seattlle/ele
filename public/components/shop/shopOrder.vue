@@ -2,7 +2,7 @@
     <section class="shop-main">
         <div class="menuview">
             <ul class="menucategory">
-                <li class="menucategory-item" v-for="(item,index) in $store.state.shop.menuCategory" :class="{'active':!!item.checked||(choseMenu==undefined&&index==0)}"   @click="choseThis(item,index)">
+                <li class="menucategory-item" v-for="(item,index) in $store.state.shop.menuCategory" :class="{'active':!!item.checked||($store.state.shop.choseMenu==undefined&&index==0)}"   @click="choseThis(item,index)">
                     <span class="menucategory-qwsbd">{{item.name}}</span>
                     <span class="menucategory-28BIn" v-if="item.selectNum!=undefined&&item.selectNum>0">{{item.selectNum}}</span>
                 </li>
@@ -56,11 +56,6 @@
     import Vue from 'vue'
     import cart from './cart.vue'
     export default{
-        data(){
-            return {
-                'choseMenu':undefined
-            }
-        },
         components:{
             cart
         },
@@ -127,6 +122,7 @@
                 }
             },
             method(list,i){
+                this.choseMenu=i;
                 this.$store.commit('addOrder',{
                     'list':list,
                     'num':i

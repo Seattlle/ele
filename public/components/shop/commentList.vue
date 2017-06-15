@@ -27,7 +27,7 @@
 
 <style>
     .comment-item {
-        padding: .26rem 0;
+        padding: .2rem 0;
         border-bottom: 1px solid #ddd;
     }
     .comment-block-container{

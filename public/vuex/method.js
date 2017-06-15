@@ -6,8 +6,11 @@ const mutations={
     setPageName(store,name){
         store.currentPageName=name;
     },
-    toggleFooter(store){
-        store.hidefooter=!store.hidefooter;
+    hideFooter(store){
+        store.hidefooter=true;
+    },
+    showFooter(store){
+        store.hidefooter=false;
     },
     choseMenu(store,thisItem){
         store.shop.menuCategory.forEach(function(item){
@@ -16,6 +19,11 @@ const mutations={
                     Vue.set(item,'checked',true);
                 }else{
                     item.checked=true;
+                }
+                if(typeof store.shop.choseMenu=='undefined'){
+                    Vue.set(store.shop,'choseMenu',item);
+                }else{
+                    store.shop.choseMenu=item;
                 }
             }else{
                 if(typeof item.checked=='undefined'){
@@ -33,6 +41,11 @@ const mutations={
                     Vue.set(items,'checked',true);
                 }else{
                     items.checked=true;
+                }
+                if(typeof store.shop.choseMenu=='undefined'){
+                    Vue.set(store.shop,'choseMenu',items);
+                }else{
+                    store.shop.choseMenu=items;
                 }
             }else{
                 if(typeof items.checked=='undefined'){

@@ -28,6 +28,10 @@ const routes=[{
             component:resolve=>require(["./components/shop/comment.vue"],resolve)
         }
     ]
+},{
+    path:'/search',
+    name:'搜索',
+    component:resolve=>require(["./components/home/search.vue"],resolve)
 }]
 
 export default new Router({
