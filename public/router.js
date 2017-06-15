@@ -4,7 +4,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-Vue.use(Router)
+Vue.use(Router);
 
 const routes=[{
     path:'/',
@@ -17,22 +17,12 @@ const routes=[{
 },{
     path:'/shopInfo',
     name:'',
-    component:resolve=>require(["./components/shop/shop.vue"],resolve),
-    children:[
-        {
-            path:'',
-            component:resolve=>require(["./components/shop/shopOrder.vue"],resolve)
-        },
-        {
-            path:'comment',
-            component:resolve=>require(["./components/shop/comment.vue"],resolve)
-        }
-    ]
+    component:resolve=>require(["./components/shop/shop.vue"],resolve)
 },{
     path:'/search',
     name:'搜索',
     component:resolve=>require(["./components/home/search.vue"],resolve)
-}]
+}];
 
 export default new Router({
     base:'/',

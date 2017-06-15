@@ -2,7 +2,7 @@
     <section class="shop-main">
         <div class="menuview">
             <ul class="menucategory">
-                <li class="menucategory-item" v-for="(item,index) in $store.state.shop.menuCategory" :class="{'active':!!item.checked||($store.state.shop.choseMenu==undefined&&index==0)}"   @click="choseThis(item,index)">
+                <li class="menucategory-item" v-for="(item ,index) in $store.state.shop.menuCategory" :class="{'active':!!item.checked||($store.state.shop.choseMenu==undefined&&index==0)}"   @click="choseThis(item,index)">
                     <span class="menucategory-qwsbd">{{item.name}}</span>
                     <span class="menucategory-28BIn" v-if="item.selectNum!=undefined&&item.selectNum>0">{{item.selectNum}}</span>
                 </li>
@@ -73,22 +73,22 @@
                 this.jump(index)
             },
             jump(index){
-                let jump = document.querySelectorAll('.category-title')
+                let jump = document.querySelectorAll('.category-title');
                 // 获取需要滚动的距离
                 let total = jump[index].offsetTop;
-                let distance = document.getElementById("container").scrollTop
+                let distance = document.getElementById("container").scrollTop;
                 // 平滑滚动，时长500ms，每10ms一跳，共50跳
-                let step = total / 50
+                let step = total / 50;
                 if (total > distance) {
                     smoothDown()
                 } else {
-                    let newTotal = distance - total
-                    step = newTotal / 50
+                    let newTotal = distance - total;
+                    step = newTotal / 50;
                     smoothUp()
                 }
                 function smoothDown () {
                     if (distance < total) {
-                        distance += step
+                        distance += step;
                         document.getElementById("container").scrollTop=distance;
                         setTimeout(smoothDown, 10)
                     } else {
@@ -98,7 +98,7 @@
                 }
                 function smoothUp () {
                     if (distance > total) {
-                        distance -= step
+                        distance -= step;
                         document.getElementById("container").scrollTop=distance;
                         setTimeout(smoothUp, 10)
                     } else {
@@ -111,9 +111,9 @@
                 if(!ifOnScroll){
                     let scrolled = document.getElementById("container").scrollTop;
                     let title=document.querySelectorAll('.category-title');
-                    var _this=this;
+                    let _this=this;
                     title.forEach(function (it) {
-                        if(it.offsetTop>scrolled-20&&it.offsetTop<scrolled+20){
+                        if(it.offsetTop>scrolled-30&&it.offsetTop<scrolled+30){
                             let menuId=it.dataset.menuid;
                             _this.$store.commit('scrollMenu',menuId);
                             _this.choseMenu=menuId;

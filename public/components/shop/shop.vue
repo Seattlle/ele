@@ -25,22 +25,34 @@
 
         <!--商品/单价-->
         <div class="shop-tab-container_3skq8_0">
-            <router-link :to="{path:'/shopInfo',query:{shophash:$route.query.shophash}}" class="shop-tab-tab_r4SDi_0 " :class="{'shop-tab-active':$route.path.indexOf('comment')===-1}">
+            <div class="shop-tab-tab_r4SDi_0 " :class="{'shop-tab-active':showOrder}" @click="showOrder=true">
                     <span class="shop-tab-title_1crD1_0">商品</span>
-            </router-link>
-            <router-link :to="{path:'/shopInfo/comment',query:{shophash:$route.query.shophash}}" class="shop-tab-tab_r4SDi_0" :class="{'shop-tab-active':$route.path.indexOf('comment')>-1}">
+            </div>
+            <div class="shop-tab-tab_r4SDi_0" :class="{'shop-tab-active':!showOrder}" @click="showOrder=false">
                     <span class="shop-tab-title_1crD1_0">评价</span>
-            </router-link>
+            </div>
         </div>
         <!--subpage-->
         <section class="subPage">
-            <router-view></router-view>
+           <shop-order v-show="showOrder"></shop-order>
+           <comment v-show="!showOrder"></comment>
         </section>
     </div>
 
 </template>
 <script>
-    export default{}
+    import shopOrder from './shopOrder.vue';
+    import comment from './comment.vue';
+    export default{
+        data(){
+            return{
+                showOrder:true
+            }
+        },
+        components:{
+            shopOrder,comment
+        }
+    }
 </script>
 <style>
     @import url('../../css/shop.css');
