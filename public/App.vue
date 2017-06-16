@@ -3,6 +3,7 @@
         <header class="app-header">
             <ele-title></ele-title>
         </header>
+
         <footer class="app-footer">
             <footer-nav></footer-nav>
         </footer>
@@ -17,6 +18,18 @@
                 </keep-alive>
             </div>
         </section>
+
+        <transition name="slide">
+            <section class="searchArea" v-show="$store.state.showSearchArea">
+                <div class="search-top">
+                    <header class="search-hearder">
+                        <span class="go-back" @click="$store.commit('toggleAreaSearch')"></span>
+                        <div class="search-area-title">选择地址</div>
+                    </header>
+                    <input type="search" placeholder="请输入地址" autofocus="autofocus" class="search-area-input">
+                </div>
+            </section>
+        </transition>
     </div>
 </template>
 <script>

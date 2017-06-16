@@ -49,6 +49,11 @@
                 showOrder:true
             }
         },
+        mounted(){
+            this.$nextTick(function () {
+               // this.$store.commit('getShopInfoById',this.$route.query.shophash);
+            })
+        },
         components:{
             shopOrder,comment
         }

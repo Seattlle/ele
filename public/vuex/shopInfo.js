@@ -1,7 +1,7 @@
 /**
  * Created by Seattle on 2017/6/14.
  */
-const shoInfo={
+const shopInfo={
     'name':'放牛斑（滨北官任店）',
     'head':'https://fuss10.elemecdn.com/f/db/4e3454fcacc68667ef8ee8832179cjpeg.jpeg?imageMogr/format/webp/thumbnail/!130x130r/gravity/Center/crop/130x130/',
     'sendMethods':'蜂鸟专送',
@@ -141,4 +141,4 @@ const shoInfo={
     'totalNum':0//已选数目
 }
 
-export  default  shoInfo;
+export  default  shopInfo;
