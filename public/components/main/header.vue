@@ -1,6 +1,6 @@
 <template>
     <div id="header-title" :class="{'search-head':$route.path=='/search'}">
-        <router-link to="/" class="go-back" v-if="$route.path!='/'"></router-link>
+        <a href="javascript:;" class="go-back" v-if="$route.path!='/'" @click="$router.go(-1)"></a>
         <h1  v-if="$route.path!='/' && $route.path!='/search'">{{$store.state.currentPageName}}</h1>
         <span class="area-title"  v-if="$route.path=='/'" @click="$store.commit('toggleAreaSearch')">厦门市湖里区禾山路</span>
         <input type="text" class="search-input" placeholder="请输入商品名称" v-if="$route.path=='/search'">

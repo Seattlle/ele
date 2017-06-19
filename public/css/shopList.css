@@ -55,6 +55,7 @@
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    font-size: .24rem;
 }
 .index-line h3{
     display: -webkit-box;
@@ -78,4 +79,44 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     color: #333;
+}
+
+.index-rateWrap{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+.rating-max{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.rating-max .start{
+    font-style: normal;
+    color:#ffaa0c;
+}
+.index-rate {
+    margin: 0 .05rem;
+    color: #ff6000;
+}
+.index-iconDeliver{
+    padding: 0 .053333rem;
+    border: 1px solid #44a5ff;
+    border-radius: .053333rem;
+    background-color: #fff;
+    color: #2395ff;
+    font-size: .22rem;
+    line-height: .346667rem;
+}
+
+.activity-activityIcon{
+    font-style:normal;
+    font-size:.2rem;
 }

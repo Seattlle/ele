@@ -1,6 +1,6 @@
 <template>
     <!--个人信息组件-->
-    <section class="userInfo">
+    <section class="userInfo" @click="$router.push('/login')">
        <div class="profile-header">
            <img src="../../images/head.png" alt="">
        </div>
@@ -13,7 +13,7 @@
     </section>
 </template>
 <script>
-    export default { }
+    export default {}
 </script>
 
 <style>

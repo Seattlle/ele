@@ -15,6 +15,10 @@ const routes=[{
     name:'我的',
     component:resolve=>require(["./components/profile/userInfo.vue"],resolve)
 },{
+    path:'/login',
+    name:'登录',
+    component:resolve=>require(["./components/profile/login.vue"],resolve)
+},{
     path:'/shopInfo',
     name:'',
     component:resolve=>require(["./components/shop/shop.vue"],resolve)
