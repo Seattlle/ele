@@ -2,8 +2,8 @@
     <section class="login">
         <form action="#">
             <div class="MessageLogin">
-                <input type="tel" maxlength="11" placeholder="手机号">
-                <button class="CountButton" disabled="disabled">获取验证码</button>
+                <input type="tel" maxlength="11" placeholder="手机号" v-model.trim="phone">
+                <button class="CountButton" v-bind="{'disabled':phone.length!=11}">获取验证码</button>
             </div>
             <div class="MessageLogin">
                 <input type="tel" maxlength="11" placeholder="验证码">
@@ -19,6 +19,15 @@
         <div class="about-us"><span>关于我们</span></div>
     </section>
 </template>
+<script>
+    export default{
+        data(){
+            return{
+                phone:''
+            }
+        }
+    }
+</script>
 <style>
     .login{
         margin-top: .4rem;

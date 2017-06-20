@@ -7,20 +7,20 @@
                     <span>外卖</span>
                 </router-link>
             </li>
-            <li class="nav-item">
-                <a href="javascript:;">
-                    <div class="nav-icon icon1"></div>
-                    <span>发现</span>
-                </a>
+            <li class="nav-item" :class="{'active':$route.path.indexOf('discover')>0}">
+                 <router-link to="discover">
+                     <div class="nav-icon icon1"></div>
+                     <span>发现</span>
+                 </router-link>
             </li>
-            <li class="nav-item">
-                <a href="javascript:;">
+            <li class="nav-item" :class="{'active':$route.path.indexOf('order')>0}">
+                <router-link to="order">
                     <div class="nav-icon icon1"></div>
                     <span>订单</span>
-                </a>
+                </router-link>
             </li>
             <li class="nav-item" :class="{'active':$route.path.indexOf('profile')>0}">
-                <router-link to="/profile">
+                <router-link to="profile">
                     <div class="nav-icon icon1"></div>
                     <span>我的</span>
                 </router-link>

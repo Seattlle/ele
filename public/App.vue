@@ -1,6 +1,6 @@
 <template>
-    <div id="app" :class="{'hide-footer':$store.state.hidefooter,'search-page':$route.path=='/search'}">
-        <header class="app-header">
+    <div id="app" :class="{'hide-footer':$store.state.hidefooter,'search-page':$route.path=='/search','hide-header':$route.path=='/'}">
+        <header class="app-header" v-if="$route.path!='/'">
             <ele-title></ele-title>
         </header>
 
@@ -10,16 +10,13 @@
 
         <section class="main">
             <div class="main-contaienr">
-                <router-link to="search" class="index-search-link"   v-if="$route.path=='/'">
-                    <input type="text" placeholder="搜索商家、商品" aria-label="搜索商家、商品" class="index-search">
-                </router-link>
                 <keep-alive>
                     <router-view name="default"></router-view>
                 </keep-alive>
             </div>
         </section>
 
-        <transition name="slide">
+        <transition name="slide" v-if="$route.path=='/'">
             <section class="searchArea" v-show="$store.state.showSearchArea">
                 <div class="search-top">
                     <header class="search-hearder">

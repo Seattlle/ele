@@ -26,6 +26,14 @@ const routes=[{
     path:'/search',
     name:'搜索',
     component:resolve=>require(["./components/home/search.vue"],resolve)
+},{
+    path:'/order',
+    name:'订单',
+    component:resolve=>require(["./components/order/order.vue"],resolve)
+},{
+    path:'/discover',
+    name:'发现',
+    component:resolve=>require(["./components/discover/discover.vue"],resolve)
 }];
 
 export default new Router({
