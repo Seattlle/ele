@@ -94,7 +94,7 @@
         background: #4cd964;
         color: #fff;
         text-align: center;
-        font-size: .3rem;
+        font-size: .36rem;
         line-height: .8rem;
         outline:none;
         border:none;

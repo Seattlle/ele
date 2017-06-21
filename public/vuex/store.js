@@ -2,8 +2,9 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import mutations from './method'
 import shopList from './shopList'
-import shopInfo from './shopInfo.js'
+import shopInfo from './shopInfo'
 import searchData from  './search'
+import user from  './user'
 Vue.use(Vuex)
 
 const state={
@@ -12,7 +13,8 @@ const state={
     indexShopList:shopList,
     shop:shopInfo,
     search:searchData,
-    showSearchArea:false
+    showSearchArea:false,
+    user:user
 }
 
 export default new Vuex.Store({

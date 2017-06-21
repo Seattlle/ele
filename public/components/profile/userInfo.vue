@@ -1,7 +1,7 @@
 <template>
     <!--个人信息组件-->
     <section class="user">
-        <section class="userInfo" @click="$router.push('/login')">
+        <section class="userInfo" @click="!$store.state.user.isLogin && $router.push({path:'login',query:{redirect:'profile'}})">
             <div class="profile-header">
                 <img src="../../images/head.png" alt="">
             </div>

@@ -1,9 +1,9 @@
 <template>
     <section class="order">
-        <section class="no-log">
+        <section class="no-log" v-if="!$store.state.user.isLogin">
             <img src="//github.elemecdn.com/eleme/fe-static/master/media/empty/error-load.png">
             <h3>登录后查看外卖订单</h3>
-            <button @click="$router.push('/login')">立即登录</button>
+            <button @click="$router.push({path:'login',query:{redirect:'order'}})">立即登录</button>
         </section>
     </section>
 </template>
@@ -46,7 +46,8 @@
         background-color: #56d176;
         color: #fff;
         text-align: center;
-        font-size: 1.2em;
+        font-size: .32rem;
         font-family: inherit;
+        outline:none;
     }
 </style>
