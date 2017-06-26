@@ -349,11 +349,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       staticClass: "index-line"
     }, [_c('div', {
       staticClass: "index-rateWrap"
-    }, [_c('span', [_vm._v(_vm._s(_vm._f("toMoney")(shop.saleStart)) + "起送")]), _vm._v(" / \n                            "), _c('span', [_vm._v("配送费" + _vm._s(_vm._f("toMoney")(shop.sendPrice)))]), _vm._v(" / \n                            "), _c('span', [_vm._v(_vm._s(shop.pingJun) + "/人")])]), _vm._v(" "), _c('div', {
+    }, [_c('span', [_vm._v(_vm._s(_vm._f("toMoney")(shop.saleStart)) + "起送")]), _vm._v(" "), _c('span', [_vm._v("配送费" + _vm._s(_vm._f("toMoney")(shop.sendPrice)))]), _vm._v(" "), _c('span', [_vm._v(_vm._s(shop.pingJun) + "/人")])]), _vm._v(" "), _c('div', {
       staticClass: "index-deliveryWrap"
     }, [_c('span', {
       staticClass: "index-distanceWrap"
-    }, [_vm._v(_vm._s(shop.juLi) + "m")]), _vm._v(" / \n                            "), _c('span', {
+    }, [_vm._v(_vm._s(shop.juLi) + "m")]), _vm._v(" "), _c('span', {
       staticClass: "index-distanceWrap"
     }, [_vm._v(_vm._s(shop.time) + "分钟")])])])])])], 1)
   }))])
