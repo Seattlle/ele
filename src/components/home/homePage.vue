@@ -54,6 +54,7 @@
         display: block;
         width: 100%;
         height: .7rem;
+        line-height: .7rem;
         text-align: center;
         border-radius: .7rem;
         color: #333;
@@ -100,6 +101,7 @@
         margin-top: .133333rem;
         width: 90%;
         height: .533333rem;
+        line-height: .533333rem;
         border-radius: .733333rem;
         padding: 0 .32rem;
         font-size: .28rem;
