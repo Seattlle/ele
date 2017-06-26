@@ -2,64 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2a9f80c-602c-497c-88f3-8a851fa399bf" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/0.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/1.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/2.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/3.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/4.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/5.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/6.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/6.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/main.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/config/router.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/shopInfo.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/router.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/App.vue" afterPath="$PROJECT_DIR$/src/components/App.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/components/discover/discover.vue" afterPath="$PROJECT_DIR$/src/components/discover/discover.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/components/home/fooder.vue" afterPath="$PROJECT_DIR$/src/components/home/fooder.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/components/home/homePage.vue" afterPath="$PROJECT_DIR$/src/components/home/homePage.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/components/home/search.vue" afterPath="$PROJECT_DIR$/src/components/home/search.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/components/home/shopList.vue" afterPath="$PROJECT_DIR$/src/components/home/shopList.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/components/main/footer.vue" afterPath="$PROJECT_DIR$/src/components/main/footer.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/components/main/header.vue" afterPath="$PROJECT_DIR$/src/components/main/header.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/components/order/order.vue" afterPath="$PROJECT_DIR$/src/components/order/order.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/components/profile/login.vue" afterPath="$PROJECT_DIR$/src/components/profile/login.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/components/profile/userInfo.vue" afterPath="$PROJECT_DIR$/src/components/profile/userInfo.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/components/shop/cart.vue" afterPath="$PROJECT_DIR$/src/components/shop/cart.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/components/shop/comment.vue" afterPath="$PROJECT_DIR$/src/components/shop/comment.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/components/shop/commentList.vue" afterPath="$PROJECT_DIR$/src/components/shop/commentList.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/components/shop/shop.vue" afterPath="$PROJECT_DIR$/src/components/shop/shop.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/components/shop/shopOrder.vue" afterPath="$PROJECT_DIR$/src/components/shop/shopOrder.vue" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/App.css" afterPath="$PROJECT_DIR$/src/css/App.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/base.css" afterPath="$PROJECT_DIR$/src/css/base.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/cart.css" afterPath="$PROJECT_DIR$/src/css/cart.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/comment.css" afterPath="$PROJECT_DIR$/src/css/comment.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/discover.css" afterPath="$PROJECT_DIR$/src/css/discover.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/profile.css" afterPath="$PROJECT_DIR$/src/css/profile.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/shop.css" afterPath="$PROJECT_DIR$/src/css/shop.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/shopList.css" afterPath="$PROJECT_DIR$/src/css/shopList.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/css/shopOrder.css" afterPath="$PROJECT_DIR$/src/css/shopOrder.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/filter.js" afterPath="$PROJECT_DIR$/src/config/filter.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/ele.png" afterPath="$PROJECT_DIR$/static/images/ele.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/head.png" afterPath="$PROJECT_DIR$/static/images/head.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/javascript/base.js" afterPath="$PROJECT_DIR$/src/javascript/base.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/main.js" afterPath="$PROJECT_DIR$/src/components/main.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/vuex/method.js" afterPath="$PROJECT_DIR$/src/vuex/method.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/vuex/search.js" afterPath="$PROJECT_DIR$/src/vuex/search.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/vuex/shopInfo.js" afterPath="$PROJECT_DIR$/src/vuex/shopInfo.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/vuex/shopList.js" afterPath="$PROJECT_DIR$/src/vuex/shopList.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/vuex/store.js" afterPath="$PROJECT_DIR$/src/vuex/store.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/vuex/user.js" afterPath="$PROJECT_DIR$/src/vuex/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/base.css" afterPath="$PROJECT_DIR$/src/css/base.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -74,21 +18,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="order.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/order/order.vue">
+      <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+            <state relative-caret-position="287">
+              <caret line="0" column="3948" lean-forward="false" selection-start-line="0" selection-start-column="3948" selection-end-line="0" selection-end-column="3948" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/profile/login.vue">
+      <file leaf-file-name="order.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/order/order.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1824">
-              <caret line="96" column="26" lean-forward="false" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
+            <state relative-caret-position="190">
+              <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -171,7 +115,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
@@ -204,7 +148,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>webpack-dev-server</find>
       <find>shop-header-main_1B2kH_0</find>
       <find>router-view</find>
       <find>data-v-f433384a=&quot;&quot;</find>
@@ -234,6 +177,7 @@
       <find>.discover-food .food-name</find>
       <find>activity-more</find>
       <find>loading=&quot;&quot;</find>
+      <find>@media screen</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -245,7 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/../vue-WeChat/src/App.vue" />
         <option value="$PROJECT_DIR$/public/components/foodentry.vue" />
@@ -296,6 +239,7 @@
         <option value="$PROJECT_DIR$/public/css/discover.css" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/components/main.js" />
+        <option value="$PROJECT_DIR$/src/css/base.css" />
       </list>
     </option>
   </component>
@@ -363,6 +307,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ele" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ele" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ele" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ele" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ele" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -519,7 +495,7 @@
       <workItem from="1497924544566" duration="5787000" />
       <workItem from="1498010135697" duration="5209000" />
       <workItem from="1498185031714" duration="62000" />
-      <workItem from="1498459927233" duration="737000" />
+      <workItem from="1498459927233" duration="1445000" />
     </task>
     <task id="LOCAL-00001" summary="修改商户中心页">
       <created>1496999545488</created>
@@ -612,16 +588,23 @@
       <option name="project" value="LOCAL" />
       <updated>1498014794865</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="修改目录结构">
+      <created>1498460723606</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1498460723606</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132038000" />
+    <option name="totallyTimeSpent" value="132746000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2361111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2361111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -684,7 +667,8 @@
     <MESSAGE value="修改主页列表  增加登陆页面" />
     <MESSAGE value="修改主页地址栏  个人中心 订单页" />
     <MESSAGE value="添加发现页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加发现页面" />
+    <MESSAGE value="修改目录结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改目录结构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -909,14 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13776" lean-forward="false" selection-start-line="0" selection-start-column="13776" selection-end-line="0" selection-end-column="13776" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/config/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -1043,6 +1019,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="0" column="3948" lean-forward="false" selection-start-line="0" selection-start-column="3948" selection-end-line="0" selection-end-column="3948" />
           <folding />
         </state>
       </provider>
