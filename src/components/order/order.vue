@@ -3,7 +3,7 @@
         <section class="no-log" v-if="!$store.state.user.isLogin">
             <img src="//github.elemecdn.com/eleme/fe-static/master/media/empty/error-load.png">
             <h3>登录后查看外卖订单</h3>
-            <button @click="$router.push({path:'login',query:{redirect:'order'}})">立即登录</button>
+            <button @click="$router.push({path:'/login',query:{redirect:'order'}})">立即登录</button>
         </section>
     </section>
 </template>

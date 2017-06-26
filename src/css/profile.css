@@ -59,6 +59,15 @@
     border-bottom: 1px solid #ddd;
     background-color: #fff;
 }
+.index-1G7HV_0 .icon{
+    font-size:.46rem;
+}
+.index-1G7HV_0 .icon.icon-hongbao{
+     color:#ff5f3e;
+ }
+.index-1G7HV_0 .icon.icon-score{
+    color:#6ac20b;
+}
 .index-1ryAh{
     display: table-cell;
     width: 50%;
@@ -69,7 +78,6 @@
     border-right: 1px solid #ddd;
 }
 .index-3S6cZ_0 {
-    margin-top: .133333rem;
     font-size: .26rem;
     line-height: .373333rem;
     font-weight: 500;
@@ -96,8 +104,23 @@
     padding-left: .666667rem;
 }
 .index-161Mm_0 {
-    margin-left: -.266667rem;
-    margin-right: .266667rem;
+    margin-left: -.42rem;
+    margin-right: .1rem;
+}
+.index-161Mm_0 .icon{
+    font-size:.42rem;
+}
+.index-161Mm_0 .icon-cshy-orders{
+    color:#4aa5f0;
+}
+.index-161Mm_0 .icon-score{
+    color:#fc7b53;
+}
+.index-161Mm_0 .icon-huiyuanqia{
+    color:#ffc636;
+}
+.index-161Mm_0 .icon-fuwu{
+    color:#4aa5f0;
 }
 .index-yydpu_0 {
     display: -webkit-box;
@@ -118,11 +141,11 @@
 .index-3Z8It_0{
     position: relative;}
 
-.icon{
+.uicon{
     width:.32rem;
     height:.32rem;
 }
-.icon:before,.icon:after{
+.uicon:before,.uicon:after{
     content:'';
     width:.2rem;
     height:1px;
@@ -138,14 +161,14 @@
     -o-transform-origin:right center;
     transform-origin:right center;
 }
-.icon:before{
+.uicon:before{
     -webkit-transform: rotate(-40deg);
     -moz-transform: rotate(-40deg);
     -ms-transform:rotate(-40deg);
     -o-transform:rotate(-40deg);
     transform: rotate(-40deg);
 }
-.icon:after{
+.uicon:after{
     -webkit-transform: rotate(40deg);
     -moz-transform: rotate(40deg);
     -ms-transform:rotate(40deg);

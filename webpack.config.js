@@ -26,11 +26,10 @@ module.exports = {
                 loader: 'babel-loader'
             },
             {
-                test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+                test: /\.(png|jpe?g|gif|svg|eot|woff|ttf)(\?.*)?$/,
                 loader: 'url-loader',
                 query: {
-                    limit: 10000
-                    // name: utils.assetsPath('img/[name].[hash:7].[ext]')
+                    limit: 50000
                 }
             },{
                 test:/\.css$/,

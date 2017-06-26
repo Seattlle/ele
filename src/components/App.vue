@@ -60,5 +60,6 @@
 </script>
 <style>
     @import "../css/base.css";
+    @import "../../static/iconfont/iconfont.css";
     @import "../css/App.css";
 </style>

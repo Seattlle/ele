@@ -4,7 +4,7 @@
             <span class="area-title" @click="$store.commit('toggleAreaSearch')">厦门市湖里区禾山路</span>
         </div>
         <router-link to="search" class="index-search-link"   v-if="$route.path=='/'">
-            <input type="text" placeholder="搜索商家、商品" aria-label="搜索商家、商品" class="index-search">
+            <input type="text" placeholder="搜索商家、商品" disabled="disabled" aria-label="搜索商家、商品" class="index-search">
         </router-link>
 
         <!--食物功能列表-->
@@ -59,6 +59,7 @@
         border-radius: .7rem;
         color: #333;
         font-size: .28rem;
+        background: #fff;
         outline:none;
         border: none;
         box-shadow: 0 0.026667rem 0.066667rem 0 rgba(0,0,0,.2);
