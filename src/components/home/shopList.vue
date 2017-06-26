@@ -36,13 +36,13 @@
                         </section>
                         <section class="index-line">
                             <div class="index-rateWrap">
-                               <span>{{shop.saleStart | toMoney}}起送</span>
-                                <span>配送费{{shop.sendPrice | toMoney}}</span>
+                               <span>{{shop.saleStart | toMoney}}起送&nbsp:;/</span>
+                                <span>配送费{{shop.sendPrice | toMoney}}&nbsp:;/</span>
                                 <span>{{shop.pingJun}}/人</span>
                             </div>
                             <div class="index-deliveryWrap">
-                                <span class="index-distanceWrap">{{shop.juLi}}m</span>
-                                <span class="index-distanceWrap">{{shop.time}}分钟</span>
+                                <span class="index-distanceWrap">{{shop.juLi}}m&nbsp:;/</span>
+                                <span class="index-distanceWrap">{{shop.time}}</span>
                             </div>
                         </section>
                     </div>

@@ -7,6 +7,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/1.js.map" afterPath="$PROJECT_DIR$/build/1.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/main.js" afterPath="$PROJECT_DIR$/build/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/main.js.map" afterPath="$PROJECT_DIR$/build/main.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/home/homePage.vue" afterPath="$PROJECT_DIR$/src/components/home/homePage.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/home/shopList.vue" afterPath="$PROJECT_DIR$/src/components/home/shopList.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,8 +36,8 @@
       <file leaf-file-name="shopList.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/home/shopList.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="41" column="34" lean-forward="false" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+            <state relative-caret-position="589">
+              <caret line="43" column="37" lean-forward="false" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -54,8 +56,8 @@
       <file leaf-file-name="homePage.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/home/homePage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="94" column="19" lean-forward="false" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+            <state relative-caret-position="465">
+              <caret line="102" column="28" lean-forward="false" selection-start-line="102" selection-start-column="28" selection-end-line="102" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -64,7 +66,7 @@
       <file leaf-file-name="search.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/home/search.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
+            <state relative-caret-position="593">
               <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
               <folding />
             </state>
@@ -523,7 +525,7 @@
       <workItem from="1497924544566" duration="5787000" />
       <workItem from="1498010135697" duration="5209000" />
       <workItem from="1498185031714" duration="62000" />
-      <workItem from="1498459927233" duration="2140000" />
+      <workItem from="1498459927233" duration="2417000" />
     </task>
     <task id="LOCAL-00001" summary="修改商户中心页">
       <created>1496999545488</created>
@@ -651,11 +653,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498462157207</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="修改样式">
+      <created>1498462233325</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1498462233325</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133441000" />
+    <option name="totallyTimeSpent" value="133718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
@@ -1060,14 +1069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/home/shopList.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="41" column="34" lean-forward="false" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -1078,16 +1079,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/home/search.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
+        <state relative-caret-position="593">
           <caret line="49" column="20" lean-forward="false" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/home/shopList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="43" column="37" lean-forward="false" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/home/homePage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="94" column="19" lean-forward="false" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+        <state relative-caret-position="465">
+          <caret line="102" column="28" lean-forward="false" selection-start-line="102" selection-start-column="28" selection-end-line="102" selection-end-column="28" />
           <folding />
         </state>
       </provider>

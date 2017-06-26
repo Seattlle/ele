@@ -98,10 +98,9 @@
         font-size:0.36rem;
     }
     .searchArea .search-area-input{
-        margin-top: .133333rem;
         width: 90%;
-        height: .533333rem;
-        line-height: .533333rem;
+        height: .666666rem;
+        line-height: .666666rem;
         border-radius: .733333rem;
         padding: 0 .32rem;
         font-size: .28rem;
