@@ -7,6 +7,6 @@ html,body{
 html{background-color: #f4f4f4;}
 *{-webkit-tap-highlight-color:transparent;}
 input{border:none;outline:none;}
-.a:active,.a:visited,.a:link,a:hover {
+.a:active,.a:visited,.a:link,a:hover,a:-webkit-any-link {
     outline:none;
 }
