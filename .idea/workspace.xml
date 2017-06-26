@@ -2,19 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2a9f80c-602c-497c-88f3-8a851fa399bf" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iconfont/iconfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iconfont/iconfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iconfont/iconfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/iconfont/iconfont.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/App.vue" afterPath="$PROJECT_DIR$/src/components/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/home/homePage.vue" afterPath="$PROJECT_DIR$/src/components/home/homePage.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/home/shopList.vue" afterPath="$PROJECT_DIR$/src/components/home/shopList.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/main/footer.vue" afterPath="$PROJECT_DIR$/src/components/main/footer.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/order/order.vue" afterPath="$PROJECT_DIR$/src/components/order/order.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/profile/userInfo.vue" afterPath="$PROJECT_DIR$/src/components/profile/userInfo.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/profile.css" afterPath="$PROJECT_DIR$/src/css/profile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/0.js" afterPath="$PROJECT_DIR$/build/0.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/0.js.map" afterPath="$PROJECT_DIR$/build/0.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/1.js" afterPath="$PROJECT_DIR$/build/1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/1.js.map" afterPath="$PROJECT_DIR$/build/1.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/2.js" afterPath="$PROJECT_DIR$/build/2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/2.js.map" afterPath="$PROJECT_DIR$/build/2.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/3.js" afterPath="$PROJECT_DIR$/build/3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/3.js.map" afterPath="$PROJECT_DIR$/build/3.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/4.js" afterPath="$PROJECT_DIR$/build/4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/4.js.map" afterPath="$PROJECT_DIR$/build/4.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/5.js" afterPath="$PROJECT_DIR$/build/5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/5.js.map" afterPath="$PROJECT_DIR$/build/5.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/6.js" afterPath="$PROJECT_DIR$/build/6.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/6.js.map" afterPath="$PROJECT_DIR$/build/6.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/main.js" afterPath="$PROJECT_DIR$/build/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/main.js.map" afterPath="$PROJECT_DIR$/build/main.js.map" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -510,7 +514,7 @@
       <workItem from="1497924544566" duration="5787000" />
       <workItem from="1498010135697" duration="5209000" />
       <workItem from="1498185031714" duration="62000" />
-      <workItem from="1498459927233" duration="6020000" />
+      <workItem from="1498459927233" duration="6160000" />
     </task>
     <task id="LOCAL-00001" summary="修改商户中心页">
       <created>1496999545488</created>
@@ -652,11 +656,18 @@
       <option name="project" value="LOCAL" />
       <updated>1498462509765</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="修改样式 使用字体样式">
+      <created>1498466575527</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1498466575527</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137321000" />
+    <option name="totallyTimeSpent" value="137461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
@@ -726,7 +737,8 @@
     <MESSAGE value="添加发现页面" />
     <MESSAGE value="修改目录结构" />
     <MESSAGE value="修改样式" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改样式" />
+    <MESSAGE value="修改样式 使用字体样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改样式 使用字体样式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

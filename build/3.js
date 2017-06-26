@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 111:
+/***/ 114:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -204,13 +204,13 @@ if (true) {
 
 /***/ }),
 
-/***/ 124:
+/***/ 127:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(74);
+var content = __webpack_require__(77);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -219,8 +219,8 @@ var update = __webpack_require__(6)("441856e0", content, false);
 if(true) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept(74, function() {
-     var newContent = __webpack_require__(74);
+   module.hot.accept(77, function() {
+     var newContent = __webpack_require__(77);
      if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
      update(newContent);
    });
@@ -231,19 +231,19 @@ if(true) {
 
 /***/ }),
 
-/***/ 64:
+/***/ 67:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(124)
+  __webpack_require__(127)
 }
 var Component = __webpack_require__(5)(
   /* script */
   null,
   /* template */
-  __webpack_require__(111),
+  __webpack_require__(114),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -276,12 +276,12 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 74:
+/***/ 77:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(true);
 // imports
-exports.i(__webpack_require__(96), "");
+exports.i(__webpack_require__(99), "");
 
 // module
 exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"discover.vue","sourceRoot":""}]);
@@ -291,7 +291,7 @@ exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings
 
 /***/ }),
 
-/***/ 96:
+/***/ 99:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(true);

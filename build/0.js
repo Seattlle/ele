@@ -1,6 +1,21 @@
 webpackJsonp([0],{
 
-/***/ 100:
+/***/ 101:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)(true);
+// imports
+
+
+// module
+exports.push([module.i, ".shopInfo{\r\n    padding:0.3rem;\r\n    background-color:rgb(0, 151, 255);\r\n}\r\n.shop-header-main_1B2kH_0{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n    align-content: center;\r\n}\r\n.shop-header-logo_3woDQ_0{\r\n    width: 1.3rem;\r\n    height: 1.3rem;\r\n    border: 1px solid #fff;\r\n    border-radius: .106667rem;\r\n    margin: 0 .2rem;\r\n}\r\n.shop-header-content_3UjPs_0{\r\n    -webkit-box-flex: 1;\r\n    -webkit-flex: 1;\r\n    -ms-flex: 1;\r\n    flex: 1;\r\n    display: block;\r\n    width: 0;\r\n    padding-right: .133333rem;\r\n    color:#fff;\r\n}\r\n.shop-header-shopName_2QrHh_0{\r\n    font-size:.32rem;\r\n    font-weight:bold;\r\n    line-height:0.4rem;\r\n}\r\n.shop-header-delivery_1mcTe_0{\r\n    font-size:0.25rem;\r\n}\r\n.shop-header-notice_2DzmG_0{\r\n    font-size:0.25rem;\r\n    white-space: nowrap;\r\n    width:100%;\r\n    overflow:hidden;\r\n    text-overflow:ellipsis;\r\n}\r\n\r\n.shop-tab-container_3skq8_0 {\r\n    line-height: 0.8rem;\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    background-color: #fff;\r\n}\r\n.shop-tab-tab_r4SDi_0 {\r\n    position: relative;\r\n    -webkit-box-flex: 1;\r\n    -webkit-flex: 1;\r\n    -ms-flex: 1;\r\n    flex: 1;\r\n    display: block;\r\n    width: 0;\r\n    text-align: center;\r\n    font-size: .28rem;\r\n    color: #666;\r\n    border-bottom: 1px solid #ddd;\r\n    outline:none!important;\r\n}\r\n.shop-tab-active {\r\n    color: #3190e8;\r\n}\r\n.shop-tab-active .shop-tab-title_1crD1_0:after {\r\n    content: \"\";\r\n    position: absolute;\r\n    bottom:-1px;\r\n    left: 0rem;\r\n    right: 0rem;\r\n    height: .03rem;\r\n    background-color: #3190e8;\r\n    border-radius: .04rem;\r\n}\r\n\r\n.subPage{\r\n    position: absolute;\r\n    width:100%;\r\n    bottom:0;\r\n    top:2.8rem;\r\n    overflow:hidden;\r\n}", "", {"version":3,"sources":["F:/Program/ele/src/css/shop.css"],"names":[],"mappings":"AAAA;IACI,eAAe;IACf,kCAAkC;CACrC;AACD;IACI,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,0BAA0B;IAC1B,uCAAuC;IACvC,uBAAuB;IACvB,+BAA+B;IAC/B,sBAAsB;CACzB;AACD;IACI,cAAc;IACd,eAAe;IACf,uBAAuB;IACvB,0BAA0B;IAC1B,gBAAgB;CACnB;AACD;IACI,oBAAoB;IACpB,gBAAgB;IAChB,YAAY;IACZ,QAAQ;IACR,eAAe;IACf,SAAS;IACT,0BAA0B;IAC1B,WAAW;CACd;AACD;IACI,iBAAiB;IACjB,iBAAiB;IACjB,mBAAmB;CACtB;AACD;IACI,kBAAkB;CACrB;AACD;IACI,kBAAkB;IAClB,oBAAoB;IACpB,WAAW;IACX,gBAAgB;IAChB,uBAAuB;CAC1B;;AAED;IACI,oBAAoB;IACpB,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,uBAAuB;CAC1B;AACD;IACI,mBAAmB;IACnB,oBAAoB;IACpB,gBAAgB;IAChB,YAAY;IACZ,QAAQ;IACR,eAAe;IACf,SAAS;IACT,mBAAmB;IACnB,kBAAkB;IAClB,YAAY;IACZ,8BAA8B;IAC9B,uBAAuB;CAC1B;AACD;IACI,eAAe;CAClB;AACD;IACI,YAAY;IACZ,mBAAmB;IACnB,YAAY;IACZ,WAAW;IACX,YAAY;IACZ,eAAe;IACf,0BAA0B;IAC1B,sBAAsB;CACzB;;AAED;IACI,mBAAmB;IACnB,WAAW;IACX,SAAS;IACT,WAAW;IACX,gBAAgB;CACnB","file":"shop.css","sourcesContent":[".shopInfo{\r\n    padding:0.3rem;\r\n    background-color:rgb(0, 151, 255);\r\n}\r\n.shop-header-main_1B2kH_0{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n    align-content: center;\r\n}\r\n.shop-header-logo_3woDQ_0{\r\n    width: 1.3rem;\r\n    height: 1.3rem;\r\n    border: 1px solid #fff;\r\n    border-radius: .106667rem;\r\n    margin: 0 .2rem;\r\n}\r\n.shop-header-content_3UjPs_0{\r\n    -webkit-box-flex: 1;\r\n    -webkit-flex: 1;\r\n    -ms-flex: 1;\r\n    flex: 1;\r\n    display: block;\r\n    width: 0;\r\n    padding-right: .133333rem;\r\n    color:#fff;\r\n}\r\n.shop-header-shopName_2QrHh_0{\r\n    font-size:.32rem;\r\n    font-weight:bold;\r\n    line-height:0.4rem;\r\n}\r\n.shop-header-delivery_1mcTe_0{\r\n    font-size:0.25rem;\r\n}\r\n.shop-header-notice_2DzmG_0{\r\n    font-size:0.25rem;\r\n    white-space: nowrap;\r\n    width:100%;\r\n    overflow:hidden;\r\n    text-overflow:ellipsis;\r\n}\r\n\r\n.shop-tab-container_3skq8_0 {\r\n    line-height: 0.8rem;\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    background-color: #fff;\r\n}\r\n.shop-tab-tab_r4SDi_0 {\r\n    position: relative;\r\n    -webkit-box-flex: 1;\r\n    -webkit-flex: 1;\r\n    -ms-flex: 1;\r\n    flex: 1;\r\n    display: block;\r\n    width: 0;\r\n    text-align: center;\r\n    font-size: .28rem;\r\n    color: #666;\r\n    border-bottom: 1px solid #ddd;\r\n    outline:none!important;\r\n}\r\n.shop-tab-active {\r\n    color: #3190e8;\r\n}\r\n.shop-tab-active .shop-tab-title_1crD1_0:after {\r\n    content: \"\";\r\n    position: absolute;\r\n    bottom:-1px;\r\n    left: 0rem;\r\n    right: 0rem;\r\n    height: .03rem;\r\n    background-color: #3190e8;\r\n    border-radius: .04rem;\r\n}\r\n\r\n.subPage{\r\n    position: absolute;\r\n    width:100%;\r\n    bottom:0;\r\n    top:2.8rem;\r\n    overflow:hidden;\r\n}"],"sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 103:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(true);
@@ -15,19 +30,19 @@ exports.push([module.i, ".shop-main{\r\n    height:100%;\r\n    overflow: hidden
 
 /***/ }),
 
-/***/ 104:
+/***/ 107:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(126)
+  __webpack_require__(129)
 }
 var Component = __webpack_require__(5)(
   /* script */
-  __webpack_require__(89),
+  __webpack_require__(92),
   /* template */
-  __webpack_require__(113),
+  __webpack_require__(116),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -60,19 +75,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 105:
+/***/ 108:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(125)
+  __webpack_require__(128)
 }
 var Component = __webpack_require__(5)(
   /* script */
-  __webpack_require__(90),
+  __webpack_require__(93),
   /* template */
-  __webpack_require__(112),
+  __webpack_require__(115),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -105,19 +120,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 106:
+/***/ 109:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(132)
+  __webpack_require__(135)
 }
 var Component = __webpack_require__(5)(
   /* script */
-  __webpack_require__(91),
+  __webpack_require__(94),
   /* template */
-  __webpack_require__(119),
+  __webpack_require__(122),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -150,19 +165,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 107:
+/***/ 110:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(133)
+  __webpack_require__(136)
 }
 var Component = __webpack_require__(5)(
   /* script */
-  __webpack_require__(93),
+  __webpack_require__(96),
   /* template */
-  __webpack_require__(120),
+  __webpack_require__(123),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -195,7 +210,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 109:
+/***/ 112:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -285,7 +300,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 112:
+/***/ 115:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -372,7 +387,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 113:
+/***/ 116:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -416,7 +431,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 119:
+/***/ 122:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -463,7 +478,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 120:
+/***/ 123:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -572,33 +587,6 @@ if (true) {
 
 /***/ }),
 
-/***/ 122:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(72);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(6)("249305da", content, false);
-// Hot Module Replacement
-if(true) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept(72, function() {
-     var newContent = __webpack_require__(72);
-     if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
 /***/ 125:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -609,7 +597,7 @@ var content = __webpack_require__(75);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(6)("2d2bdc5c", content, false);
+var update = __webpack_require__(6)("249305da", content, false);
 // Hot Module Replacement
 if(true) {
  // When the styles change, update the <style> tags
@@ -626,13 +614,40 @@ if(true) {
 
 /***/ }),
 
-/***/ 126:
+/***/ 128:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(76);
+var content = __webpack_require__(78);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(6)("2d2bdc5c", content, false);
+// Hot Module Replacement
+if(true) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept(78, function() {
+     var newContent = __webpack_require__(78);
+     if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 129:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(79);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -641,8 +656,8 @@ var update = __webpack_require__(6)("d58f7570", content, false);
 if(true) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept(76, function() {
-     var newContent = __webpack_require__(76);
+   module.hot.accept(79, function() {
+     var newContent = __webpack_require__(79);
      if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
      update(newContent);
    });
@@ -653,13 +668,13 @@ if(true) {
 
 /***/ }),
 
-/***/ 132:
+/***/ 135:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(82);
+var content = __webpack_require__(85);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -668,8 +683,8 @@ var update = __webpack_require__(6)("0f3483ed", content, false);
 if(true) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept(82, function() {
-     var newContent = __webpack_require__(82);
+   module.hot.accept(85, function() {
+     var newContent = __webpack_require__(85);
      if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
      update(newContent);
    });
@@ -680,13 +695,13 @@ if(true) {
 
 /***/ }),
 
-/***/ 133:
+/***/ 136:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(83);
+var content = __webpack_require__(86);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -695,8 +710,8 @@ var update = __webpack_require__(6)("06976019", content, false);
 if(true) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept(83, function() {
-     var newContent = __webpack_require__(83);
+   module.hot.accept(86, function() {
+     var newContent = __webpack_require__(86);
      if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
      update(newContent);
    });
@@ -707,19 +722,19 @@ if(true) {
 
 /***/ }),
 
-/***/ 70:
+/***/ 73:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(122)
+  __webpack_require__(125)
 }
 var Component = __webpack_require__(5)(
   /* script */
-  __webpack_require__(92),
+  __webpack_require__(95),
   /* template */
-  __webpack_require__(109),
+  __webpack_require__(112),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -752,12 +767,12 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 72:
+/***/ 75:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(true);
 // imports
-exports.i(__webpack_require__(98), "");
+exports.i(__webpack_require__(101), "");
 
 // module
 exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"shop.vue","sourceRoot":""}]);
@@ -767,12 +782,12 @@ exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings
 
 /***/ }),
 
-/***/ 75:
+/***/ 78:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(true);
 // imports
-exports.i(__webpack_require__(95), "");
+exports.i(__webpack_require__(98), "");
 
 // module
 exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"comment.vue","sourceRoot":""}]);
@@ -782,12 +797,12 @@ exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings
 
 /***/ }),
 
-/***/ 76:
+/***/ 79:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(true);
 // imports
-exports.i(__webpack_require__(94), "");
+exports.i(__webpack_require__(97), "");
 
 // module
 exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"cart.vue","sourceRoot":""}]);
@@ -797,7 +812,7 @@ exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings
 
 /***/ }),
 
-/***/ 82:
+/***/ 85:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(true);
@@ -812,12 +827,12 @@ exports.push([module.i, "\n.comment-item {\n    padding: .2rem 0;\n    border-bo
 
 /***/ }),
 
-/***/ 83:
+/***/ 86:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(true);
 // imports
-exports.i(__webpack_require__(100), "");
+exports.i(__webpack_require__(103), "");
 
 // module
 exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"shopOrder.vue","sourceRoot":""}]);
@@ -827,7 +842,7 @@ exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings
 
 /***/ }),
 
-/***/ 89:
+/***/ 92:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -846,7 +861,7 @@ exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings
 
 /***/ }),
 
-/***/ 90:
+/***/ 93:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -856,7 +871,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _commentList = __webpack_require__(106);
+var _commentList = __webpack_require__(109);
 
 var _commentList2 = _interopRequireDefault(_commentList);
 
@@ -925,7 +940,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 91:
+/***/ 94:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -962,7 +977,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 92:
+/***/ 95:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -972,11 +987,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _shopOrder = __webpack_require__(107);
+var _shopOrder = __webpack_require__(110);
 
 var _shopOrder2 = _interopRequireDefault(_shopOrder);
 
-var _comment = __webpack_require__(105);
+var _comment = __webpack_require__(108);
 
 var _comment2 = _interopRequireDefault(_comment);
 
@@ -1044,7 +1059,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 93:
+/***/ 96:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1058,7 +1073,7 @@ var _vue = __webpack_require__(1);
 
 var _vue2 = _interopRequireDefault(_vue);
 
-var _cart = __webpack_require__(104);
+var _cart = __webpack_require__(107);
 
 var _cart2 = _interopRequireDefault(_cart);
 
@@ -1233,7 +1248,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 94:
+/***/ 97:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(true);
@@ -1248,21 +1263,6 @@ exports.push([module.i, ".cartview{\r\n    font-size: .3rem;\r\n}\r\n.bottomNav-
 
 /***/ }),
 
-/***/ 95:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(true);
-// imports
-
-
-// module
-exports.push([module.i, ".shopComment{\r\n    height:100%;\r\n    overflow-y:auto;\r\n}\r\n.overview-container{\r\n    background-color: #fff;\r\n    margin-bottom: .2em;\r\n    padding: .3rem;\r\n    font-size: .3rem;\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    color: #666;\r\n}\r\n.overview-col1{\r\n    padding-right: .2rem;\r\n    border-right: 1px solid #ddd;\r\n    text-align: center;\r\n    line-height: 1.5;\r\n}\r\n.overview-overallScore{\r\n    font-size: .6rem;\r\n    line-height: 1;\r\n    font-weight: 400;\r\n    color: #f60;\r\n    display: block;\r\n}\r\n.overview-col2{\r\n    -webkit-box-flex: 1;\r\n    -webkit-flex: 1;\r\n    -ms-flex: 1;\r\n    flex: 1;\r\n    display: block;\r\n    width: 0;\r\n    font-size: .3rem;\r\n    line-height: 1;\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n}\r\n.overview-line{\r\n    width: 80%;\r\n    margin: .1rem 0;\r\n}\r\n.overview-lineContent i{\r\n    font-style: normal;\r\n    color:#ffaa0c;\r\n}\r\n.rating-wrapper{\r\n    position: relative;\r\n    overflow: hidden;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n}\r\n.rating-max, .rating-rating{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n}\r\n.overview-lineScore {\r\n    color: #f60;\r\n}\r\n.overview-small{\r\n    font-size: .2rem;\r\n    padding-left:.16rem;\r\n    color: #999;\r\n}\r\n\r\n.index-rateDetail{\r\n    background-color: #fff;\r\n    padding: .3rem .22rem;\r\n    font-size: .3rem;\r\n}", "", {"version":3,"sources":["F:/Program/ele/src/css/comment.css"],"names":[],"mappings":"AAAA;IACI,YAAY;IACZ,gBAAgB;CACnB;AACD;IACI,uBAAuB;IACvB,oBAAoB;IACpB,eAAe;IACf,iBAAiB;IACjB,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,0BAA0B;IAC1B,4BAA4B;IAC5B,uBAAuB;IACvB,oBAAoB;IACpB,YAAY;CACf;AACD;IACI,qBAAqB;IACrB,6BAA6B;IAC7B,mBAAmB;IACnB,iBAAiB;CACpB;AACD;IACI,iBAAiB;IACjB,eAAe;IACf,iBAAiB;IACjB,YAAY;IACZ,eAAe;CAClB;AACD;IACI,oBAAoB;IACpB,gBAAgB;IAChB,YAAY;IACZ,QAAQ;IACR,eAAe;IACf,SAAS;IACT,iBAAiB;IACjB,eAAe;IACf,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,6BAA6B;IAC7B,8BAA8B;IAC9B,+BAA+B;IAC/B,2BAA2B;IAC3B,uBAAuB;IACvB,0BAA0B;IAC1B,4BAA4B;IAC5B,uBAAuB;IACvB,oBAAoB;CACvB;AACD;IACI,WAAW;IACX,gBAAgB;CACnB;AACD;IACI,mBAAmB;IACnB,cAAc;CACjB;AACD;IACI,mBAAmB;IACnB,iBAAiB;IACjB,sBAAsB;IACtB,uBAAuB;CAC1B;AACD;IACI,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;CACjB;AACD;IACI,YAAY;CACf;AACD;IACI,iBAAiB;IACjB,oBAAoB;IACpB,YAAY;CACf;;AAED;IACI,uBAAuB;IACvB,sBAAsB;IACtB,iBAAiB;CACpB","file":"comment.css","sourcesContent":[".shopComment{\r\n    height:100%;\r\n    overflow-y:auto;\r\n}\r\n.overview-container{\r\n    background-color: #fff;\r\n    margin-bottom: .2em;\r\n    padding: .3rem;\r\n    font-size: .3rem;\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    color: #666;\r\n}\r\n.overview-col1{\r\n    padding-right: .2rem;\r\n    border-right: 1px solid #ddd;\r\n    text-align: center;\r\n    line-height: 1.5;\r\n}\r\n.overview-overallScore{\r\n    font-size: .6rem;\r\n    line-height: 1;\r\n    font-weight: 400;\r\n    color: #f60;\r\n    display: block;\r\n}\r\n.overview-col2{\r\n    -webkit-box-flex: 1;\r\n    -webkit-flex: 1;\r\n    -ms-flex: 1;\r\n    flex: 1;\r\n    display: block;\r\n    width: 0;\r\n    font-size: .3rem;\r\n    line-height: 1;\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n}\r\n.overview-line{\r\n    width: 80%;\r\n    margin: .1rem 0;\r\n}\r\n.overview-lineContent i{\r\n    font-style: normal;\r\n    color:#ffaa0c;\r\n}\r\n.rating-wrapper{\r\n    position: relative;\r\n    overflow: hidden;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n}\r\n.rating-max, .rating-rating{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n}\r\n.overview-lineScore {\r\n    color: #f60;\r\n}\r\n.overview-small{\r\n    font-size: .2rem;\r\n    padding-left:.16rem;\r\n    color: #999;\r\n}\r\n\r\n.index-rateDetail{\r\n    background-color: #fff;\r\n    padding: .3rem .22rem;\r\n    font-size: .3rem;\r\n}"],"sourceRoot":""}]);
-
-// exports
-
-
-/***/ }),
-
 /***/ 98:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1271,7 +1271,7 @@ exports = module.exports = __webpack_require__(3)(true);
 
 
 // module
-exports.push([module.i, ".shopInfo{\r\n    padding:0.3rem;\r\n    background-color:rgb(0, 151, 255);\r\n}\r\n.shop-header-main_1B2kH_0{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n    align-content: center;\r\n}\r\n.shop-header-logo_3woDQ_0{\r\n    width: 1.3rem;\r\n    height: 1.3rem;\r\n    border: 1px solid #fff;\r\n    border-radius: .106667rem;\r\n    margin: 0 .2rem;\r\n}\r\n.shop-header-content_3UjPs_0{\r\n    -webkit-box-flex: 1;\r\n    -webkit-flex: 1;\r\n    -ms-flex: 1;\r\n    flex: 1;\r\n    display: block;\r\n    width: 0;\r\n    padding-right: .133333rem;\r\n    color:#fff;\r\n}\r\n.shop-header-shopName_2QrHh_0{\r\n    font-size:.32rem;\r\n    font-weight:bold;\r\n    line-height:0.4rem;\r\n}\r\n.shop-header-delivery_1mcTe_0{\r\n    font-size:0.25rem;\r\n}\r\n.shop-header-notice_2DzmG_0{\r\n    font-size:0.25rem;\r\n    white-space: nowrap;\r\n    width:100%;\r\n    overflow:hidden;\r\n    text-overflow:ellipsis;\r\n}\r\n\r\n.shop-tab-container_3skq8_0 {\r\n    line-height: 0.8rem;\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    background-color: #fff;\r\n}\r\n.shop-tab-tab_r4SDi_0 {\r\n    position: relative;\r\n    -webkit-box-flex: 1;\r\n    -webkit-flex: 1;\r\n    -ms-flex: 1;\r\n    flex: 1;\r\n    display: block;\r\n    width: 0;\r\n    text-align: center;\r\n    font-size: .28rem;\r\n    color: #666;\r\n    border-bottom: 1px solid #ddd;\r\n    outline:none!important;\r\n}\r\n.shop-tab-active {\r\n    color: #3190e8;\r\n}\r\n.shop-tab-active .shop-tab-title_1crD1_0:after {\r\n    content: \"\";\r\n    position: absolute;\r\n    bottom:-1px;\r\n    left: 0rem;\r\n    right: 0rem;\r\n    height: .03rem;\r\n    background-color: #3190e8;\r\n    border-radius: .04rem;\r\n}\r\n\r\n.subPage{\r\n    position: absolute;\r\n    width:100%;\r\n    bottom:0;\r\n    top:2.8rem;\r\n    overflow:hidden;\r\n}", "", {"version":3,"sources":["F:/Program/ele/src/css/shop.css"],"names":[],"mappings":"AAAA;IACI,eAAe;IACf,kCAAkC;CACrC;AACD;IACI,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,0BAA0B;IAC1B,uCAAuC;IACvC,uBAAuB;IACvB,+BAA+B;IAC/B,sBAAsB;CACzB;AACD;IACI,cAAc;IACd,eAAe;IACf,uBAAuB;IACvB,0BAA0B;IAC1B,gBAAgB;CACnB;AACD;IACI,oBAAoB;IACpB,gBAAgB;IAChB,YAAY;IACZ,QAAQ;IACR,eAAe;IACf,SAAS;IACT,0BAA0B;IAC1B,WAAW;CACd;AACD;IACI,iBAAiB;IACjB,iBAAiB;IACjB,mBAAmB;CACtB;AACD;IACI,kBAAkB;CACrB;AACD;IACI,kBAAkB;IAClB,oBAAoB;IACpB,WAAW;IACX,gBAAgB;IAChB,uBAAuB;CAC1B;;AAED;IACI,oBAAoB;IACpB,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,uBAAuB;CAC1B;AACD;IACI,mBAAmB;IACnB,oBAAoB;IACpB,gBAAgB;IAChB,YAAY;IACZ,QAAQ;IACR,eAAe;IACf,SAAS;IACT,mBAAmB;IACnB,kBAAkB;IAClB,YAAY;IACZ,8BAA8B;IAC9B,uBAAuB;CAC1B;AACD;IACI,eAAe;CAClB;AACD;IACI,YAAY;IACZ,mBAAmB;IACnB,YAAY;IACZ,WAAW;IACX,YAAY;IACZ,eAAe;IACf,0BAA0B;IAC1B,sBAAsB;CACzB;;AAED;IACI,mBAAmB;IACnB,WAAW;IACX,SAAS;IACT,WAAW;IACX,gBAAgB;CACnB","file":"shop.css","sourcesContent":[".shopInfo{\r\n    padding:0.3rem;\r\n    background-color:rgb(0, 151, 255);\r\n}\r\n.shop-header-main_1B2kH_0{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n    align-content: center;\r\n}\r\n.shop-header-logo_3woDQ_0{\r\n    width: 1.3rem;\r\n    height: 1.3rem;\r\n    border: 1px solid #fff;\r\n    border-radius: .106667rem;\r\n    margin: 0 .2rem;\r\n}\r\n.shop-header-content_3UjPs_0{\r\n    -webkit-box-flex: 1;\r\n    -webkit-flex: 1;\r\n    -ms-flex: 1;\r\n    flex: 1;\r\n    display: block;\r\n    width: 0;\r\n    padding-right: .133333rem;\r\n    color:#fff;\r\n}\r\n.shop-header-shopName_2QrHh_0{\r\n    font-size:.32rem;\r\n    font-weight:bold;\r\n    line-height:0.4rem;\r\n}\r\n.shop-header-delivery_1mcTe_0{\r\n    font-size:0.25rem;\r\n}\r\n.shop-header-notice_2DzmG_0{\r\n    font-size:0.25rem;\r\n    white-space: nowrap;\r\n    width:100%;\r\n    overflow:hidden;\r\n    text-overflow:ellipsis;\r\n}\r\n\r\n.shop-tab-container_3skq8_0 {\r\n    line-height: 0.8rem;\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    background-color: #fff;\r\n}\r\n.shop-tab-tab_r4SDi_0 {\r\n    position: relative;\r\n    -webkit-box-flex: 1;\r\n    -webkit-flex: 1;\r\n    -ms-flex: 1;\r\n    flex: 1;\r\n    display: block;\r\n    width: 0;\r\n    text-align: center;\r\n    font-size: .28rem;\r\n    color: #666;\r\n    border-bottom: 1px solid #ddd;\r\n    outline:none!important;\r\n}\r\n.shop-tab-active {\r\n    color: #3190e8;\r\n}\r\n.shop-tab-active .shop-tab-title_1crD1_0:after {\r\n    content: \"\";\r\n    position: absolute;\r\n    bottom:-1px;\r\n    left: 0rem;\r\n    right: 0rem;\r\n    height: .03rem;\r\n    background-color: #3190e8;\r\n    border-radius: .04rem;\r\n}\r\n\r\n.subPage{\r\n    position: absolute;\r\n    width:100%;\r\n    bottom:0;\r\n    top:2.8rem;\r\n    overflow:hidden;\r\n}"],"sourceRoot":""}]);
+exports.push([module.i, ".shopComment{\r\n    height:100%;\r\n    overflow-y:auto;\r\n}\r\n.overview-container{\r\n    background-color: #fff;\r\n    margin-bottom: .2em;\r\n    padding: .3rem;\r\n    font-size: .3rem;\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    color: #666;\r\n}\r\n.overview-col1{\r\n    padding-right: .2rem;\r\n    border-right: 1px solid #ddd;\r\n    text-align: center;\r\n    line-height: 1.5;\r\n}\r\n.overview-overallScore{\r\n    font-size: .6rem;\r\n    line-height: 1;\r\n    font-weight: 400;\r\n    color: #f60;\r\n    display: block;\r\n}\r\n.overview-col2{\r\n    -webkit-box-flex: 1;\r\n    -webkit-flex: 1;\r\n    -ms-flex: 1;\r\n    flex: 1;\r\n    display: block;\r\n    width: 0;\r\n    font-size: .3rem;\r\n    line-height: 1;\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n}\r\n.overview-line{\r\n    width: 80%;\r\n    margin: .1rem 0;\r\n}\r\n.overview-lineContent i{\r\n    font-style: normal;\r\n    color:#ffaa0c;\r\n}\r\n.rating-wrapper{\r\n    position: relative;\r\n    overflow: hidden;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n}\r\n.rating-max, .rating-rating{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n}\r\n.overview-lineScore {\r\n    color: #f60;\r\n}\r\n.overview-small{\r\n    font-size: .2rem;\r\n    padding-left:.16rem;\r\n    color: #999;\r\n}\r\n\r\n.index-rateDetail{\r\n    background-color: #fff;\r\n    padding: .3rem .22rem;\r\n    font-size: .3rem;\r\n}", "", {"version":3,"sources":["F:/Program/ele/src/css/comment.css"],"names":[],"mappings":"AAAA;IACI,YAAY;IACZ,gBAAgB;CACnB;AACD;IACI,uBAAuB;IACvB,oBAAoB;IACpB,eAAe;IACf,iBAAiB;IACjB,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,0BAA0B;IAC1B,4BAA4B;IAC5B,uBAAuB;IACvB,oBAAoB;IACpB,YAAY;CACf;AACD;IACI,qBAAqB;IACrB,6BAA6B;IAC7B,mBAAmB;IACnB,iBAAiB;CACpB;AACD;IACI,iBAAiB;IACjB,eAAe;IACf,iBAAiB;IACjB,YAAY;IACZ,eAAe;CAClB;AACD;IACI,oBAAoB;IACpB,gBAAgB;IAChB,YAAY;IACZ,QAAQ;IACR,eAAe;IACf,SAAS;IACT,iBAAiB;IACjB,eAAe;IACf,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,6BAA6B;IAC7B,8BAA8B;IAC9B,+BAA+B;IAC/B,2BAA2B;IAC3B,uBAAuB;IACvB,0BAA0B;IAC1B,4BAA4B;IAC5B,uBAAuB;IACvB,oBAAoB;CACvB;AACD;IACI,WAAW;IACX,gBAAgB;CACnB;AACD;IACI,mBAAmB;IACnB,cAAc;CACjB;AACD;IACI,mBAAmB;IACnB,iBAAiB;IACjB,sBAAsB;IACtB,uBAAuB;CAC1B;AACD;IACI,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;CACjB;AACD;IACI,YAAY;CACf;AACD;IACI,iBAAiB;IACjB,oBAAoB;IACpB,YAAY;CACf;;AAED;IACI,uBAAuB;IACvB,sBAAsB;IACtB,iBAAiB;CACpB","file":"comment.css","sourcesContent":[".shopComment{\r\n    height:100%;\r\n    overflow-y:auto;\r\n}\r\n.overview-container{\r\n    background-color: #fff;\r\n    margin-bottom: .2em;\r\n    padding: .3rem;\r\n    font-size: .3rem;\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    color: #666;\r\n}\r\n.overview-col1{\r\n    padding-right: .2rem;\r\n    border-right: 1px solid #ddd;\r\n    text-align: center;\r\n    line-height: 1.5;\r\n}\r\n.overview-overallScore{\r\n    font-size: .6rem;\r\n    line-height: 1;\r\n    font-weight: 400;\r\n    color: #f60;\r\n    display: block;\r\n}\r\n.overview-col2{\r\n    -webkit-box-flex: 1;\r\n    -webkit-flex: 1;\r\n    -ms-flex: 1;\r\n    flex: 1;\r\n    display: block;\r\n    width: 0;\r\n    font-size: .3rem;\r\n    line-height: 1;\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n}\r\n.overview-line{\r\n    width: 80%;\r\n    margin: .1rem 0;\r\n}\r\n.overview-lineContent i{\r\n    font-style: normal;\r\n    color:#ffaa0c;\r\n}\r\n.rating-wrapper{\r\n    position: relative;\r\n    overflow: hidden;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n}\r\n.rating-max, .rating-rating{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n}\r\n.overview-lineScore {\r\n    color: #f60;\r\n}\r\n.overview-small{\r\n    font-size: .2rem;\r\n    padding-left:.16rem;\r\n    color: #999;\r\n}\r\n\r\n.index-rateDetail{\r\n    background-color: #fff;\r\n    padding: .3rem .22rem;\r\n    font-size: .3rem;\r\n}"],"sourceRoot":""}]);
 
 // exports
 

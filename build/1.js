@@ -3,16 +3,31 @@ webpackJsonp([1],{
 /***/ 102:
 /***/ (function(module, exports, __webpack_require__) {
 
+exports = module.exports = __webpack_require__(3)(true);
+// imports
+
+
+// module
+exports.push([module.i, ".shoplist{\r\n    background-color:#fff;\r\n}\r\n.shop-list-item a{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n    border-bottom: 1px solid #eee;\r\n    background-color: #fff;\r\n    color: #666;\r\n    list-style: none;\r\n    font-size: .293333rem;\r\n    outline:none;\r\n}\r\n.shop-list-item .logo-container{\r\n    position: relative;\r\n    padding: .3rem .266667rem;\r\n    width: 1.2rem;\r\n    height: 1.2rem;\r\n}\r\n.shop-list-item .logo-container img {\r\n    display: block;\r\n    width: 100%;\r\n    height: 100%;\r\n    border-radius: .053333rem;\r\n}\r\n\r\n.index-main{\r\n    -webkit-box-flex: 1;\r\n    -webkit-flex-grow: 1;\r\n    -ms-flex-positive: 1;\r\n    flex-grow: 1;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    padding: .3rem .266667rem .3rem 0;\r\n}\r\n.index-line{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n    font-size: .24rem;\r\n}\r\n.index-line h3{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    margin: 0;\r\n    padding: 0;\r\n    max-width: 5rem;\r\n    height: .426667rem;\r\n    color: #333;\r\n    font-weight: 700;\r\n    font-size: .3rem;\r\n}\r\n.index-line h3 span{\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n    white-space: nowrap;\r\n    color: #333;\r\n}\r\n\r\n.index-rateWrap{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n\r\n}\r\n.rating-max{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n}\r\n.rating-max .start{\r\n    font-style: normal;\r\n    color:#ffaa0c;\r\n}\r\n.index-rate {\r\n    margin: 0 .05rem;\r\n    color: #ff6000;\r\n}\r\n.index-iconDeliver{\r\n    padding: 0 .053333rem;\r\n    border: 1px solid #44a5ff;\r\n    border-radius: .053333rem;\r\n    background-color: #fff;\r\n    color: #2395ff;\r\n    font-size: .22rem;\r\n    line-height: .346667rem;\r\n}\r\n\r\n.activity-activityIcon{\r\n    font-style:normal;\r\n    font-size:.2rem;\r\n}", "", {"version":3,"sources":["F:/Program/ele/src/css/shopList.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;CACzB;AACD;IACI,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,0BAA0B;IAC1B,uCAAuC;IACvC,uBAAuB;IACvB,+BAA+B;IAC/B,8BAA8B;IAC9B,uBAAuB;IACvB,YAAY;IACZ,iBAAiB;IACjB,sBAAsB;IACtB,aAAa;CAChB;AACD;IACI,mBAAmB;IACnB,0BAA0B;IAC1B,cAAc;IACd,eAAe;CAClB;AACD;IACI,eAAe;IACf,YAAY;IACZ,aAAa;IACb,0BAA0B;CAC7B;;AAED;IACI,oBAAoB;IACpB,qBAAqB;IACrB,qBAAqB;IACrB,aAAa;IACb,6BAA6B;IAC7B,8BAA8B;IAC9B,+BAA+B;IAC/B,2BAA2B;IAC3B,uBAAuB;IACvB,kCAAkC;CACrC;AACD;IACI,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,0BAA0B;IAC1B,4BAA4B;IAC5B,uBAAuB;IACvB,oBAAoB;IACpB,0BAA0B;IAC1B,uCAAuC;IACvC,uBAAuB;IACvB,+BAA+B;IAC/B,kBAAkB;CACrB;AACD;IACI,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,0BAA0B;IAC1B,4BAA4B;IAC5B,uBAAuB;IACvB,oBAAoB;IACpB,UAAU;IACV,WAAW;IACX,gBAAgB;IAChB,mBAAmB;IACnB,YAAY;IACZ,iBAAiB;IACjB,iBAAiB;CACpB;AACD;IACI,iBAAiB;IACjB,wBAAwB;IACxB,oBAAoB;IACpB,YAAY;CACf;;AAED;IACI,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,0BAA0B;IAC1B,4BAA4B;IAC5B,uBAAuB;IACvB,oBAAoB;;CAEvB;AACD;IACI,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;CACjB;AACD;IACI,mBAAmB;IACnB,cAAc;CACjB;AACD;IACI,iBAAiB;IACjB,eAAe;CAClB;AACD;IACI,sBAAsB;IACtB,0BAA0B;IAC1B,0BAA0B;IAC1B,uBAAuB;IACvB,eAAe;IACf,kBAAkB;IAClB,wBAAwB;CAC3B;;AAED;IACI,kBAAkB;IAClB,gBAAgB;CACnB","file":"shopList.css","sourcesContent":[".shoplist{\r\n    background-color:#fff;\r\n}\r\n.shop-list-item a{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n    border-bottom: 1px solid #eee;\r\n    background-color: #fff;\r\n    color: #666;\r\n    list-style: none;\r\n    font-size: .293333rem;\r\n    outline:none;\r\n}\r\n.shop-list-item .logo-container{\r\n    position: relative;\r\n    padding: .3rem .266667rem;\r\n    width: 1.2rem;\r\n    height: 1.2rem;\r\n}\r\n.shop-list-item .logo-container img {\r\n    display: block;\r\n    width: 100%;\r\n    height: 100%;\r\n    border-radius: .053333rem;\r\n}\r\n\r\n.index-main{\r\n    -webkit-box-flex: 1;\r\n    -webkit-flex-grow: 1;\r\n    -ms-flex-positive: 1;\r\n    flex-grow: 1;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    padding: .3rem .266667rem .3rem 0;\r\n}\r\n.index-line{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n    font-size: .24rem;\r\n}\r\n.index-line h3{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    margin: 0;\r\n    padding: 0;\r\n    max-width: 5rem;\r\n    height: .426667rem;\r\n    color: #333;\r\n    font-weight: 700;\r\n    font-size: .3rem;\r\n}\r\n.index-line h3 span{\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n    white-space: nowrap;\r\n    color: #333;\r\n}\r\n\r\n.index-rateWrap{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n\r\n}\r\n.rating-max{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n}\r\n.rating-max .start{\r\n    font-style: normal;\r\n    color:#ffaa0c;\r\n}\r\n.index-rate {\r\n    margin: 0 .05rem;\r\n    color: #ff6000;\r\n}\r\n.index-iconDeliver{\r\n    padding: 0 .053333rem;\r\n    border: 1px solid #44a5ff;\r\n    border-radius: .053333rem;\r\n    background-color: #fff;\r\n    color: #2395ff;\r\n    font-size: .22rem;\r\n    line-height: .346667rem;\r\n}\r\n\r\n.activity-activityIcon{\r\n    font-style:normal;\r\n    font-size:.2rem;\r\n}"],"sourceRoot":""}]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 105:
+/***/ (function(module, exports, __webpack_require__) {
+
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(129)
+  __webpack_require__(132)
 }
 var Component = __webpack_require__(5)(
   /* script */
   null,
   /* template */
-  __webpack_require__(116),
+  __webpack_require__(119),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -45,19 +60,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 103:
+/***/ 106:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(131)
+  __webpack_require__(134)
 }
 var Component = __webpack_require__(5)(
   /* script */
-  __webpack_require__(86),
+  __webpack_require__(89),
   /* template */
-  __webpack_require__(118),
+  __webpack_require__(121),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -90,7 +105,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 108:
+/***/ 111:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -117,6 +132,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "type": "text",
       "placeholder": "搜索商家、商品",
+      "disabled": "disabled",
       "aria-label": "搜索商家、商品"
     }
   })]) : _vm._e(), _vm._v(" "), _c('section', {
@@ -135,7 +151,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 116:
+/***/ 119:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -279,7 +295,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 118:
+/***/ 121:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -349,11 +365,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       staticClass: "index-line"
     }, [_c('div', {
       staticClass: "index-rateWrap"
-    }, [_c('span', [_vm._v(_vm._s(_vm._f("toMoney")(shop.saleStart)) + "起送 :;/")]), _vm._v(" "), _c('span', [_vm._v("配送费" + _vm._s(_vm._f("toMoney")(shop.sendPrice)) + " :;/")]), _vm._v(" "), _c('span', [_vm._v(_vm._s(shop.pingJun) + "/人")])]), _vm._v(" "), _c('div', {
+    }, [_c('span', [_vm._v(_vm._s(_vm._f("toMoney")(shop.saleStart)) + "起送 / ")]), _vm._v(" "), _c('span', [_vm._v("配送费" + _vm._s(_vm._f("toMoney")(shop.sendPrice)) + " / ")]), _vm._v(" "), _c('span', [_vm._v(_vm._s(shop.pingJun) + "/人")])]), _vm._v(" "), _c('div', {
       staticClass: "index-deliveryWrap"
     }, [_c('span', {
       staticClass: "index-distanceWrap"
-    }, [_vm._v(_vm._s(shop.juLi) + "m :;/")]), _vm._v(" "), _c('span', {
+    }, [_vm._v(_vm._s(shop.juLi) + "m / ")]), _vm._v(" "), _c('span', {
       staticClass: "index-distanceWrap"
     }, [_vm._v(_vm._s(shop.time))])])])])])], 1)
   }))])
@@ -368,13 +384,13 @@ if (true) {
 
 /***/ }),
 
-/***/ 121:
+/***/ 124:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(71);
+var content = __webpack_require__(74);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -383,8 +399,8 @@ var update = __webpack_require__(6)("2bf53aae", content, false);
 if(true) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept(71, function() {
-     var newContent = __webpack_require__(71);
+   module.hot.accept(74, function() {
+     var newContent = __webpack_require__(74);
      if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
      update(newContent);
    });
@@ -395,13 +411,13 @@ if(true) {
 
 /***/ }),
 
-/***/ 129:
+/***/ 132:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(79);
+var content = __webpack_require__(82);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -410,8 +426,8 @@ var update = __webpack_require__(6)("7d91d9a6", content, false);
 if(true) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept(79, function() {
-     var newContent = __webpack_require__(79);
+   module.hot.accept(82, function() {
+     var newContent = __webpack_require__(82);
      if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
      update(newContent);
    });
@@ -422,13 +438,13 @@ if(true) {
 
 /***/ }),
 
-/***/ 131:
+/***/ 134:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(81);
+var content = __webpack_require__(84);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -437,8 +453,8 @@ var update = __webpack_require__(6)("fb7ba812", content, false);
 if(true) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept(81, function() {
-     var newContent = __webpack_require__(81);
+   module.hot.accept(84, function() {
+     var newContent = __webpack_require__(84);
      if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
      update(newContent);
    });
@@ -449,19 +465,19 @@ if(true) {
 
 /***/ }),
 
-/***/ 65:
+/***/ 68:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(121)
+  __webpack_require__(124)
 }
 var Component = __webpack_require__(5)(
   /* script */
-  __webpack_require__(84),
+  __webpack_require__(87),
   /* template */
-  __webpack_require__(108),
+  __webpack_require__(111),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -494,7 +510,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 71:
+/***/ 74:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(true);
@@ -502,14 +518,14 @@ exports = module.exports = __webpack_require__(3)(true);
 
 
 // module
-exports.push([module.i, "\n.fooder{background-color:#fff;padding-bottom:0.2rem;\n}\n.index-title {\n    margin-top: .266667rem;\n    line-height: .7rem;\n    font-weight: 600;\n    border-top: 1px solid #eee;\n    border-bottom: 1px solid #eee;\n    font-size: .3rem;\n    padding-left: .3rem;\n    background-color:#fff;\n}\n.index-search-link{\n    background:#0097ff;\n    display: block;\n    padding:0 .3rem .3rem .3rem;\n}\n.index-search-link:active{\n    background:#0097ff;\n}\n.index-search{\n    display: block;\n    width: 100%;\n    height: .7rem;\n    line-height: .7rem;\n    text-align: center;\n    border-radius: .7rem;\n    color: #333;\n    font-size: .28rem;\n    outline:none;\n    border: none;\n    box-shadow: 0 0.026667rem 0.066667rem 0 rgba(0,0,0,.2);\n}\n.area-title{\n    float:left;\n    text-align:left;\n    width:40%;\n    overflow:hidden;\n    white-space:nowrap;\n    -ms-text-overflow: ellipsis;\n    text-overflow: ellipsis;\n    padding-left:.3rem;\n    font-size:.32rem;\n}\n.searchArea{\n    position: fixed;\n    top:0;\n    bottom:0;\n    width:100%;\n    height:100%;\n    z-index:100;\n    background:#f4f4f4;\n}\n.searchArea .search-top{\n    background-color:rgb(0, 151, 255);\n    text-align: center;\n    padding-bottom: .2rem;\n}\n.searchArea .search-hearder{\n    height:0.8rem;\n    line-height:0.8rem;\n    color:#fff;\n}\n.searchArea .search-hearder .search-area-title{\n    font-size:0.36rem;\n}\n.searchArea .search-area-input{\n    width: 90%;\n    height: .666666rem;\n    line-height: .666666rem;\n    border-radius: .733333rem;\n    padding: 0 .32rem;\n    font-size: .28rem;\n    box-sizing:border-box;\n}\n.slide-enter-active, .slide-leave-active {\n    transition: all 300ms;\n}\n.slide-enter, .slide-leave-active {\n    opacity: 0;\n    transform: translateX(100%);\n}\n", "", {"version":3,"sources":["F:/Program/ele/src/components/home/homePage.vue?f024fad6"],"names":[],"mappings":";AAgCA,QAAA,sBAAA,sBAAA;CAAA;AACA;IACA,uBAAA;IACA,mBAAA;IACA,iBAAA;IACA,2BAAA;IACA,8BAAA;IACA,iBAAA;IACA,oBAAA;IACA,sBAAA;CACA;AAEA;IACA,mBAAA;IACA,eAAA;IACA,4BAAA;CACA;AACA;IACA,mBAAA;CACA;AACA;IACA,eAAA;IACA,YAAA;IACA,cAAA;IACA,mBAAA;IACA,mBAAA;IACA,qBAAA;IACA,YAAA;IACA,kBAAA;IACA,aAAA;IACA,aAAA;IACA,uDAAA;CACA;AACA;IACA,WAAA;IACA,gBAAA;IACA,UAAA;IACA,gBAAA;IACA,mBAAA;IACA,4BAAA;IACA,wBAAA;IACA,mBAAA;IACA,iBAAA;CACA;AAEA;IACA,gBAAA;IACA,MAAA;IACA,SAAA;IACA,WAAA;IACA,YAAA;IACA,YAAA;IACA,mBAAA;CACA;AACA;IACA,kCAAA;IACA,mBAAA;IACA,sBAAA;CACA;AACA;IACA,cAAA;IACA,mBAAA;IACA,WAAA;CACA;AACA;IACA,kBAAA;CACA;AACA;IACA,WAAA;IACA,mBAAA;IACA,wBAAA;IACA,0BAAA;IACA,kBAAA;IACA,kBAAA;IACA,sBAAA;CACA;AAEA;IACA,sBAAA;CACA;AACA;IACA,WAAA;IACA,4BAAA;CACA","file":"homePage.vue","sourcesContent":["<template>\r\n    <div class=\"container\">\r\n        <div id=\"header-title\"  v-if=\"$route.path=='/'\">\r\n            <span class=\"area-title\" @click=\"$store.commit('toggleAreaSearch')\">厦门市湖里区禾山路</span>\r\n        </div>\r\n        <router-link to=\"search\" class=\"index-search-link\"   v-if=\"$route.path=='/'\">\r\n            <input type=\"text\" placeholder=\"搜索商家、商品\" aria-label=\"搜索商家、商品\" class=\"index-search\">\r\n        </router-link>\r\n\r\n        <!--食物功能列表-->\r\n        <section class=\"fooder\">\r\n            <fooder></fooder>\r\n        </section>\r\n\r\n        <h3 class=\"index-title\">推荐商家</h3>\r\n\r\n        <shop-list></shop-list>\r\n\r\n    </div>\r\n</template>\r\n<script>\r\n    import fooder from './fooder.vue'\r\n    import shopList from './shopList.vue'\r\n\r\n    export default{\r\n        name:'homePage',\r\n        components:{\r\n            fooder,shopList\r\n        }\r\n    }\r\n</script>\r\n<style>\r\n    .fooder{background-color:#fff;padding-bottom:0.2rem;}\r\n    .index-title {\r\n        margin-top: .266667rem;\r\n        line-height: .7rem;\r\n        font-weight: 600;\r\n        border-top: 1px solid #eee;\r\n        border-bottom: 1px solid #eee;\r\n        font-size: .3rem;\r\n        padding-left: .3rem;\r\n        background-color:#fff;\r\n    }\r\n\r\n    .index-search-link{\r\n        background:#0097ff;\r\n        display: block;\r\n        padding:0 .3rem .3rem .3rem;\r\n    }\r\n    .index-search-link:active{\r\n        background:#0097ff;\r\n    }\r\n    .index-search{\r\n        display: block;\r\n        width: 100%;\r\n        height: .7rem;\r\n        line-height: .7rem;\r\n        text-align: center;\r\n        border-radius: .7rem;\r\n        color: #333;\r\n        font-size: .28rem;\r\n        outline:none;\r\n        border: none;\r\n        box-shadow: 0 0.026667rem 0.066667rem 0 rgba(0,0,0,.2);\r\n    }\r\n    .area-title{\r\n        float:left;\r\n        text-align:left;\r\n        width:40%;\r\n        overflow:hidden;\r\n        white-space:nowrap;\r\n        -ms-text-overflow: ellipsis;\r\n        text-overflow: ellipsis;\r\n        padding-left:.3rem;\r\n        font-size:.32rem;\r\n    }\r\n\r\n    .searchArea{\r\n        position: fixed;\r\n        top:0;\r\n        bottom:0;\r\n        width:100%;\r\n        height:100%;\r\n        z-index:100;\r\n        background:#f4f4f4;\r\n    }\r\n    .searchArea .search-top{\r\n        background-color:rgb(0, 151, 255);\r\n        text-align: center;\r\n        padding-bottom: .2rem;\r\n    }\r\n    .searchArea .search-hearder{\r\n        height:0.8rem;\r\n        line-height:0.8rem;\r\n        color:#fff;\r\n    }\r\n    .searchArea .search-hearder .search-area-title{\r\n        font-size:0.36rem;\r\n    }\r\n    .searchArea .search-area-input{\r\n        width: 90%;\r\n        height: .666666rem;\r\n        line-height: .666666rem;\r\n        border-radius: .733333rem;\r\n        padding: 0 .32rem;\r\n        font-size: .28rem;\r\n        box-sizing:border-box;\r\n    }\r\n\r\n    .slide-enter-active, .slide-leave-active {\r\n        transition: all 300ms;\r\n    }\r\n    .slide-enter, .slide-leave-active {\r\n        opacity: 0;\r\n        transform: translateX(100%);\r\n    }\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.fooder{background-color:#fff;padding-bottom:0.2rem;\n}\n.index-title {\n    margin-top: .266667rem;\n    line-height: .7rem;\n    font-weight: 600;\n    border-top: 1px solid #eee;\n    border-bottom: 1px solid #eee;\n    font-size: .3rem;\n    padding-left: .3rem;\n    background-color:#fff;\n}\n.index-search-link{\n    background:#0097ff;\n    display: block;\n    padding:0 .3rem .3rem .3rem;\n}\n.index-search-link:active{\n    background:#0097ff;\n}\n.index-search{\n    display: block;\n    width: 100%;\n    height: .7rem;\n    line-height: .7rem;\n    text-align: center;\n    border-radius: .7rem;\n    color: #333;\n    font-size: .28rem;\n    background: #fff;\n    outline:none;\n    border: none;\n    box-shadow: 0 0.026667rem 0.066667rem 0 rgba(0,0,0,.2);\n}\n.area-title{\n    float:left;\n    text-align:left;\n    width:40%;\n    overflow:hidden;\n    white-space:nowrap;\n    -ms-text-overflow: ellipsis;\n    text-overflow: ellipsis;\n    padding-left:.3rem;\n    font-size:.32rem;\n}\n.searchArea{\n    position: fixed;\n    top:0;\n    bottom:0;\n    width:100%;\n    height:100%;\n    z-index:100;\n    background:#f4f4f4;\n}\n.searchArea .search-top{\n    background-color:rgb(0, 151, 255);\n    text-align: center;\n    padding-bottom: .2rem;\n}\n.searchArea .search-hearder{\n    height:0.8rem;\n    line-height:0.8rem;\n    color:#fff;\n}\n.searchArea .search-hearder .search-area-title{\n    font-size:0.36rem;\n}\n.searchArea .search-area-input{\n    width: 90%;\n    height: .666666rem;\n    line-height: .666666rem;\n    border-radius: .733333rem;\n    padding: 0 .32rem;\n    font-size: .28rem;\n    box-sizing:border-box;\n}\n.slide-enter-active, .slide-leave-active {\n    transition: all 300ms;\n}\n.slide-enter, .slide-leave-active {\n    opacity: 0;\n    transform: translateX(100%);\n}\n", "", {"version":3,"sources":["F:/Program/ele/src/components/home/homePage.vue?69662f19"],"names":[],"mappings":";AAgCA,QAAA,sBAAA,sBAAA;CAAA;AACA;IACA,uBAAA;IACA,mBAAA;IACA,iBAAA;IACA,2BAAA;IACA,8BAAA;IACA,iBAAA;IACA,oBAAA;IACA,sBAAA;CACA;AAEA;IACA,mBAAA;IACA,eAAA;IACA,4BAAA;CACA;AACA;IACA,mBAAA;CACA;AACA;IACA,eAAA;IACA,YAAA;IACA,cAAA;IACA,mBAAA;IACA,mBAAA;IACA,qBAAA;IACA,YAAA;IACA,kBAAA;IACA,iBAAA;IACA,aAAA;IACA,aAAA;IACA,uDAAA;CACA;AACA;IACA,WAAA;IACA,gBAAA;IACA,UAAA;IACA,gBAAA;IACA,mBAAA;IACA,4BAAA;IACA,wBAAA;IACA,mBAAA;IACA,iBAAA;CACA;AAEA;IACA,gBAAA;IACA,MAAA;IACA,SAAA;IACA,WAAA;IACA,YAAA;IACA,YAAA;IACA,mBAAA;CACA;AACA;IACA,kCAAA;IACA,mBAAA;IACA,sBAAA;CACA;AACA;IACA,cAAA;IACA,mBAAA;IACA,WAAA;CACA;AACA;IACA,kBAAA;CACA;AACA;IACA,WAAA;IACA,mBAAA;IACA,wBAAA;IACA,0BAAA;IACA,kBAAA;IACA,kBAAA;IACA,sBAAA;CACA;AAEA;IACA,sBAAA;CACA;AACA;IACA,WAAA;IACA,4BAAA;CACA","file":"homePage.vue","sourcesContent":["<template>\r\n    <div class=\"container\">\r\n        <div id=\"header-title\"  v-if=\"$route.path=='/'\">\r\n            <span class=\"area-title\" @click=\"$store.commit('toggleAreaSearch')\">厦门市湖里区禾山路</span>\r\n        </div>\r\n        <router-link to=\"search\" class=\"index-search-link\"   v-if=\"$route.path=='/'\">\r\n            <input type=\"text\" placeholder=\"搜索商家、商品\" disabled=\"disabled\" aria-label=\"搜索商家、商品\" class=\"index-search\">\r\n        </router-link>\r\n\r\n        <!--食物功能列表-->\r\n        <section class=\"fooder\">\r\n            <fooder></fooder>\r\n        </section>\r\n\r\n        <h3 class=\"index-title\">推荐商家</h3>\r\n\r\n        <shop-list></shop-list>\r\n\r\n    </div>\r\n</template>\r\n<script>\r\n    import fooder from './fooder.vue'\r\n    import shopList from './shopList.vue'\r\n\r\n    export default{\r\n        name:'homePage',\r\n        components:{\r\n            fooder,shopList\r\n        }\r\n    }\r\n</script>\r\n<style>\r\n    .fooder{background-color:#fff;padding-bottom:0.2rem;}\r\n    .index-title {\r\n        margin-top: .266667rem;\r\n        line-height: .7rem;\r\n        font-weight: 600;\r\n        border-top: 1px solid #eee;\r\n        border-bottom: 1px solid #eee;\r\n        font-size: .3rem;\r\n        padding-left: .3rem;\r\n        background-color:#fff;\r\n    }\r\n\r\n    .index-search-link{\r\n        background:#0097ff;\r\n        display: block;\r\n        padding:0 .3rem .3rem .3rem;\r\n    }\r\n    .index-search-link:active{\r\n        background:#0097ff;\r\n    }\r\n    .index-search{\r\n        display: block;\r\n        width: 100%;\r\n        height: .7rem;\r\n        line-height: .7rem;\r\n        text-align: center;\r\n        border-radius: .7rem;\r\n        color: #333;\r\n        font-size: .28rem;\r\n        background: #fff;\r\n        outline:none;\r\n        border: none;\r\n        box-shadow: 0 0.026667rem 0.066667rem 0 rgba(0,0,0,.2);\r\n    }\r\n    .area-title{\r\n        float:left;\r\n        text-align:left;\r\n        width:40%;\r\n        overflow:hidden;\r\n        white-space:nowrap;\r\n        -ms-text-overflow: ellipsis;\r\n        text-overflow: ellipsis;\r\n        padding-left:.3rem;\r\n        font-size:.32rem;\r\n    }\r\n\r\n    .searchArea{\r\n        position: fixed;\r\n        top:0;\r\n        bottom:0;\r\n        width:100%;\r\n        height:100%;\r\n        z-index:100;\r\n        background:#f4f4f4;\r\n    }\r\n    .searchArea .search-top{\r\n        background-color:rgb(0, 151, 255);\r\n        text-align: center;\r\n        padding-bottom: .2rem;\r\n    }\r\n    .searchArea .search-hearder{\r\n        height:0.8rem;\r\n        line-height:0.8rem;\r\n        color:#fff;\r\n    }\r\n    .searchArea .search-hearder .search-area-title{\r\n        font-size:0.36rem;\r\n    }\r\n    .searchArea .search-area-input{\r\n        width: 90%;\r\n        height: .666666rem;\r\n        line-height: .666666rem;\r\n        border-radius: .733333rem;\r\n        padding: 0 .32rem;\r\n        font-size: .28rem;\r\n        box-sizing:border-box;\r\n    }\r\n\r\n    .slide-enter-active, .slide-leave-active {\r\n        transition: all 300ms;\r\n    }\r\n    .slide-enter, .slide-leave-active {\r\n        opacity: 0;\r\n        transform: translateX(100%);\r\n    }\r\n</style>"],"sourceRoot":""}]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 79:
+/***/ 82:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(true);
@@ -524,12 +540,12 @@ exports.push([module.i, "\n.fooder-list{\n    display:-ms-flex;\n    display:-we
 
 /***/ }),
 
-/***/ 81:
+/***/ 84:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(true);
 // imports
-exports.i(__webpack_require__(99), "");
+exports.i(__webpack_require__(102), "");
 
 // module
 exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"shopList.vue","sourceRoot":""}]);
@@ -539,7 +555,7 @@ exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings
 
 /***/ }),
 
-/***/ 84:
+/***/ 87:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -549,11 +565,11 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _fooder = __webpack_require__(102);
+var _fooder = __webpack_require__(105);
 
 var _fooder2 = _interopRequireDefault(_fooder);
 
-var _shopList = __webpack_require__(103);
+var _shopList = __webpack_require__(106);
 
 var _shopList2 = _interopRequireDefault(_shopList);
 
@@ -589,7 +605,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 86:
+/***/ 89:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -646,21 +662,6 @@ exports.default = {
 //
 //
 //
-
-
-/***/ }),
-
-/***/ 99:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(true);
-// imports
-
-
-// module
-exports.push([module.i, ".shoplist{\r\n    background-color:#fff;\r\n}\r\n.shop-list-item a{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n    border-bottom: 1px solid #eee;\r\n    background-color: #fff;\r\n    color: #666;\r\n    list-style: none;\r\n    font-size: .293333rem;\r\n    outline:none;\r\n}\r\n.shop-list-item .logo-container{\r\n    position: relative;\r\n    padding: .3rem .266667rem;\r\n    width: 1.2rem;\r\n    height: 1.2rem;\r\n}\r\n.shop-list-item .logo-container img {\r\n    display: block;\r\n    width: 100%;\r\n    height: 100%;\r\n    border-radius: .053333rem;\r\n}\r\n\r\n.index-main{\r\n    -webkit-box-flex: 1;\r\n    -webkit-flex-grow: 1;\r\n    -ms-flex-positive: 1;\r\n    flex-grow: 1;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    padding: .3rem .266667rem .3rem 0;\r\n}\r\n.index-line{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n    font-size: .24rem;\r\n}\r\n.index-line h3{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    margin: 0;\r\n    padding: 0;\r\n    max-width: 5rem;\r\n    height: .426667rem;\r\n    color: #333;\r\n    font-weight: 700;\r\n    font-size: .3rem;\r\n}\r\n.index-line h3 span{\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n    white-space: nowrap;\r\n    color: #333;\r\n}\r\n\r\n.index-rateWrap{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n\r\n}\r\n.rating-max{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n}\r\n.rating-max .start{\r\n    font-style: normal;\r\n    color:#ffaa0c;\r\n}\r\n.index-rate {\r\n    margin: 0 .05rem;\r\n    color: #ff6000;\r\n}\r\n.index-iconDeliver{\r\n    padding: 0 .053333rem;\r\n    border: 1px solid #44a5ff;\r\n    border-radius: .053333rem;\r\n    background-color: #fff;\r\n    color: #2395ff;\r\n    font-size: .22rem;\r\n    line-height: .346667rem;\r\n}\r\n\r\n.activity-activityIcon{\r\n    font-style:normal;\r\n    font-size:.2rem;\r\n}", "", {"version":3,"sources":["F:/Program/ele/src/css/shopList.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;CACzB;AACD;IACI,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,0BAA0B;IAC1B,uCAAuC;IACvC,uBAAuB;IACvB,+BAA+B;IAC/B,8BAA8B;IAC9B,uBAAuB;IACvB,YAAY;IACZ,iBAAiB;IACjB,sBAAsB;IACtB,aAAa;CAChB;AACD;IACI,mBAAmB;IACnB,0BAA0B;IAC1B,cAAc;IACd,eAAe;CAClB;AACD;IACI,eAAe;IACf,YAAY;IACZ,aAAa;IACb,0BAA0B;CAC7B;;AAED;IACI,oBAAoB;IACpB,qBAAqB;IACrB,qBAAqB;IACrB,aAAa;IACb,6BAA6B;IAC7B,8BAA8B;IAC9B,+BAA+B;IAC/B,2BAA2B;IAC3B,uBAAuB;IACvB,kCAAkC;CACrC;AACD;IACI,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,0BAA0B;IAC1B,4BAA4B;IAC5B,uBAAuB;IACvB,oBAAoB;IACpB,0BAA0B;IAC1B,uCAAuC;IACvC,uBAAuB;IACvB,+BAA+B;IAC/B,kBAAkB;CACrB;AACD;IACI,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,0BAA0B;IAC1B,4BAA4B;IAC5B,uBAAuB;IACvB,oBAAoB;IACpB,UAAU;IACV,WAAW;IACX,gBAAgB;IAChB,mBAAmB;IACnB,YAAY;IACZ,iBAAiB;IACjB,iBAAiB;CACpB;AACD;IACI,iBAAiB;IACjB,wBAAwB;IACxB,oBAAoB;IACpB,YAAY;CACf;;AAED;IACI,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;IACd,0BAA0B;IAC1B,4BAA4B;IAC5B,uBAAuB;IACvB,oBAAoB;;CAEvB;AACD;IACI,qBAAqB;IACrB,sBAAsB;IACtB,qBAAqB;IACrB,cAAc;CACjB;AACD;IACI,mBAAmB;IACnB,cAAc;CACjB;AACD;IACI,iBAAiB;IACjB,eAAe;CAClB;AACD;IACI,sBAAsB;IACtB,0BAA0B;IAC1B,0BAA0B;IAC1B,uBAAuB;IACvB,eAAe;IACf,kBAAkB;IAClB,wBAAwB;CAC3B;;AAED;IACI,kBAAkB;IAClB,gBAAgB;CACnB","file":"shopList.css","sourcesContent":[".shoplist{\r\n    background-color:#fff;\r\n}\r\n.shop-list-item a{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n    border-bottom: 1px solid #eee;\r\n    background-color: #fff;\r\n    color: #666;\r\n    list-style: none;\r\n    font-size: .293333rem;\r\n    outline:none;\r\n}\r\n.shop-list-item .logo-container{\r\n    position: relative;\r\n    padding: .3rem .266667rem;\r\n    width: 1.2rem;\r\n    height: 1.2rem;\r\n}\r\n.shop-list-item .logo-container img {\r\n    display: block;\r\n    width: 100%;\r\n    height: 100%;\r\n    border-radius: .053333rem;\r\n}\r\n\r\n.index-main{\r\n    -webkit-box-flex: 1;\r\n    -webkit-flex-grow: 1;\r\n    -ms-flex-positive: 1;\r\n    flex-grow: 1;\r\n    -webkit-box-orient: vertical;\r\n    -webkit-box-direction: normal;\r\n    -webkit-flex-direction: column;\r\n    -ms-flex-direction: column;\r\n    flex-direction: column;\r\n    padding: .3rem .266667rem .3rem 0;\r\n}\r\n.index-line{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    -webkit-box-pack: justify;\r\n    -webkit-justify-content: space-between;\r\n    -ms-flex-pack: justify;\r\n    justify-content: space-between;\r\n    font-size: .24rem;\r\n}\r\n.index-line h3{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n    margin: 0;\r\n    padding: 0;\r\n    max-width: 5rem;\r\n    height: .426667rem;\r\n    color: #333;\r\n    font-weight: 700;\r\n    font-size: .3rem;\r\n}\r\n.index-line h3 span{\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n    white-space: nowrap;\r\n    color: #333;\r\n}\r\n\r\n.index-rateWrap{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -webkit-box-align: center;\r\n    -webkit-align-items: center;\r\n    -ms-flex-align: center;\r\n    align-items: center;\r\n\r\n}\r\n.rating-max{\r\n    display: -webkit-box;\r\n    display: -webkit-flex;\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n}\r\n.rating-max .start{\r\n    font-style: normal;\r\n    color:#ffaa0c;\r\n}\r\n.index-rate {\r\n    margin: 0 .05rem;\r\n    color: #ff6000;\r\n}\r\n.index-iconDeliver{\r\n    padding: 0 .053333rem;\r\n    border: 1px solid #44a5ff;\r\n    border-radius: .053333rem;\r\n    background-color: #fff;\r\n    color: #2395ff;\r\n    font-size: .22rem;\r\n    line-height: .346667rem;\r\n}\r\n\r\n.activity-activityIcon{\r\n    font-style:normal;\r\n    font-size:.2rem;\r\n}"],"sourceRoot":""}]);
-
-// exports
 
 
 /***/ })
