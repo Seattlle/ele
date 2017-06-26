@@ -69,6 +69,6 @@
         background-size:100%;
     }
     .nav-list .nav-item .nav-icon.icon1{
-        background-image:url('../../images/ele.png');
+        background-image:url('../../../static/images/ele.png');
     }
 </style>

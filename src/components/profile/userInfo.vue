@@ -3,7 +3,7 @@
     <section class="user">
         <section class="userInfo" @click="!$store.state.user.isLogin && $router.push({path:'login',query:{redirect:'profile'}})">
             <div class="profile-header">
-                <img src="../../images/head.png" alt="">
+                <img src="../../../static/images/head.png" alt="">
             </div>
             <div class="profile-info">
                 <p class="profile-tips">登录/注册</p>

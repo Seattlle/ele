@@ -30,8 +30,8 @@
     </div>
 </template>
 <script>
-    import eleTitle from "./components/main/header.vue";
-    import footerNav from "./components/main/footer.vue";
+    import eleTitle from "./main/header.vue";
+    import footerNav from "./main/footer.vue";
     export default{
         name:"app",
         components:{
@@ -59,6 +59,6 @@
     window.onresize=resize;
 </script>
 <style>
-    @import "./css/base.css";
-    @import "./css/App.css";
+    @import "../css/base.css";
+    @import "../css/App.css";
 </style>
