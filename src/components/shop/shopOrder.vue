@@ -149,14 +149,17 @@
                 flyball.style.top=startY+'px';
                 flyball.style.left=startX+'px';
 
+                let firstX=startX;
+
                 document.getElementById('app').appendChild(flyball);
 
                 let target=document.querySelector('.bottomNav-18KRG_0');
-                let targetX=target.clientLeft+15;
-                let targetY=screen.height-target.clientTop-40;
+                let middle=target.offsetWidth/4;
+                let targetX=target.clientLeft+middle;
+                let targetY=target.offsetParent.offsetTop+target.offsetTop-middle;
 
                 let stepsX=(startX-targetX)/50;
-                let stepsY=(targetY-startY)/50;
+                let stepsY=(targetY-startY)/25;
 
                moveBall();
 
@@ -164,11 +167,17 @@
                     if (startX > targetX) {
                         startX -= stepsX;
                         flyball.style.left=startX+'px';
-                        if(startY<targetY){
+                        if(startX>0.8*firstX){
+                            startY -= stepsY;
+                        }else{
                             startY += stepsY;
-                            flyball.style.top=startY+'px';
                         }
-                        setTimeout(moveBall, 10)
+                        flyball.style.top=startY+'px';
+//                        if(startY<targetY){
+//                            startY += stepsY;
+//                            flyball.style.top=startY+'px';
+//                        }
+                        setTimeout(moveBall, 20)
                     } else {
                         document.getElementById('app').removeChild(flyball);
                     }

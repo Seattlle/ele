@@ -1229,14 +1229,17 @@ exports.default = {
             flyball.style.top = startY + 'px';
             flyball.style.left = startX + 'px';
 
+            var firstX = startX;
+
             document.getElementById('app').appendChild(flyball);
 
             var target = document.querySelector('.bottomNav-18KRG_0');
-            var targetX = target.clientLeft + 15;
-            var targetY = screen.height - target.clientTop - 40;
+            var middle = target.offsetWidth / 4;
+            var targetX = target.clientLeft + middle;
+            var targetY = target.offsetParent.offsetTop + target.offsetTop - middle;
 
             var stepsX = (startX - targetX) / 50;
-            var stepsY = (targetY - startY) / 50;
+            var stepsY = (targetY - startY) / 25;
 
             moveBall();
 
@@ -1244,11 +1247,17 @@ exports.default = {
                 if (startX > targetX) {
                     startX -= stepsX;
                     flyball.style.left = startX + 'px';
-                    if (startY < targetY) {
+                    if (startX > 0.8 * firstX) {
+                        startY -= stepsY;
+                    } else {
                         startY += stepsY;
-                        flyball.style.top = startY + 'px';
                     }
-                    setTimeout(moveBall, 10);
+                    flyball.style.top = startY + 'px';
+                    //                        if(startY<targetY){
+                    //                            startY += stepsY;
+                    //                            flyball.style.top=startY+'px';
+                    //                        }
+                    setTimeout(moveBall, 20);
                 } else {
                     document.getElementById('app').removeChild(flyball);
                 }
