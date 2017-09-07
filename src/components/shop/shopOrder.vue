@@ -112,6 +112,7 @@
                     let scrolled = document.getElementById("container").scrollTop;
                     let title=document.querySelectorAll('.category-title');
                     let _this=this;
+                    alert(scrolled);
                     title.forEach(function (it) {
                         if(it.offsetTop>scrolled-30&&it.offsetTop<scrolled+30){
                             let menuId=it.dataset.menuid;

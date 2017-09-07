@@ -1192,6 +1192,7 @@ exports.default = {
                 var scrolled = document.getElementById("container").scrollTop;
                 var title = document.querySelectorAll('.category-title');
                 var _this = this;
+                alert(scrolled);
                 title.forEach(function (it) {
                     if (it.offsetTop > scrolled - 30 && it.offsetTop < scrolled + 30) {
                         var menuId = it.dataset.menuid;
