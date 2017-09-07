@@ -1,5 +1,6 @@
 <template>
     <section class="shop-main">
+        {{menuTop}}
         <div class="menuview">
             <ul class="menucategory">
                 <li class="menucategory-item" v-for="(item ,index) in $store.state.shop.menuCategory" :class="{'active':!!item.checked||($store.state.shop.choseMenu==undefined&&index==0)}"   @click="choseThis(item,index)">
@@ -59,6 +60,11 @@
         components:{
             cart
         },
+        data(){
+            return {
+                menuTop:"123"
+            }
+        },
         mounted(){
             this.$nextTick(function () {
                 document.getElementById("container").addEventListener('scroll', this.onScroll)
@@ -112,7 +118,9 @@
                     let scrolled = document.getElementById("container").scrollTop;
                     let title=document.querySelectorAll('.category-title');
                     let _this=this;
+                    _this.menuTop="";
                     title.forEach(function (it) {
+                        _this.menuTop+=it.offsetTop+";";
                         if(it.offsetTop>scrolled-50&&it.offsetTop<scrolled+50){
                             let menuId=it.dataset.menuid;
                             _this.$store.commit('scrollMenu',menuId);
