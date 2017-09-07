@@ -122,6 +122,7 @@
                     _this.menuTop=title.length;
                     _this.scrollTop=scrolled;
                     title.forEach(function (it) {
+                        _this.menuTop="555";
                         _this.menuTop+=it.offsetTop+";";
                         if(it.offsetTop>scrolled-50&&it.offsetTop<scrolled+50){
                             let menuId=it.dataset.menuid;
