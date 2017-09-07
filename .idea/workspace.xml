@@ -55,8 +55,8 @@
       <file leaf-file-name="shopOrder.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/shop/shopOrder.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="124" column="44" lean-forward="true" selection-start-line="124" selection-start-column="44" selection-end-line="124" selection-end-column="44" />
+            <state relative-caret-position="646">
+              <caret line="135" column="66" lean-forward="false" selection-start-line="135" selection-start-column="66" selection-end-line="135" selection-end-column="66" />
               <folding>
                 <element signature="n#section#0;n#li#0;n#ul#0;n#template#0;n#section#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="false" />
                 <element signature="e#3583#3786#0" expanded="false" />
@@ -109,7 +109,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.container-menuview</find>
       <find>Info</find>
       <find>.shop-header-notice_2DzmG_0</find>
       <find>.overview-small</find>
@@ -139,6 +138,7 @@
       <find>.index-3S6cZ_0</find>
       <find>index-1G7HV_0</find>
       <find>index-161Mm_0</find>
+      <find>forEach</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -499,7 +499,7 @@
       <workItem from="1498010135697" duration="5209000" />
       <workItem from="1498185031714" duration="62000" />
       <workItem from="1498459927233" duration="6376000" />
-      <workItem from="1504749870865" duration="5587000" />
+      <workItem from="1504749870865" duration="5948000" />
     </task>
     <task id="LOCAL-00001" summary="修改商户中心页">
       <created>1496999545488</created>
@@ -704,11 +704,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504757291198</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="=">
+      <created>1504757866401</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1504757866401</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143264000" />
+    <option name="totallyTimeSpent" value="143625000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1112,8 +1119,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/shop/shopOrder.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="124" column="44" lean-forward="true" selection-start-line="124" selection-start-column="44" selection-end-line="124" selection-end-column="44" />
+        <state relative-caret-position="646">
+          <caret line="135" column="66" lean-forward="false" selection-start-line="135" selection-start-column="66" selection-end-line="135" selection-end-column="66" />
           <folding>
             <element signature="n#section#0;n#li#0;n#ul#0;n#template#0;n#section#0;n#div#0;n#section#0;n#template#0;n#!!top" expanded="false" />
             <element signature="e#3583#3786#0" expanded="false" />

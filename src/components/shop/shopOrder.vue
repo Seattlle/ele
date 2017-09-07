@@ -121,15 +121,22 @@
                     let _this=this;
                     _this.menuTop=title.length;
                     _this.scrollTop=scrolled;
-                    title.forEach(function (it) {
-                        _this.menuTop="555";
-                        _this.menuTop+=it.offsetTop+";";
-                        if(it.offsetTop>scrolled-50&&it.offsetTop<scrolled+50){
-                            let menuId=it.dataset.menuid;
+                    for(let i=0;i<title.length;i++){
+                        _this.menuTop+=title[i].offsetTop+";";
+                        if(title[i].offsetTop>scrolled-50&&title[i].offsetTop<scrolled+50){
+                            let menuId=title[i].dataset.menuid;
                             _this.$store.commit('scrollMenu',menuId);
                             _this.choseMenu=menuId;
                         }
-                    })
+                    }
+//                    title.forEach(function (it) {
+//                        _this.menuTop+=it.offsetTop+";";
+//                        if(it.offsetTop>scrolled-50&&it.offsetTop<scrolled+50){
+//                            let menuId=it.dataset.menuid;
+//                            _this.$store.commit('scrollMenu',menuId);
+//                            _this.choseMenu=menuId;
+//                        }
+//                    })
                 }
             },
             method(list,i){
