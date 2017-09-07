@@ -1,6 +1,6 @@
 <template>
     <section class="shop-main">
-        {{menuTop}}
+        {{menuTop}}---{{scrollTop}}
         <div class="menuview">
             <ul class="menucategory">
                 <li class="menucategory-item" v-for="(item ,index) in $store.state.shop.menuCategory" :class="{'active':!!item.checked||($store.state.shop.choseMenu==undefined&&index==0)}"   @click="choseThis(item,index)">
@@ -62,7 +62,8 @@
         },
         data(){
             return {
-                menuTop:"123"
+                menuTop:"0",
+                scrollTop:"0"
             }
         },
         mounted(){
@@ -119,6 +120,7 @@
                     let title=document.querySelectorAll('.category-title');
                     let _this=this;
                     _this.menuTop="";
+                    _this.scrollTop=scrolled;
                     title.forEach(function (it) {
                         _this.menuTop+=it.offsetTop+";";
                         if(it.offsetTop>scrolled-50&&it.offsetTop<scrolled+50){

@@ -484,7 +484,7 @@ if (true) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('section', {
     staticClass: "shop-main"
-  }, [_c('div', {
+  }, [_vm._v("\n    " + _vm._s(_vm.menuTop) + "---" + _vm._s(_vm.scrollTop) + "\n    "), _c('div', {
     staticClass: "menuview"
   }, [_c('ul', {
     staticClass: "menucategory"
@@ -1132,11 +1132,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
 
 var ifOnScroll = false;
 exports.default = {
     components: {
         cart: _cart2.default
+    },
+    data: function data() {
+        return {
+            menuTop: "0",
+            scrollTop: "0"
+        };
     },
     mounted: function mounted() {
         this.$nextTick(function () {
@@ -1192,7 +1199,10 @@ exports.default = {
                 var scrolled = document.getElementById("container").scrollTop;
                 var title = document.querySelectorAll('.category-title');
                 var _this = this;
+                _this.menuTop = "";
+                _this.scrollTop = scrolled;
                 title.forEach(function (it) {
+                    _this.menuTop += it.offsetTop + ";";
                     if (it.offsetTop > scrolled - 50 && it.offsetTop < scrolled + 50) {
                         var menuId = it.dataset.menuid;
                         _this.$store.commit('scrollMenu', menuId);
