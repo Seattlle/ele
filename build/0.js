@@ -1192,9 +1192,8 @@ exports.default = {
                 var scrolled = document.getElementById("container").scrollTop;
                 var title = document.querySelectorAll('.category-title');
                 var _this = this;
-                alert(scrolled);
                 title.forEach(function (it) {
-                    if (it.offsetTop > scrolled - 30 && it.offsetTop < scrolled + 30) {
+                    if (it.offsetTop > scrolled - 50 && it.offsetTop < scrolled + 50) {
                         var menuId = it.dataset.menuid;
                         _this.$store.commit('scrollMenu', menuId);
                         _this.choseMenu = menuId;
