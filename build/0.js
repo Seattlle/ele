@@ -484,7 +484,7 @@ if (true) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('section', {
     staticClass: "shop-main"
-  }, [_vm._v("\n    " + _vm._s(_vm.menuTop) + "---" + _vm._s(_vm.scrollTop) + "\n    "), _c('div', {
+  }, [_c('div', {
     staticClass: "menuview"
   }, [_c('ul', {
     staticClass: "menucategory"
@@ -1132,7 +1132,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-//
 
 var ifOnScroll = false;
 exports.default = {
@@ -1140,10 +1139,7 @@ exports.default = {
         cart: _cart2.default
     },
     data: function data() {
-        return {
-            menuTop: "0",
-            scrollTop: "0"
-        };
+        return {};
     },
     mounted: function mounted() {
         this.$nextTick(function () {
@@ -1199,10 +1195,7 @@ exports.default = {
                 var scrolled = document.getElementById("container").scrollTop;
                 var title = document.querySelectorAll('.category-title');
                 var _this = this;
-                _this.menuTop = title.length;
-                _this.scrollTop = scrolled;
                 for (var i = 0; i < title.length; i++) {
-                    _this.menuTop += title[i].offsetTop + ";";
                     if (title[i].offsetTop > scrolled - 50 && title[i].offsetTop < scrolled + 50) {
                         var menuId = title[i].dataset.menuid;
                         _this.$store.commit('scrollMenu', menuId);

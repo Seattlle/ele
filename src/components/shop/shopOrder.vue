@@ -1,6 +1,5 @@
 <template>
     <section class="shop-main">
-        {{menuTop}}---{{scrollTop}}
         <div class="menuview">
             <ul class="menucategory">
                 <li class="menucategory-item" v-for="(item ,index) in $store.state.shop.menuCategory" :class="{'active':!!item.checked||($store.state.shop.choseMenu==undefined&&index==0)}"   @click="choseThis(item,index)">
@@ -61,10 +60,7 @@
             cart
         },
         data(){
-            return {
-                menuTop:"0",
-                scrollTop:"0"
-            }
+            return { }
         },
         mounted(){
             this.$nextTick(function () {
@@ -119,10 +115,7 @@
                     let scrolled = document.getElementById("container").scrollTop;
                     let title=document.querySelectorAll('.category-title');
                     let _this=this;
-                    _this.menuTop=title.length;
-                    _this.scrollTop=scrolled;
                     for(let i=0;i<title.length;i++){
-                        _this.menuTop+=title[i].offsetTop+";";
                         if(title[i].offsetTop>scrolled-50&&title[i].offsetTop<scrolled+50){
                             let menuId=title[i].dataset.menuid;
                             _this.$store.commit('scrollMenu',menuId);
