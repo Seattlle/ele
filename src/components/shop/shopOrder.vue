@@ -122,7 +122,8 @@
                     _this.menuTop=title.length;
                     _this.scrollTop=scrolled;
                     for(let i=0;i<title.length;i++){
-                        _this.menuTop+=title[i].offsetTop+";";
+                        _this.menuTop+=title[i]+";";
+//                        _this.menuTop+=title[i].offsetTop+";";
                         if(title[i].offsetTop>scrolled-50&&title[i].offsetTop<scrolled+50){
                             let menuId=title[i].dataset.menuid;
                             _this.$store.commit('scrollMenu',menuId);
