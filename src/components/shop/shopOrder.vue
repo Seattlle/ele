@@ -119,7 +119,7 @@
                     let scrolled = document.getElementById("container").scrollTop;
                     let title=document.querySelectorAll('.category-title');
                     let _this=this;
-                    _this.menuTop="";
+                    _this.menuTop=title.length;
                     _this.scrollTop=scrolled;
                     title.forEach(function (it) {
                         _this.menuTop+=it.offsetTop+";";

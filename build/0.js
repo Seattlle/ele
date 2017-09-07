@@ -1199,7 +1199,7 @@ exports.default = {
                 var scrolled = document.getElementById("container").scrollTop;
                 var title = document.querySelectorAll('.category-title');
                 var _this = this;
-                _this.menuTop = "";
+                _this.menuTop = title.length;
                 _this.scrollTop = scrolled;
                 title.forEach(function (it) {
                     _this.menuTop += it.offsetTop + ";";
