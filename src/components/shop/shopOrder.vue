@@ -149,34 +149,37 @@
                 flyball.style.top=startY+'px';
                 flyball.style.left=startX+'px';
 
-                let firstX=startX;
-
                 document.getElementById('app').appendChild(flyball);
 
                 let target=document.querySelector('.bottomNav-18KRG_0');
-                let middle=target.offsetWidth/4;
+                let middle=target.offsetWidth/2;
                 let targetX=target.clientLeft+middle;
                 let targetY=target.offsetParent.offsetTop+target.offsetTop-middle;
 
                 let stepsX=(startX-targetX)/50;
-                let stepsY=(targetY-startY)/25;
 
-               moveBall();
+                let nStartY=startY;
+                let nStartX=startX;
+                let nEndX=targetX;
+                let nEndY=targetY;
+
+                let nTopX=0.8*nStartX;
+                let nTopY=0.9*nStartY;
+
+                let a = ((nStartY - nEndY) * (nStartX - nTopX) - (nStartY - nTopY) * (nStartX - nEndX)) / ((nStartX * nStartX - nEndX * nEndX) * (nStartX - nTopX) - (nStartX * nStartX - nTopX * nTopX) * (nStartX - nEndX));
+                let b = ((nEndY - nStartY) - a * (nEndX * nEndX - nStartX * nStartX)) / (nEndX - nStartX);
+                let c = nStartY - a * nStartX * nStartX - b * nStartX;
+
+                moveBall();
 
                 function moveBall(){
                     if (startX > targetX) {
                         startX -= stepsX;
+
+                        let y = a * startX * startX + b * startX + c;
+
                         flyball.style.left=startX+'px';
-                        if(startX>0.8*firstX){
-                            startY -= stepsY;
-                        }else{
-                            startY += stepsY;
-                        }
-                        flyball.style.top=startY+'px';
-//                        if(startY<targetY){
-//                            startY += stepsY;
-//                            flyball.style.top=startY+'px';
-//                        }
+                        flyball.style.top=y+'px';
                         setTimeout(moveBall, 20)
                     } else {
                         document.getElementById('app').removeChild(flyball);
