@@ -1219,22 +1219,26 @@ exports.default = {
                 'num': i
             });
             if (i > 0) {
-                this.flyball(event.clientX - event.target.clientWidth, event.clientY - event.target.clientHeight);
+                var startX = event.clientX - event.target.clientWidth;
+                var startY = event.clientY - event.target.clientHeight;
+
+                var target = document.querySelector('.bottomNav-18KRG_0');
+                var middle = target.offsetWidth / 2;
+                var targetX = target.clientLeft + middle;
+                var targetY = target.offsetParent.offsetTop + target.offsetTop - middle;
+
+                this.flyball(startX, startY, targetX, targetY);
             }
             this.$store.commit('calculateMoney');
         },
-        flyball: function flyball(startX, startY) {
+
+        //购物车抛物线  开始坐标  结束坐标
+        flyball: function flyball(startX, startY, targetX, targetY) {
             var flyball = document.createElement('div');
             flyball.className = 'flyball';
-            flyball.style.top = startY + 'px';
             flyball.style.left = startX + 'px';
-
+            flyball.style.top = startY + 'px';
             document.getElementById('app').appendChild(flyball);
-
-            var target = document.querySelector('.bottomNav-18KRG_0');
-            var middle = target.offsetWidth / 2;
-            var targetX = target.clientLeft + middle;
-            var targetY = target.offsetParent.offsetTop + target.offsetTop - middle;
 
             var stepsX = (startX - targetX) / 50;
 
@@ -1242,7 +1246,6 @@ exports.default = {
             var nStartX = startX;
             var nEndX = targetX;
             var nEndY = targetY;
-
             var nTopX = 0.8 * nStartX;
             var nTopY = 0.9 * nStartY;
 
@@ -1251,11 +1254,9 @@ exports.default = {
             var c = nStartY - a * nStartX * nStartX - b * nStartX;
 
             moveBall();
-
             function moveBall() {
                 if (startX > targetX) {
                     startX -= stepsX;
-
                     var y = a * startX * startX + b * startX + c;
 
                     flyball.style.left = startX + 'px';

@@ -139,22 +139,25 @@
                     'num':i
                 });
                 if(i>0){
-                   this.flyball(event.clientX-event.target.clientWidth,event.clientY-event.target.clientHeight);
+                    let  startX=event.clientX-event.target.clientWidth;
+                    let  startY=event.clientY-event.target.clientHeight;
+
+                    let target=document.querySelector('.bottomNav-18KRG_0');
+                    let middle=target.offsetWidth/2;
+                    let targetX=target.clientLeft+middle;
+                    let targetY=target.offsetParent.offsetTop+target.offsetTop-middle;
+
+                   this.flyball(startX,startY,targetX,targetY);
                 }
                 this.$store.commit('calculateMoney');
             },
-            flyball(startX,startY){
+            //购物车抛物线  开始坐标  结束坐标
+            flyball(startX,startY,targetX,targetY){
                 let flyball=document.createElement('div');
                 flyball.className='flyball';
-                flyball.style.top=startY+'px';
                 flyball.style.left=startX+'px';
-
+                flyball.style.top=startY+'px';
                 document.getElementById('app').appendChild(flyball);
-
-                let target=document.querySelector('.bottomNav-18KRG_0');
-                let middle=target.offsetWidth/2;
-                let targetX=target.clientLeft+middle;
-                let targetY=target.offsetParent.offsetTop+target.offsetTop-middle;
 
                 let stepsX=(startX-targetX)/50;
 
@@ -162,7 +165,6 @@
                 let nStartX=startX;
                 let nEndX=targetX;
                 let nEndY=targetY;
-
                 let nTopX=0.8*nStartX;
                 let nTopY=0.9*nStartY;
 
@@ -171,11 +173,9 @@
                 let c = nStartY - a * nStartX * nStartX - b * nStartX;
 
                 moveBall();
-
                 function moveBall(){
                     if (startX > targetX) {
                         startX -= stepsX;
-
                         let y = a * startX * startX + b * startX + c;
 
                         flyball.style.left=startX+'px';
