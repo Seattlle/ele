@@ -1,6 +1,6 @@
 webpackJsonp([6],{
 
-/***/ 120:
+/***/ 121:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -35,7 +35,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 133:
+/***/ 134:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -68,13 +68,13 @@ if(true) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(133)
+  __webpack_require__(134)
 }
 var Component = __webpack_require__(5)(
   /* script */
   null,
   /* template */
-  __webpack_require__(120),
+  __webpack_require__(121),
   /* styles */
   injectStyle,
   /* scopeId */

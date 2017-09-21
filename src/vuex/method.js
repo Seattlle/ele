@@ -87,6 +87,14 @@ const mutations={
             Vue.set(menuType,'selectNum',num);
             store.shop.totalNum+=num;
         });
+
+        let button=document.getElementById("bottomNav_Cart");
+        if(store.shop.totalNum>0){
+            if(button.className.indexOf("bottomNav_right")<0)
+                button.className=button.className.trim()+" bottomNav_right";
+        }else{
+            button.className=button.className.trim().replace("bottomNav_right","");
+        }
     },
     //显示/隐藏搜索地址页
     toggleAreaSearch(state){

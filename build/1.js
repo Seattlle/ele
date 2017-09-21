@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 102:
+/***/ 103:
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)(true);
@@ -15,19 +15,19 @@ exports.push([module.i, ".shoplist{\r\n    background-color:#fff;\r\n}\r\n.shop-
 
 /***/ }),
 
-/***/ 105:
+/***/ 106:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(132)
+  __webpack_require__(133)
 }
 var Component = __webpack_require__(5)(
   /* script */
-  null,
+  __webpack_require__(87),
   /* template */
-  __webpack_require__(119),
+  __webpack_require__(120),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -60,19 +60,19 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 106:
+/***/ 107:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(134)
+  __webpack_require__(135)
 }
 var Component = __webpack_require__(5)(
   /* script */
-  __webpack_require__(89),
+  __webpack_require__(90),
   /* template */
-  __webpack_require__(121),
+  __webpack_require__(122),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -105,7 +105,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 111:
+/***/ 112:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -151,15 +151,150 @@ if (true) {
 
 /***/ }),
 
-/***/ 119:
+/***/ 120:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "fooder-list-wrap"
-  }, [_c('ul', {
+    staticClass: "fooder-list-wrap",
+    on: {
+      "touchstart": function($event) {
+        _vm.touchLi(0)
+      },
+      "touchmove": function($event) {
+        _vm.touchLi(1)
+      },
+      "touchend": function($event) {
+        _vm.touchLi(2)
+      }
+    }
+  }, [_vm._m(0), _vm._v(" "), _vm._m(1)])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('ul', {
+    staticClass: "fooder-list active"
+  }, [_c('li', {
+    staticClass: "list-item"
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:;"
+    }
+  }, [_c('div', {
+    staticClass: "list-img"
+  }, [_c('img', {
+    attrs: {
+      "src": "https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('span', {
+    staticClass: "title"
+  }, [_vm._v("美食")])])]), _vm._v(" "), _c('li', {
+    staticClass: "list-item"
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:;"
+    }
+  }, [_c('div', {
+    staticClass: "list-img"
+  }, [_c('img', {
+    attrs: {
+      "src": "https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('span', {
+    staticClass: "title"
+  }, [_vm._v("美食")])])]), _vm._v(" "), _c('li', {
+    staticClass: "list-item"
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:;"
+    }
+  }, [_c('div', {
+    staticClass: "list-img"
+  }, [_c('img', {
+    attrs: {
+      "src": "https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('span', {
+    staticClass: "title"
+  }, [_vm._v("美食")])])]), _vm._v(" "), _c('li', {
+    staticClass: "list-item"
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:;"
+    }
+  }, [_c('div', {
+    staticClass: "list-img"
+  }, [_c('img', {
+    attrs: {
+      "src": "https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('span', {
+    staticClass: "title"
+  }, [_vm._v("美食")])])]), _vm._v(" "), _c('li', {
+    staticClass: "list-item"
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:;"
+    }
+  }, [_c('div', {
+    staticClass: "list-img"
+  }, [_c('img', {
+    attrs: {
+      "src": "https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('span', {
+    staticClass: "title"
+  }, [_vm._v("美食")])])]), _vm._v(" "), _c('li', {
+    staticClass: "list-item"
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:;"
+    }
+  }, [_c('div', {
+    staticClass: "list-img"
+  }, [_c('img', {
+    attrs: {
+      "src": "https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('span', {
+    staticClass: "title"
+  }, [_vm._v("美食")])])]), _vm._v(" "), _c('li', {
+    staticClass: "list-item"
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:;"
+    }
+  }, [_c('div', {
+    staticClass: "list-img"
+  }, [_c('img', {
+    attrs: {
+      "src": "https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('span', {
+    staticClass: "title"
+  }, [_vm._v("美食")])])]), _vm._v(" "), _c('li', {
+    staticClass: "list-item"
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:;"
+    }
+  }, [_c('div', {
+    staticClass: "list-img"
+  }, [_c('img', {
+    attrs: {
+      "src": "https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('span', {
+    staticClass: "title"
+  }, [_vm._v("美食")])])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('ul', {
     staticClass: "fooder-list"
   }, [_c('li', {
     staticClass: "list-item"
@@ -221,23 +356,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })]), _vm._v(" "), _c('span', {
     staticClass: "title"
-  }, [_vm._v("美食")])])])]), _vm._v(" "), _c('ul', {
-    staticClass: "fooder-list"
-  }, [_c('li', {
-    staticClass: "list-item"
-  }, [_c('a', {
-    attrs: {
-      "href": "javascript:;"
-    }
-  }, [_c('div', {
-    staticClass: "list-img"
-  }, [_c('img', {
-    attrs: {
-      "src": "https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
-      "alt": ""
-    }
-  })]), _vm._v(" "), _c('span', {
-    staticClass: "title"
   }, [_vm._v("美食")])])]), _vm._v(" "), _c('li', {
     staticClass: "list-item"
   }, [_c('a', {
@@ -283,7 +401,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })]), _vm._v(" "), _c('span', {
     staticClass: "title"
-  }, [_vm._v("美食")])])])])])
+  }, [_vm._v("美食")])])]), _vm._v(" "), _c('li', {
+    staticClass: "list-item"
+  }, [_c('a', {
+    attrs: {
+      "href": "javascript:;"
+    }
+  }, [_c('div', {
+    staticClass: "list-img"
+  }, [_c('img', {
+    attrs: {
+      "src": "https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/",
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('span', {
+    staticClass: "title"
+  }, [_vm._v("美食")])])])])
 }]}
 module.exports.render._withStripped = true
 if (true) {
@@ -295,7 +428,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 121:
+/***/ 122:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -384,7 +517,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 124:
+/***/ 125:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -411,7 +544,7 @@ if(true) {
 
 /***/ }),
 
-/***/ 132:
+/***/ 133:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -438,7 +571,7 @@ if(true) {
 
 /***/ }),
 
-/***/ 134:
+/***/ 135:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -471,13 +604,13 @@ if(true) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(124)
+  __webpack_require__(125)
 }
 var Component = __webpack_require__(5)(
   /* script */
-  __webpack_require__(87),
+  __webpack_require__(88),
   /* template */
-  __webpack_require__(111),
+  __webpack_require__(112),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -533,7 +666,7 @@ exports = module.exports = __webpack_require__(3)(true);
 
 
 // module
-exports.push([module.i, "\n.fooder-list{\n    display:-ms-flex;\n    display:-webkit-flex;\n    display:flex;\n    align-items:center;\n}\n.fooder-list .list-item{\n    -webkit-flex:1;\n    -webkit-box-flex:1;\n    -ms-flex:1;\n    flex:1;\n    display: block;\n    width:0;\n    text-align:center;\n}\n.fooder-list a{\n    outline:none;\n}\n.fooder-list .list-img{\n    width:1rem;\n    height:1rem;\n    display: inline-block;\n}\n.fooder-list img{width:100%;\n}\n.fooder-list .title{\n    display: block;\n    margin-top: .133333rem;\n    color: #666;\n    font-size: .26rem;\n}\n", "", {"version":3,"sources":["F:/Program/ele/src/components/home/fooder.vue?67df1884"],"names":[],"mappings":";AA0DA;IACA,iBAAA;IACA,qBAAA;IACA,aAAA;IACA,mBAAA;CACA;AACA;IACA,eAAA;IACA,mBAAA;IACA,WAAA;IACA,OAAA;IACA,eAAA;IACA,QAAA;IACA,kBAAA;CACA;AACA;IACA,aAAA;CACA;AACA;IACA,WAAA;IACA,YAAA;IACA,sBAAA;CACA;AACA,iBAAA,WAAA;CAAA;AAEA;IACA,eAAA;IACA,uBAAA;IACA,YAAA;IACA,kBAAA;CACA","file":"fooder.vue","sourcesContent":["<template>\r\n    <div class=\"fooder-list-wrap\">\r\n        <ul class=\"fooder-list\">\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n        </ul>\r\n        <ul class=\"fooder-list\">\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n        </ul>\r\n    </div>\r\n</template>\r\n\r\n<style>\r\n    .fooder-list{\r\n        display:-ms-flex;\r\n        display:-webkit-flex;\r\n        display:flex;\r\n        align-items:center;\r\n    }\r\n    .fooder-list .list-item{\r\n        -webkit-flex:1;\r\n        -webkit-box-flex:1;\r\n        -ms-flex:1;\r\n        flex:1;\r\n        display: block;\r\n        width:0;\r\n        text-align:center;\r\n    }\r\n    .fooder-list a{\r\n        outline:none;\r\n    }\r\n    .fooder-list .list-img{\r\n        width:1rem;\r\n        height:1rem;\r\n        display: inline-block;\r\n    }\r\n    .fooder-list img{width:100%;}\r\n\r\n    .fooder-list .title{\r\n        display: block;\r\n        margin-top: .133333rem;\r\n        color: #666;\r\n        font-size: .26rem;\r\n    }\r\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n.fooder-list-wrap{\n    position: relative;\n    overflow: hidden;\n    height:3rem;\n}\n.fooder-list{\n    position: absolute;\n    -webkit-transform: translateX(-100%);\n    transform: translateX(-100%);\n    width: 100%;\n    display: none;\n}\n.fooder-list.active{\n    -webkit-transform: translateX(0);\n    transform: translateX(0);\n    display: block;\n}\n.fooder-list .list-item{\n    text-align:center;\n    float:left;\n    width:25%;\n}\n.fooder-list:after{\n    content: '';\n    display: block;\n    clear: both;\n    zoom: 1;\n}\n.fooder-list a{\n    outline:none;\n}\n.fooder-list .list-img{\n    width:1rem;\n    height:1rem;\n    display: inline-block;\n}\n.fooder-list img{width:100%;\n}\n.fooder-list .title{\n    display: block;\n    /*margin-top: .133333rem;*/\n    color: #666;\n    font-size: .26rem;\n}\n", "", {"version":3,"sources":["F:/Program/ele/src/components/home/fooder.vue?1f84a3d2"],"names":[],"mappings":";AA0GA;IACA,mBAAA;IACA,iBAAA;IACA,YAAA;CACA;AACA;IACA,mBAAA;IACA,qCAAA;IACA,6BAAA;IACA,YAAA;IACA,cAAA;CACA;AACA;IACA,iCAAA;IACA,yBAAA;IACA,eAAA;CACA;AACA;IACA,kBAAA;IACA,WAAA;IACA,UAAA;CACA;AACA;IACA,YAAA;IACA,eAAA;IACA,YAAA;IACA,QAAA;CACA;AACA;IACA,aAAA;CACA;AACA;IACA,WAAA;IACA,YAAA;IACA,sBAAA;CACA;AACA,iBAAA,WAAA;CAAA;AAEA;IACA,eAAA;IACA,2BAAA;IACA,YAAA;IACA,kBAAA;CACA","file":"fooder.vue","sourcesContent":["<template>\r\n    <div class=\"fooder-list-wrap\" v-on:touchstart=\"touchLi(0)\"  v-on:touchmove=\"touchLi(1)\"  v-on:touchend=\"touchLi(2)\">\r\n        <ul class=\"fooder-list active\">\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n        </ul>\r\n        <ul class=\"fooder-list\">\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n            <li class=\"list-item\"><a href=\"javascript:;\">\r\n                <div class=\"list-img\">\r\n                    <img src=\"https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/\" alt=\"\">\r\n                </div>\r\n                <span class=\"title\">美食</span>\r\n            </a></li>\r\n        </ul>\r\n    </div>\r\n</template>\r\n\r\n<style>\r\n    .fooder-list-wrap{\r\n        position: relative;\r\n        overflow: hidden;\r\n        height:3rem;\r\n    }\r\n    .fooder-list{\r\n        position: absolute;\r\n        -webkit-transform: translateX(-100%);\r\n        transform: translateX(-100%);\r\n        width: 100%;\r\n        display: none;\r\n    }\r\n    .fooder-list.active{\r\n        -webkit-transform: translateX(0);\r\n        transform: translateX(0);\r\n        display: block;\r\n    }\r\n    .fooder-list .list-item{\r\n        text-align:center;\r\n        float:left;\r\n        width:25%;\r\n    }\r\n    .fooder-list:after{\r\n        content: '';\r\n        display: block;\r\n        clear: both;\r\n        zoom: 1;\r\n    }\r\n    .fooder-list a{\r\n        outline:none;\r\n    }\r\n    .fooder-list .list-img{\r\n        width:1rem;\r\n        height:1rem;\r\n        display: inline-block;\r\n    }\r\n    .fooder-list img{width:100%;}\r\n\r\n    .fooder-list .title{\r\n        display: block;\r\n        /*margin-top: .133333rem;*/\r\n        color: #666;\r\n        font-size: .26rem;\r\n    }\r\n</style>\r\n\r\n<script>\r\n    let startX=0,bodywidth=document.body.clientWidth;\r\n    export default{\r\n        data(){\r\n            return{}\r\n        },\r\n        methods:{\r\n            touchLi(index){\r\n                let touch=event.changedTouches[0],endX=0;\r\n                let fooder=document.querySelectorAll(\".fooder-list\");\r\n                let length=fooder.length;\r\n\r\n                if(index==0){\r\n                   startX=touch.pageX;\r\n                    for(let i=0;i<length;i++){\r\n                        let item=fooder[i];\r\n                        if(item.className.indexOf(\"active\")<0){\r\n                            item.style.display=\"block\";\r\n                        }\r\n                    }\r\n                   return false;\r\n               }\r\n\r\n                endX=touch.pageX;\r\n                let dt=endX-startX;\r\n\r\n               if(index==2){\r\n                     if(Math.abs(dt)>bodywidth/2){\r\n                         for(let i=0;i<length;i++){\r\n                             let item=fooder[i];\r\n                             if(item.className.indexOf(\"active\")<0){\r\n                                 item.className=item.className.trim()+\" active\";\r\n                             }else{\r\n                                 item.className=item.className.replace(\"active\",\"\");\r\n                             }\r\n                             item.style=\"\";\r\n                         }\r\n                     }else{\r\n                        for(let i=0;i<length;i++){\r\n                           let item=fooder[i];\r\n                           item.style=\"\";\r\n                       }\r\n                     }\r\n\r\n                   return false;\r\n               }\r\n\r\n\r\n\r\n               for(let i=0;i<length;i++){\r\n                   let item=fooder[i];\r\n                   if(item.className.indexOf(\"active\")>=0){\r\n                       item.style.transform=\"translate3d(\"+dt+\"px,0,0)\";\r\n                   }else{\r\n                       item.style.transform=\"translate3d(\"+(bodywidth+dt)+\"px,0,0)\";\r\n                   }\r\n               }\r\n            }\r\n        }\r\n    }\r\n</script>"],"sourceRoot":""}]);
 
 // exports
 
@@ -545,7 +678,7 @@ exports.push([module.i, "\n.fooder-list{\n    display:-ms-flex;\n    display:-we
 
 exports = module.exports = __webpack_require__(3)(true);
 // imports
-exports.i(__webpack_require__(102), "");
+exports.i(__webpack_require__(103), "");
 
 // module
 exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"shopList.vue","sourceRoot":""}]);
@@ -564,12 +697,237 @@ exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
-var _fooder = __webpack_require__(105);
+var startX = 0,
+    bodywidth = document.body.clientWidth;
+exports.default = {
+    data: function data() {
+        return {};
+    },
+
+    methods: {
+        touchLi: function touchLi(index) {
+            var touch = event.changedTouches[0],
+                endX = 0;
+            var fooder = document.querySelectorAll(".fooder-list");
+            var length = fooder.length;
+
+            if (index == 0) {
+                startX = touch.pageX;
+                for (var i = 0; i < length; i++) {
+                    var item = fooder[i];
+                    if (item.className.indexOf("active") < 0) {
+                        item.style.display = "block";
+                    }
+                }
+                return false;
+            }
+
+            endX = touch.pageX;
+            var dt = endX - startX;
+
+            if (index == 2) {
+                if (Math.abs(dt) > bodywidth / 2) {
+                    for (var _i = 0; _i < length; _i++) {
+                        var _item = fooder[_i];
+                        if (_item.className.indexOf("active") < 0) {
+                            _item.className = _item.className.trim() + " active";
+                        } else {
+                            _item.className = _item.className.replace("active", "");
+                        }
+                        _item.style = "";
+                    }
+                } else {
+                    for (var _i2 = 0; _i2 < length; _i2++) {
+                        var _item2 = fooder[_i2];
+                        _item2.style = "";
+                    }
+                }
+
+                return false;
+            }
+
+            for (var _i3 = 0; _i3 < length; _i3++) {
+                var _item3 = fooder[_i3];
+                if (_item3.className.indexOf("active") >= 0) {
+                    _item3.style.transform = "translate3d(" + dt + "px,0,0)";
+                } else {
+                    _item3.style.transform = "translate3d(" + (bodywidth + dt) + "px,0,0)";
+                }
+            }
+        }
+    }
+};
+
+/***/ }),
+
+/***/ 88:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _fooder = __webpack_require__(106);
 
 var _fooder2 = _interopRequireDefault(_fooder);
 
-var _shopList = __webpack_require__(106);
+var _shopList = __webpack_require__(107);
 
 var _shopList2 = _interopRequireDefault(_shopList);
 
@@ -605,7 +963,7 @@ exports.default = {
 
 /***/ }),
 
-/***/ 89:
+/***/ 90:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

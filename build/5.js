@@ -1,6 +1,6 @@
 webpackJsonp([5],{
 
-/***/ 113:
+/***/ 114:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -40,7 +40,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 126:
+/***/ 127:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
@@ -73,13 +73,13 @@ if(true) {
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(126)
+  __webpack_require__(127)
 }
 var Component = __webpack_require__(5)(
   /* script */
-  __webpack_require__(88),
+  __webpack_require__(89),
   /* template */
-  __webpack_require__(113),
+  __webpack_require__(114),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -127,7 +127,7 @@ exports.push([module.i, "\n.history-2IxHX_1 {\n    margin-top: .3rem;\n}\n.histo
 
 /***/ }),
 
-/***/ 88:
+/***/ 89:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

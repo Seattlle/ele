@@ -183,6 +183,11 @@
                         setTimeout(moveBall, 20)
                     } else {
                         document.getElementById('app').removeChild(flyball);
+                        let bottom=document.getElementById("bottomNav_Cart");
+                        bottom.className=bottom.className.replace("bottom_shake","")+" bottom_shake";
+                        setTimeout(function () {
+                            bottom.className=bottom.className.replace("bottom_shake","");
+                        },300)
                     }
                 }
             }

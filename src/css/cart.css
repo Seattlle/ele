@@ -78,7 +78,7 @@
 .bottomNav-1urxC_0.bottomNav-9FCIh_0 {
     background-color: #535356;
 }
-.bottomNav-18KRG_0:after {
+.bottomNav_right:after {
     position: absolute;
     right: -.12rem;
     top: -.133333rem;
@@ -92,4 +92,26 @@
     padding: .03rem .05rem;
     line-height: .25rem;
     content: attr(attr-quantity);
+}
+
+.bottomNav-18KRG_0.bottom_shake{
+    -webkit-animation:bottom-shake .5s ease-in-out;
+    animation:bottom-shake .5s ease-in-out;
+}
+@keyframes bottom-shake {
+    0%{
+        transform: scale(0.9);
+    }
+    25%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
 }

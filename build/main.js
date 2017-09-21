@@ -83,7 +83,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "f811a8bdd7a92002387f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "3675acad1ac4aa1cf7ac"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -11526,6 +11526,13 @@ var mutations = {
             _vue2.default.set(menuType, 'selectNum', num);
             store.shop.totalNum += num;
         });
+
+        var button = document.getElementById("bottomNav_Cart");
+        if (store.shop.totalNum > 0) {
+            if (button.className.indexOf("bottomNav_right") < 0) button.className = button.className.trim() + " bottomNav_right";
+        } else {
+            button.className = button.className.trim().replace("bottomNav_right", "");
+        }
     },
 
     //显示/隐藏搜索地址页
