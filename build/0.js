@@ -223,28 +223,28 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('img', {
     staticClass: "shop-header-logo_3woDQ_0",
     attrs: {
-      "src": _vm.$store.state.shop.head
+      "src": _vm.shop.img
     }
   }), _vm._v(" "), _c('div', {
     staticClass: "shop-header-content_3UjPs_0"
   }, [_c('h2', {
     staticClass: "shop-header-shopName_2QrHh_0",
     domProps: {
-      "textContent": _vm._s(_vm.$store.state.shop.name)
+      "textContent": _vm._s(_vm.shop.name)
     }
   }), _vm._v(" "), _c('p', {
     staticClass: "shop-header-delivery_1mcTe_0"
   }, [_c('span', {
     staticClass: "shop-header-deliveryItem_Fari3_0"
-  }, [_vm._v("\n                 " + _vm._s(_vm.$store.state.shop.sendMethods) + "\n             ")]), _vm._v(" "), _c('span', {
+  }, [_vm._v("\n                 " + _vm._s(_vm.shop.sendMethods) + "\n             ")]), _vm._v(" "), _c('span', {
     staticClass: "shop-header-deliveryItem_Fari3_0"
-  }, [_vm._v("\n                " + _vm._s(_vm.$store.state.shop.sendTime) + "送达\n             ")]), _vm._v(" "), _c('span', {
+  }, [_vm._v("\n                " + _vm._s(_vm.shop.time) + "送达\n             ")]), _vm._v(" "), _c('span', {
     staticClass: "shop-header-deliveryItem_Fari3_0"
-  }, [_vm._v("\n                配送费" + _vm._s(_vm._f("toMoney")(_vm.$store.state.shop.sendPrice)) + "\n              ")])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("\n                配送费" + _vm._s(_vm._f("toMoney")(_vm.shop.sendPrice)) + "\n              ")])]), _vm._v(" "), _c('div', {
     staticClass: "shop-header-notice_2DzmG_0"
   }, [_c('span', [_vm._v("公告：")]), _vm._v(" "), _c('span', {
     domProps: {
-      "textContent": _vm._s(_vm.$store.state.shop.gongGao)
+      "textContent": _vm._s(_vm.shop.gongGao)
     }
   })])])])]), _vm._v(" "), _c('div', {
     staticClass: "shop-tab-container_3skq8_0"
@@ -1044,8 +1044,23 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = {
     data: function data() {
         return {
-            showOrder: true
+            showOrder: true,
+            shop: {}
         };
+    },
+
+    watch: {
+        // 监听 $route 为店内页设置不同的过渡效果
+        "$route": function $route(to, from) {
+            var shopid = this.$route.query.shophash;
+            var _this = this;
+            this.$store.state.indexShopList.forEach(function (item) {
+                if (item.id == shopid) {
+                    _this.shop = item;
+                    return false;
+                }
+            });
+        }
     },
     mounted: function mounted() {
         this.$nextTick(function () {

@@ -83,7 +83,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "3675acad1ac4aa1cf7ac"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "9a79140e0ccacf53ca1a"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -11742,7 +11742,7 @@ Object.defineProperty(exports, "__esModule", {
  */
 var shopList = [{
     'id': '10001',
-    'name': '隔壁老王',
+    'name': '放牛斑（滨北官任店）',
     'img': 'https://fuss10.elemecdn.com/6/0a/f9fba2b5ea3f1d6e15429f382b4fejpeg.jpeg?imageMogr/format/webp/thumbnail/!120x120r/gravity/Center/crop/120x120/',
     "score": "4.7",
     "sale": "741",
@@ -11750,7 +11750,9 @@ var shopList = [{
     "sendPrice": "5",
     "pingJun": "55",
     "juLi": '500m',
-    "time": "20分钟"
+    'sendMethods': '蜂鸟专送',
+    "time": "20分钟",
+    'gongGao': '各位放牛斑的粉丝，请在饮料下单的时候备注一下购买饮料的需求：1、甜度选择（多糖、正常糖、少糖、半塘、微糖、无糖）。2、放牛斑会员卡的手机号，以便我们帮您把积分积进去喔！3、选购加料（波霸、燕麦、红豆）的时候要备注清楚加料要加在哪一杯饮料中，确保我们给您的饮料是无误的，谢谢！'
 }, {
     'id': '10002',
     'name': '隔壁老王',
@@ -11761,7 +11763,9 @@ var shopList = [{
     "sendPrice": "5",
     "pingJun": "55",
     "juLi": '500m',
-    "time": "20分钟"
+    'sendMethods': '蜂鸟专送',
+    "time": "20分钟",
+    'gongGao': '各位放牛斑的粉丝，请在饮料下单的时候备注一下购买饮料的需求：1、甜度选择（多糖、正常糖、少糖、半塘、微糖、无糖）。2、放牛斑会员卡的手机号，以便我们帮您把积分积进去喔！3、选购加料（波霸、燕麦、红豆）的时候要备注清楚加料要加在哪一杯饮料中，确保我们给您的饮料是无误的，谢谢！'
 }, {
     'id': '10003',
     'name': '隔壁老王',
