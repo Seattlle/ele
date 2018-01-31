@@ -9,12 +9,12 @@
 
         <!--食物功能列表-->
         <section class="fooder">
-            <fooder></fooder>
+            <fooder :fooders="indexShops"></fooder>
         </section>
 
         <h3 class="index-title">推荐商家</h3>
 
-        <shop-list></shop-list>
+        <shop-list :index-shop="indexShopList"></shop-list>
 
     </div>
 </template>
@@ -26,6 +26,28 @@
         name:'homePage',
         components:{
             fooder,shopList
+        },
+        data:function () {
+            return{
+                indexShops:[],
+                indexShopList:[]
+            }
+        },
+        mounted:function () {
+           this.$nextTick(function () {
+               this.getIndexShop();
+           })
+        },
+        methods:{
+           getIndexShop:function () {
+               let _this=this;
+               this.axios.get('./indexSlideType.js').then(function (response) {
+                   _this.indexShops=response.data;
+               });
+               this.axios.get('./shopList.js').then(function (response) {
+                   _this.indexShopList=response.data;
+               })
+           }
         }
     }
 </script>

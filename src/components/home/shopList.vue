@@ -1,7 +1,7 @@
 <template>
     <section class="shoplist">
         <ul class="shop-list">
-            <li class="shop-list-item" v-for="shop in $store.state.indexShopList">
+            <li class="shop-list-item" v-for="shop in indexShop">
                 <router-link :to="{path:'shopInfo',query:{shophash:shop.id}}">
                     <div class="logo-container">
                         <img :src="shop.img" alt="" class="shop-logo">
@@ -52,6 +52,9 @@
     </section>
 </template>
 <script>
+    export default {
+        "props":["indexShop"]
+    }
 
 </script>
 <style>

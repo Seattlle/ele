@@ -1,104 +1,24 @@
 <template>
     <div class="fooder-list-wrap" v-on:touchstart="touchLi(0)"  v-on:touchmove="touchLi(1)"  v-on:touchend="touchLi(2)">
         <ul class="fooder-list active">
-            <li class="list-item"><a href="javascript:;">
-                <div class="list-img">
-                    <img src="https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
-                </div>
-                <span class="title">美食</span>
-            </a></li>
-            <li class="list-item"><a href="javascript:;">
-                <div class="list-img">
-                    <img src="https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
-                </div>
-                <span class="title">美食</span>
-            </a></li>
-            <li class="list-item"><a href="javascript:;">
-                <div class="list-img">
-                    <img src="https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
-                </div>
-                <span class="title">美食</span>
-            </a></li>
-            <li class="list-item"><a href="javascript:;">
-                <div class="list-img">
-                    <img src="https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
-                </div>
-                <span class="title">美食</span>
-            </a></li>
-            <li class="list-item"><a href="javascript:;">
-                <div class="list-img">
-                    <img src="https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
-                </div>
-                <span class="title">美食</span>
-            </a></li>
-            <li class="list-item"><a href="javascript:;">
-                <div class="list-img">
-                    <img src="https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
-                </div>
-                <span class="title">美食</span>
-            </a></li>
-            <li class="list-item"><a href="javascript:;">
-                <div class="list-img">
-                    <img src="https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
-                </div>
-                <span class="title">美食</span>
-            </a></li>
-            <li class="list-item"><a href="javascript:;">
-                <div class="list-img">
-                    <img src="https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
-                </div>
-                <span class="title">美食</span>
-            </a></li>
+            <li class="list-item" v-for="food in fooders">
+                <a href="javascript:;">
+                    <div class="list-img">
+                        <img :src="food.img" :alt="food.title">
+                    </div>
+                    <span class="title">{{food.title}}</span>
+                </a>
+            </li>
         </ul>
         <ul class="fooder-list">
-            <li class="list-item"><a href="javascript:;">
-                <div class="list-img">
-                    <img src="https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
-                </div>
-                <span class="title">美食</span>
-            </a></li>
-            <li class="list-item"><a href="javascript:;">
-                <div class="list-img">
-                    <img src="https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
-                </div>
-                <span class="title">美食</span>
-            </a></li>
-            <li class="list-item"><a href="javascript:;">
-                <div class="list-img">
-                    <img src="https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
-                </div>
-                <span class="title">美食</span>
-            </a></li>
-            <li class="list-item"><a href="javascript:;">
-                <div class="list-img">
-                    <img src="https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
-                </div>
-                <span class="title">美食</span>
-            </a></li>
-            <li class="list-item"><a href="javascript:;">
-                <div class="list-img">
-                    <img src="https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
-                </div>
-                <span class="title">美食</span>
-            </a></li>
-            <li class="list-item"><a href="javascript:;">
-                <div class="list-img">
-                    <img src="https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
-                </div>
-                <span class="title">美食</span>
-            </a></li>
-            <li class="list-item"><a href="javascript:;">
-                <div class="list-img">
-                    <img src="https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
-                </div>
-                <span class="title">美食</span>
-            </a></li>
-            <li class="list-item"><a href="javascript:;">
-                <div class="list-img">
-                    <img src="https://fuss10.elemecdn.com/b/7e/d1890cf73ae6f2adb97caa39de7fcjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/" alt="">
-                </div>
-                <span class="title">美食</span>
-            </a></li>
+            <li class="list-item" v-for="food in fooders">
+                <a href="javascript:;">
+                    <div class="list-img">
+                        <img :src="food.img" :alt="food.title">
+                    </div>
+                    <span class="title">{{food.title}}</span>
+                </a>
+            </li>
         </ul>
     </div>
 </template>
@@ -153,8 +73,10 @@
 <script>
     let startX=0,bodywidth=document.body.clientWidth;
     export default{
+        props:['fooders'],
         data(){
-            return{}
+            return{
+            }
         },
         methods:{
             touchLi(index){

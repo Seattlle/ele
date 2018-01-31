@@ -1,13 +1,17 @@
 <template>
     <div id="app" :class="{'hide-footer':$store.state.hidefooter,'search-page':$route.path=='/search','hide-header':$route.path=='/'}">
+
+        <!--头部-->
         <header class="app-header" v-if="$route.path!='/'">
             <ele-title></ele-title>
         </header>
 
+        <!--底部-->
         <footer class="app-footer">
             <footer-nav></footer-nav>
         </footer>
 
+        <!--主体-->
         <section class="main">
             <div class="main-contaienr">
                 <keep-alive>
@@ -16,6 +20,7 @@
             </div>
         </section>
 
+        <!--定位-->
         <transition name="slide" v-if="$route.path=='/'">
             <section class="searchArea" v-show="$store.state.showSearchArea">
                 <div class="search-top">
