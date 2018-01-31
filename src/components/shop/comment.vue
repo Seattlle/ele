@@ -2,7 +2,7 @@
     <section class="shopComment">
         <section class="overview-container">
             <div class="overview-col1">
-                <strong class="overview-overallScore">{{$store.state.shop.overallScore}}</strong>
+                <strong class="overview-overallScore">{{overallScore}}</strong>
                 <div>综合评价</div>
                 <p class="overview-small">高于周边商家32.2%</p>
             </div>
@@ -19,7 +19,7 @@
                                 <i class="start">★</i>
                             </div>
                         </div>
-                        <span class="overview-lineScore">{{$store.state.shop.serviceNum}}</span>
+                        <span class="overview-lineScore">{{serviceNum}}</span>
                     </span>
                 </div>
                 <div class="overview-line">
@@ -34,18 +34,18 @@
                                 <i class="start">★</i>
                             </div>
                         </div>
-                        <span class="overview-lineScore">{{$store.state.shop.goodNum}}</span>
+                        <span class="overview-lineScore">{{goodNum}}</span>
                     </span>
                 </div>
                 <div class="overview-line">
                     <span>送达时间</span>
-                    <span class="overview-lineContent overview-small">{{$store.state.shop.sendTime}}</span>
+                    <span class="overview-lineContent overview-small">{{sendTime}}</span>
                 </div>
             </div>
         </section>
         <section class="index-rateDetail">
             <ul class="commit-list">
-                <comment-list v-for="comment in $store.state.shop.commentList" :item="comment" :key="comment.id"></comment-list>
+                <comment-list v-for="comment in comments" :item="comment" :key="comment.id"></comment-list>
             </ul>
         </section>
     </section>
@@ -53,6 +53,7 @@
 <script>
     import commentList from './commentList.vue'
     export default{
+        props:["comments","overallScore","goodNum","sendTime","serviceNum"],
         data(){
             return { }
         },

@@ -52,7 +52,7 @@
     }
 </script>
 <style>
-    .fooder{background-color:#fff;padding-bottom:0.2rem;}
+    .fooder{background-color:#fff;padding-bottom:0.1rem;}
     .index-title {
         margin-top: .266667rem;
         line-height: .7rem;

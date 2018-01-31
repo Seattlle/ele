@@ -3,7 +3,7 @@
         <!--商家信息-->
         <section class="shopInfo">
             <div class="shop-header-main_1B2kH_0">
-                <img class="shop-header-logo_3woDQ_0" :src="shop.img"> <div class="shop-header-content_3UjPs_0"><h2 class="shop-header-shopName_2QrHh_0" v-text="shop.name"></h2>
+                <img class="shop-header-logo_3woDQ_0" :src="shop.head"> <div class="shop-header-content_3UjPs_0"><h2 class="shop-header-shopName_2QrHh_0" v-text="shop.name"></h2>
                 <p class="shop-header-delivery_1mcTe_0">
                 <span class="shop-header-deliveryItem_Fari3_0">
                      {{shop.sendMethods}}
@@ -34,8 +34,8 @@
         </div>
         <!--subpage-->
         <section class="subPage">
-           <shop-order v-show="showOrder"></shop-order>
-           <comment v-show="!showOrder"></comment>
+           <shop-order v-show="showOrder" :menu-category="shop.menuCategory" :send-price="shop.sendPrice"></shop-order>
+           <comment v-show="!showOrder" :comments="shop.commentList" :overall-score="shop.overallScore" :good-num="shop.goodNum" :send-time="shop.sendTime" :service-num="shop.serviceNum"></comment>
         </section>
     </div>
 
@@ -50,26 +50,28 @@
                 shop:{}
             }
         },
-        watch: {
-            // 监听 $route 为店内页设置不同的过渡效果
-            "$route" (to, from) {
-                let shopid=this.$route.query.shophash;
-                let _this=this;
-                this.$store.state.indexShopList.forEach(function (item) {
-                    if(item.id==shopid){
-                        _this.shop=item;
-                        return false;
-                    }
-                })
-            }
-        },
-        mounted(){
+        mounted:function(){
             this.$nextTick(function () {
-                // this.$store.commit('getShopInfoById',this.$route.query.shophash);
+                this.getShopInfoById();
             })
+        },
+        watch:{
+            '$route':'getShopInfoById'
         },
         components:{
             shopOrder,comment
+        },
+        methods:{
+            getShopInfoById:function () {
+                this.showOrder=true;
+                let shopid=this.$route.query.shophash;
+                if(!isNaN(shopid)){
+                    let _this=this;
+                    this.axios.get('./shopInfo.js',{params:{id:shopid}}).then(function (response) {
+                        _this.shop=response.data;
+                    })
+                }
+            }
         }
     }
 </script>

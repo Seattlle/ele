@@ -20,6 +20,11 @@
                 </a>
             </li>
         </ul>
+
+        <div class="slide-point-group">
+            <span class="slide-point active"></span>
+            <span class="slide-point"></span>
+        </div>
     </div>
 </template>
 
@@ -27,7 +32,7 @@
     .fooder-list-wrap{
         position: relative;
         overflow: hidden;
-        height:3rem;
+        height:3.3rem;
     }
     .fooder-list{
         position: absolute;
@@ -67,6 +72,28 @@
         /*margin-top: .133333rem;*/
         color: #666;
         font-size: .26rem;
+    }
+    .slide-point-group{
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left:0;
+        width:100%;
+    }
+    .slide-point{
+        display: inline-block;
+        margin:0 1px;
+        width:5px;
+        height:5px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius:50%;
+        border-radius:50%;
+        background:#000;
+        overflow: hidden;
+        opacity: .2;
+    }
+    .slide-point.active{
+        opacity: .6;
     }
 </style>
 

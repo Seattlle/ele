@@ -2,13 +2,13 @@
     <section class="shop-main">
         <div class="menuview">
             <ul class="menucategory">
-                <li class="menucategory-item" v-for="(item ,index) in $store.state.shop.menuCategory" :class="{'active':!!item.checked||($store.state.shop.choseMenu==undefined&&index==0)}"   @click="choseThis(item,index)">
+                <li class="menucategory-item" v-for="(item ,index) in menuCategory" :class="{'active':!!item.checked||(choseMenu&&index==0)}"   @click="choseThis(item,index)">
                     <span class="menucategory-qwsbd">{{item.name}}</span>
                     <span class="menucategory-28BIn" v-if="item.selectNum!=undefined&&item.selectNum>0">{{item.selectNum}}</span>
                 </li>
             </ul>
             <section id="container" class="container-menuview">
-                <template v-for="cate in $store.state.shop.menuCategory">
+                <template v-for="cate in menuCategory">
                     <div class="category-title" :data-menuid="cate.id">
                         <strong class="category-name">{{cate.name}}</strong>
                         <span  class="category-description">{{cate.descript}}</span>
@@ -48,7 +48,7 @@
                 </template>
             </section>
         </div>
-        <cart></cart>
+        <cart :total-money="totalMoney" :send-price="sendPrice" :total-num="totalNum"></cart>
     </section>
 </template>
 <script>
@@ -56,11 +56,20 @@
     import Vue from 'vue'
     import cart from './cart.vue'
     export default{
+        props:["menuCategory","sendPrice"],
         components:{
             cart
         },
         data(){
-            return { }
+            return {
+                choseMenu:true,
+                totalMoney:0,
+                totalNum:0,
+                selectedItem:[]
+            }
+        },
+        watch:{
+            '$route':'reflash'
         },
         mounted(){
             this.$nextTick(function () {
@@ -70,8 +79,24 @@
         methods:{
             choseThis(thisItem,index) {
                 ifOnScroll=true;
-                this.choseMenu=thisItem;
-                this.$store.commit('choseMenu',thisItem);
+                this.choseMenu=false;
+
+                this.menuCategory.forEach(function(item){
+                    if(thisItem==item){
+                        if(typeof item.checked=='undefined'){
+                            Vue.set(item,'checked',true);
+                        }else{
+                            item.checked=true;
+                        }
+                    }else{
+                        if(typeof item.checked=='undefined'){
+                            Vue.set(item,'checked',false);
+                        }else{
+                            item.checked=false;
+                        }
+                    }
+                });
+
                 //平滑滚动
                 this.jump(index)
             },
@@ -118,38 +143,76 @@
                     for(let i=0;i<title.length;i++){
                         if(title[i].offsetTop>scrolled-50&&title[i].offsetTop<scrolled+50){
                             let menuId=title[i].dataset.menuid;
-                            _this.$store.commit('scrollMenu',menuId);
-                            _this.choseMenu=menuId;
+                            _this.scrollChoseMenu(menuId)
+                            _this.choseMenu=false;
                         }
                     }
-//                    title.forEach(function (it) {
-//                        _this.menuTop+=it.offsetTop+";";
-//                        if(it.offsetTop>scrolled-50&&it.offsetTop<scrolled+50){
-//                            let menuId=it.dataset.menuid;
-//                            _this.$store.commit('scrollMenu',menuId);
-//                            _this.choseMenu=menuId;
-//                        }
-//                    })
                 }
             },
-            method(list,i){
-                this.choseMenu=i;
-                this.$store.commit('addOrder',{
-                    'list':list,
-                    'num':i
+            scrollChoseMenu(menuId){
+                this.menuCategory.forEach(function(items){
+                    if(items.id==menuId){
+                        if(typeof items.checked=='undefined'){
+                            Vue.set(items,'checked',true);
+                        }else{
+                            items.checked=true;
+                        }
+                    }else{
+                        if(typeof items.checked=='undefined'){
+                            Vue.set(items,'checked',false);
+                        }else{
+                            items.checked=false;
+                        }
+                    }
                 });
-                if(i>0){
-                    let  startX=event.clientX-event.target.clientWidth;
-                    let  startY=event.clientY-event.target.clientHeight;
-
-                    let target=document.querySelector('.bottomNav-18KRG_0');
-                    let middle=target.offsetWidth/2;
-                    let targetX=target.clientLeft+middle;
-                    let targetY=target.offsetParent.offsetTop+target.offsetTop-middle;
-
-                   this.flyball(startX,startY,targetX,targetY);
+            },
+            method(list,i){
+                if(typeof list.selectNum=='undefined'){
+                    Vue.set(list,'selectNum',i);
+                }else{
+                    list.selectNum+=i;
                 }
-                this.$store.commit('calculateMoney');
+                if(i>0){
+                    this.addBall(event)
+                }
+                this.calculateMoney();
+            },
+            addBall(event){
+                let  startX=event.clientX-event.target.clientWidth;
+                let  startY=event.clientY-event.target.clientHeight;
+
+                let target=document.querySelector('.bottomNav-18KRG_0');
+                let middle=target.offsetWidth/2;
+                let targetX=target.clientLeft+middle;
+                let targetY=target.offsetParent.offsetTop+target.offsetTop-middle;
+
+                this.flyball(startX,startY,targetX,targetY);
+            },
+            calculateMoney(){
+                let _this=this;
+                this.selectedItem=[];
+                this.totalMoney=0;
+                this.totalNum=0;
+                this.menuCategory.forEach(function (menuType) {
+                    let num=0;
+                    menuType.category.forEach(function (item) {
+                        if(item.selectNum>0){
+                            _this.selectedItem.push(item);
+                            _this.totalMoney+=item.selectNum*item.price;
+                            num+=item.selectNum;
+                        }
+                    });
+                    Vue.set(menuType,'selectNum',num);
+                    _this.totalNum+=num;
+                });
+
+                let button=document.getElementById("bottomNav_Cart");
+                if(_this.totalNum>0){
+                    if(button.className.indexOf("bottomNav_right")<0)
+                        button.className=button.className.trim()+" bottomNav_right";
+                }else{
+                    button.className=button.className.trim().replace("bottomNav_right","");
+                }
             },
             //购物车抛物线  开始坐标  结束坐标
             flyball(startX,startY,targetX,targetY){
@@ -189,6 +252,16 @@
                             bottom.className=bottom.className.replace("bottom_shake","");
                         },300)
                     }
+                }
+            },
+            reflash(){
+                let path=this.$route.path;
+                if(path.indexOf('shopInfo')>=0){
+                    this.totalMoney=0;
+                    this.choseMenu=true;
+                    this.totalNum=0;
+                    this.selectedItem=[];
+                    document.getElementById("bottomNav_Cart").className="bottomNav-18KRG_0";
                 }
             }
         }

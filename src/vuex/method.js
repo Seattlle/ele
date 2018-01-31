@@ -40,8 +40,8 @@ const mutations={
         });
     },
     //滚动右侧菜单时  选择左侧菜单
-    scrollMenu(store,menuId){
-        store.shop.menuCategory.forEach(function(items){
+    scrollMenu(store,menuCategory,menuId){
+       menuCategory.forEach(function(items){
             if(items.id==menuId){
                 if(typeof items.checked=='undefined'){
                     Vue.set(items,'checked',true);
