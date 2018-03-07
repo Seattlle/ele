@@ -2,7 +2,7 @@
     <section class="shop-main">
         <div class="menuview">
             <ul class="menucategory">
-                <li class="menucategory-item" v-for="(item ,index) in menuCategory" :class="{'active':!!item.checked||(choseMenu&&index==0)}"   @click="choseThis(item,index)">
+                <li class="menucategory-item" v-for="(item ,index) in menuCategory" :class="{'active':(index==0&&choseMenu)||!!item.checked}"   @click="choseThis(item,index)">
                     <span class="menucategory-qwsbd">{{item.name}}</span>
                     <span class="menucategory-28BIn" v-if="item.selectNum!=undefined&&item.selectNum>0">{{item.selectNum}}</span>
                 </li>
@@ -143,7 +143,7 @@
                     for(let i=0;i<title.length;i++){
                         if(title[i].offsetTop>scrolled-50&&title[i].offsetTop<scrolled+50){
                             let menuId=title[i].dataset.menuid;
-                            _this.scrollChoseMenu(menuId)
+                            _this.scrollChoseMenu(menuId);
                             _this.choseMenu=false;
                         }
                     }
@@ -258,11 +258,22 @@
                 let path=this.$route.path;
                 if(path.indexOf('shopInfo')>=0){
                     this.totalMoney=0;
-                    this.choseMenu=true;
                     this.totalNum=0;
                     this.selectedItem=[];
+                    this.choseMenu=true;
                     document.getElementById("bottomNav_Cart").className="bottomNav-18KRG_0";
+                }else{
+                    this.clearMenuChose();
                 }
+            },
+            clearMenuChose(){
+                this.menuCategory.forEach(function(items){
+                    if(typeof items.checked=='undefined'){
+                        Vue.set(items,'checked',false);
+                    }else{
+                        items.checked=false;
+                    }
+                });
             }
         }
     }

@@ -12,7 +12,7 @@
                     {{shop.time}}送达
                  </span>
                     <span class="shop-header-deliveryItem_Fari3_0">
-                    配送费{{shop.sendPrice | toMoney}}
+                    配送费{{shop.sendPrice||0 | toMoney}}
                   </span>
                 </p>
                 <div class="shop-header-notice_2DzmG_0">

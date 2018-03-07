@@ -240,7 +240,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "shop-header-deliveryItem_Fari3_0"
   }, [_vm._v("\n                " + _vm._s(_vm.shop.time) + "送达\n             ")]), _vm._v(" "), _c('span', {
     staticClass: "shop-header-deliveryItem_Fari3_0"
-  }, [_vm._v("\n                配送费" + _vm._s(_vm._f("toMoney")(_vm.shop.sendPrice)) + "\n              ")])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("\n                配送费" + _vm._s(_vm._f("toMoney")(_vm.shop.sendPrice || 0)) + "\n              ")])]), _vm._v(" "), _c('div', {
     staticClass: "shop-header-notice_2DzmG_0"
   }, [_c('span', [_vm._v("公告：")]), _vm._v(" "), _c('span', {
     domProps: {
@@ -504,7 +504,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     return _c('li', {
       staticClass: "menucategory-item",
       class: {
-        'active': !!item.checked || (_vm.choseMenu && index == 0)
+        'active': (index == 0 && _vm.choseMenu) || !!item.checked
       },
       on: {
         "click": function($event) {
@@ -1382,11 +1382,22 @@ exports.default = {
             var path = this.$route.path;
             if (path.indexOf('shopInfo') >= 0) {
                 this.totalMoney = 0;
-                this.choseMenu = true;
                 this.totalNum = 0;
                 this.selectedItem = [];
+                this.choseMenu = true;
                 document.getElementById("bottomNav_Cart").className = "bottomNav-18KRG_0";
+            } else {
+                this.clearMenuChose();
             }
+        },
+        clearMenuChose: function clearMenuChose() {
+            this.menuCategory.forEach(function (items) {
+                if (typeof items.checked == 'undefined') {
+                    _vue2.default.set(items, 'checked', false);
+                } else {
+                    items.checked = false;
+                }
+            });
         }
     }
 };
