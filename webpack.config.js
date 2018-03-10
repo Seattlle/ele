@@ -53,6 +53,18 @@ module.exports = {
                     port:8099
                 }
             }
+        }),
+
+        new webpack.optimize.UglifyJsPlugin({ // js、css都会压缩
+            mangle: {
+                except: ['$super', '$', 'exports', 'require', 'module', '_']
+            },
+            compress: {
+                warnings: false
+            },
+            output: {
+                comments: false,
+            }
         })
     ]
 }
